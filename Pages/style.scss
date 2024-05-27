@@ -1,0 +1,81 @@
+$primary-margin: 15px;
+$secondary-margin: 70px;
+$spacer-margin: 100px;
+$max-width: 900px;
+$instruction-height: 200px;
+$output-height: 500px;
+
+.page-head {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruction-header, .output-header {
+  margin: $primary-margin auto;
+  text-align: center;
+}
+
+.instruction-container, .output-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  max-width: $max-width;
+}
+
+.instruction-textarea, .output-textarea {
+  width: 100%;
+}
+
+.instruction-textarea {
+  height: $instruction-height;
+}
+
+.output-textarea {
+  height: $output-height;
+}
+
+.input-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: $primary-margin auto;
+
+  .generate-btn, .continue-btn {
+    flex: 1;
+    border-radius: 0;
+  }
+
+  .generate-btn {
+    border-radius: 1000px 0 0 1000px;
+  }
+
+  .continue-btn {
+    border-radius: 0 1000px 1000px 0;
+  }
+}
+
+.comment-section {
+  margin-top: $secondary-margin;
+}
+
+.spacer {
+  display: block;
+  margin-top: $spacer-margin;
+  color: transparent;
+  user-select: none;
+}
+
+.ui-container {
+  display: flex;
+  justify-content: center;
+  margin-top: $primary-margin;
+
+  button {
+    margin: 0 10px;
+  }
+}

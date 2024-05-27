@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="../Assets/script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-head">
+      <h1>[$meta.title]</h1>
+    </div>
+    <div class="page">
+      <div class="instruction-header">— Instruction —</div>
+      <div class="instruction-container">
+        <textarea
+          class="instruction-textarea"
+          id="instructionEl"
+          placeholder="Type an instruction here."
+          oninput="localStorage.instruction=this.value; generateBtn.textContent='generate';"
+        ></textarea>
+      </div>
+      <div class="input-buttons-container">
+        <button
+          class="generate-btn"
+          id="generateBtn"
+          onclick="responseEl.value=''; loaderEl.innerHTML=output.evaluateItem; continueBtn.disabled=false; this.textContent='regenerate';"
+        >
+          generate
+        </button>
+        <button
+          class="continue-btn"
+          id="continueBtn"
+          disabled
+          onclick="loaderEl.innerHTML=output.evaluateItem"
+        >
+          continue
+        </button>
+      </div>
+      <div id="loaderEl"></div>
+      <div class="output-header">— Output —</div>
+      <div class="output-container">
+        <textarea
+          class="output-textarea"
+          oninput="if (this.value.trim()=='') { continueBtn.disabled=true; generateBtn.textContent='generate'; } else { continueBtn.disabled=false; generateBtn.textContent='regenerate'; }"
+          id="responseEl"
+          placeholder="AI's output will show up here, and you can edit it. You can also type stuff here to ensure the output starts with specific text."
+        ></textarea>
+      </div>
+      <div class="comment-section">[comments(commentsOptions)]</div>
+    </div>
+    <p class="spacer">-</p>
+    <div class="ui-container">
+      <button onclick="fullscreen()">Fullscreen</button>
+      <button onclick="darkmode();">Darkmode</button>
+    </div>
+  </body>
+</html>

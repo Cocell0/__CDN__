@@ -1,0 +1,72 @@
+.page-head {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruction-header, .output-header {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.instruction-container, .output-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  max-width: 900px;
+}
+
+.instruction-textarea, .output-textarea {
+  width: 100%;
+}
+
+.instruction-textarea {
+  height: 200px;
+}
+
+.output-textarea {
+  height: 500px;
+}
+
+.input-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+.input-buttons-container .generate-btn, .input-buttons-container .continue-btn {
+  flex: 1;
+  border-radius: 0;
+}
+.input-buttons-container .generate-btn {
+  border-radius: 1000px 0 0 1000px;
+}
+.input-buttons-container .continue-btn {
+  border-radius: 0 1000px 1000px 0;
+}
+
+.comment-section {
+  margin-top: 70px;
+}
+
+.spacer {
+  display: block;
+  margin-top: 100px;
+  color: transparent;
+  user-select: none;
+}
+
+.ui-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.ui-container button {
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

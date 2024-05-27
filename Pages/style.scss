@@ -1,81 +1,106 @@
-$primary-margin: 15px;
-$secondary-margin: 70px;
-$spacer-margin: 100px;
-$max-width: 900px;
-$instruction-height: 200px;
-$output-height: 500px;
+/* Variables */
+$primary-color: #4a90e2;
+$secondary-color: #ff6f61;
+$text-color: #333;
+$background-color: #f5f5f5;
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
 
 .page-head {
   text-align: center;
+  margin-top: 20px;
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .instruction-header, .output-header {
-  margin: $primary-margin auto;
-  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .instruction-container, .output-container {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  max-width: $max-width;
+  margin-top: 10px;
 }
 
 .instruction-textarea, .output-textarea {
   width: 100%;
-}
-
-.instruction-textarea {
-  height: $instruction-height;
-}
-
-.output-textarea {
-  height: $output-height;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
 }
 
 .input-buttons-container {
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
-  margin: $primary-margin auto;
+  justify-content: space-between;
+}
 
-  .generate-btn, .continue-btn {
-    flex: 1;
-    border-radius: 0;
-  }
+.generate-btn, .continue-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
 
-  .generate-btn {
-    border-radius: 1000px 0 0 1000px;
-  }
+.generate-btn:hover, .continue-btn:hover {
+  background-color: darken($primary-color, 10%);
+}
 
-  .continue-btn {
-    border-radius: 0 1000px 1000px 0;
-  }
+.continue-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 .comment-section {
-  margin-top: $secondary-margin;
-}
-
-.spacer {
-  display: block;
-  margin-top: $spacer-margin;
-  color: transparent;
-  user-select: none;
+  margin-top: 20px;
 }
 
 .ui-container {
   display: flex;
   justify-content: center;
-  margin-top: $primary-margin;
+  margin-top: 20px;
+}
 
-  button {
-    margin: 0 10px;
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $secondary-color;
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken($secondary-color, 10%);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .page {
+    padding: 10px;
   }
 }

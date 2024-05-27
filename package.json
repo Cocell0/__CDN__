@@ -1,0 +1,18 @@
+{
+  "name": "central-dom-network",
+  "version": "1.0.0",
+  "description": "Central location to maintan all relative projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cocell0/__CDN__"
+  },
+  "author": "Cocell",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

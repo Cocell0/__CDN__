@@ -2,5 +2,9 @@
   "liveServer.settings.port": 5501,
   "objectscript.conn": {
     "active": false
-  }
+  },
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveFrame.url": "https://potential-goggles-69g6wrvq5jg42xwvp-45679.app.github.dev/Pages/",
+  "liveFrame.title": "Local Development",
+  "liveFrame.pane": "Beside"
 }

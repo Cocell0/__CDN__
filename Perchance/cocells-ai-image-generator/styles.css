@@ -215,6 +215,11 @@
   display: none;
 }
 
+#aimg:not(.aimg-toggle) .aimg-prompt textarea {
+  overflow-y: hidden;
+  margin-right: var(--d-10px);
+}
+
 .aimg-toggle .aimg-prompt textarea {
   height: 120px;
 }

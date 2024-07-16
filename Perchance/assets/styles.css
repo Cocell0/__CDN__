@@ -33,7 +33,7 @@
   --background: hsl(0, 0%, 100%);
   --background-darker: hsl(0, 0%, 90%);
   --primary-theme_light: hsl(224, 12%, 68%);
-  --secondary-theme_light: hsl(224, 15.3%, 92%);
+  --secondary-theme_light: hsl(224 25% 95%);
   --tertiary-theme_light: hsl(224, 15.3%, 70%);
   --accent-theme_light: hsl(222, 15%, 83%);
 
@@ -784,8 +784,8 @@ input:checked+.slider:before {
 
 .tabs {
   --shadow-bg-color: var(--secondary);
-  --active: hsl(224, 9.4%, 77.1%);
-  --hover: hsl(224, 10.5%, 86.6%);
+  --active: hsl(225, 15%, 88%);
+  --hover: hsl(225, 10%, 84%);
   box-sizing: border-box;
   border: 2px solid transparent;
   text-align: left;

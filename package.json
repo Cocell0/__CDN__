@@ -13,6 +13,8 @@
   "author": "Cocell",
   "license": "GPL-3.0",
   "dependencies": {
-    "express": "^4.19.2"
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0"
   }
 }

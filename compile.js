@@ -1,55 +1,72 @@
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 
-// Function to read the content of a file
-function readFileContent(filePath) {
-    return fs.readFileSync(filePath, 'utf-8');
+async function readFileContent(filePath) {
+    try {
+        return await fs.readFile(filePath, 'utf8');
+    } catch (err) {
+        console.error(`Error reading file: ${filePath}`);
+        throw err;
+    }
 }
 
-// Function to process HTML file and replace link/script references with actual content
-function processHTMLFile(filePath) {
-    let content = readFileContent(filePath);
+async function replaceReferences(content, baseDir) {
+    const scriptTagRegex = /<script\s+src="([^"]+)"\s*><\/script>/g;
+    const linkTagRegex = /<link\s+rel="stylesheet"\s+href="([^"]+)"\s*\/?>/g;
 
-    // Replace <link> tags with the actual content
-    content = content.replace(/<link rel="stylesheet" href="(.+?)">/g, (match, href) => {
-        const cssFilePath = path.resolve(path.dirname(filePath), href);
-        const cssContent = readFileContent(cssFilePath);
-        return `<style>\n${cssContent}\n</style>`;
-    });
-
-    // Replace <script> tags with the actual content
-    content = content.replace(/<script src="(.+?)"><\/script>/g, (match, src) => {
-        const jsFilePath = path.resolve(path.dirname(filePath), src);
-        const jsContent = readFileContent(jsFilePath);
-        return `<script>\n${jsContent}\n</script>`;
-    });
+    // Replace <script src="..."></script> references
+    content = await replaceTagReferences(content, baseDir, scriptTagRegex, '<script>${content}</script>');
+    // Replace <link rel="stylesheet" href="..."> references
+    content = await replaceTagReferences(content, baseDir, linkTagRegex, '<style>${content}</style>');
 
     return content;
 }
 
-// Get command-line arguments
-const args = process.argv.slice(2);
-if (args.length < 1) {
-    console.error('Usage: node compile.js <input-html-file> [output-html-file]');
+async function replaceTagReferences(content, baseDir, regex, replacementTemplate) {
+    let match;
+    while ((match = regex.exec(content)) !== null) {
+        const relativePath = match[1];
+        if (isExternalLink(relativePath)) {
+            continue;  // Skip external links
+        }
+        const absolutePath = path.resolve(baseDir, relativePath);
+
+        try {
+            const fileContent = await readFileContent(absolutePath);
+            const replacement = replacementTemplate.replace('${content}', fileContent);
+            content = content.replace(match[0], replacement);
+        } catch (err) {
+            console.error(`Error processing reference: ${relativePath}`);
+            throw err;
+        }
+    }
+    return content;
+}
+
+function isExternalLink(link) {
+    return /^(https?:)?\/\//.test(link);
+}
+
+async function compileFile(filePath) {
+    const baseDir = path.dirname(filePath);
+    const fileName = path.basename(filePath);
+    const compiledFileName = `compiled-${fileName}`;
+    const compiledFilePath = path.join(baseDir, compiledFileName);
+
+    try {
+        let content = await readFileContent(filePath);
+        content = await replaceReferences(content, baseDir);
+        await fs.writeFile(compiledFilePath, content, 'utf8');
+        console.log(`Compiled file saved as: ${compiledFilePath}`);
+    } catch (err) {
+        console.error(`Error compiling file: ${filePath}`);
+    }
+}
+
+const filePath = process.argv[2];
+if (!filePath) {
+    console.error('Usage: node compile.js <path to the document>');
     process.exit(1);
 }
 
-const inputFilePath = args[0];
-let outputFilePath;
-
-if (args.length === 2) {
-    outputFilePath = args[1];
-} else {
-    const inputDir = path.dirname(inputFilePath);
-    const inputFileName = path.basename(inputFilePath);
-    const outputFileName = `compiled-${inputFileName}`;
-    outputFilePath = path.join(inputDir, outputFileName);
-}
-
-// Process the HTML file
-const compiledHTMLContent = processHTMLFile(inputFilePath);
-
-// Write the compiled content to a new file
-fs.writeFileSync(outputFilePath, compiledHTMLContent, 'utf-8');
-
-console.log('Compilation complete. Output file created at:', outputFilePath);
+compileFile(filePath);

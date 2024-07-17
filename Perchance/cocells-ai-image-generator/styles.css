@@ -181,6 +181,12 @@
   transition: 0.5s, color 0s;
   height: 36px;
   text-align: justify;
+  transition: margin 0s, height 0.5s;
+}
+
+.aimg-prompt textarea::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
 }
 
 .aimg-button-wrapper {
@@ -217,7 +223,7 @@
 
 #aimg:not(.aimg-toggle) .aimg-prompt textarea {
   overflow-y: hidden;
-  margin-right: var(--d-10px);
+  margin-right: 5px;
 }
 
 .aimg-toggle .aimg-prompt textarea {

@@ -1,0 +1,3758 @@
+<!DOCTYPE html>
+
+<script
+  src="https://kit.fontawesome.com/dd1238c4ee.js"
+  crossorigin="anonymous"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Cocell0/Cocell-s-Perchance@main/styles.css"
+/>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .__perchance-comments-loading-facade-12345 {
+    background: var(--vanilla-velour) !important;
+  }
+  
+  .dark .__perchance-comments-loading-facade-12345 {
+    background: #181818 !important;
+  }
+  
+  :root {
+    --font-color-black: #374151;
+    --font-color-mid-black: #57606e;
+    --font-color-white: #e6e8ec;
+    /* Background Type Colors */
+    --ct-bg: #ced4e595;
+    --ct-bg-alt: #dbe2ffc5;
+    --backdrop-light: #0000008c;
+    --backdrop-dark: #000000cc;
+    /* Gradient Type Colors */
+    --ct-bg-dark: linear-gradient(160deg, #1d1d1d, #18181a, #141420);
+    --ct-bg-dark-alt: linear-gradient(160deg, #505053, #2d2d31, #0e0e1a);
+    /* Accent Type Colors */
+    --light-gray-accent: #cdd1d3;
+    --light-gray-accent-mono: #aeb5b9;
+    --light-gray-accent-zeno: #858a8d;
+    --dark-gray-accent: #3C4347;
+    --dark-gray-accent-mono: #535D63;
+    --dark-gray-accent-zeno: #1b1e1e;
+    /* ***Colors*** */
+    /* White */
+    --whispering-white: #F8F8FF;
+    --vanilla-velour: #f9f9f9;
+    --pearlescent-purity: #FFF8E7;
+    --ivory-illusion: #f7fff0;
+    --ecru-elegance: #dcedf5;
+    --cream-chiffon: #fdf5e5;
+    --alabaster-ambiance: #F0F8FF;
+    --marshmallow-mist: #F5FFFA;
+    --subtle-snowfall: #F0FFFF;
+    --silken-snow: #DFF0E2;
+    --creamy-cotton: #FFFDD0;
+    --pale-purity: #E6F0FF;
+    --antique-aura: #FAEBD7;
+    --porcelain-pearl: #F4F0E5;
+    --frosted-flurry: #E1E8EB;
+    --linen-lustre: #FAF0E6;
+    --whitewash-whirl: #EDEDED;
+    --blizzard-breeze: #F9F9F9;
+    --glacial-glow: #F0F0F0;
+    --powdered-precipitation: #EAEAEA;
+    --crystal-clear: #E3E3E3;
+    --ice-ivory: #F1F1F1;
+    --cloud-comfort: #F2F2F2;
+    --silver-snowflake: #DCDCDC;
+    --faint-frosting: #F5F5F5;
+    --gentle-glow: #F8F8F8;
+    --soft-snow: #FFFAFA;
+    --airy-alabaster: #F7F7F7;
+    --whitened-whirlwind: #FDFDFD;
+    --pure-peace: #FCFCFC;
+    --arctic-ash: #F2F4F6;
+    /* Gray */
+    --charcoal-gray: #36454F;
+    --dark-gray: #383737;
+    --slate-gray: #708090;
+    --steel-gray: #4682B4;
+    --dark-steel: #3c444b;
+    --smoke-gray: #696969;
+    --ash-gray: #b8bec7;
+    --cloudy-gray: #d4d9e0;
+    --silver-steel: #C0C0C0;
+    --cool-platinum: #E5E4E2;
+    --warm-platinum: #C0C0C0;
+    --soft-gray: #d1d1d1;
+    --pale-silver: #C0C0C0;
+    --battleship-gray: #848482;
+    --mouse-gray: #8B8682;
+    --dove-gray: #525151;
+    --concrete-gray: #D2D1CD;
+    --rain-cloud-gray: #A9A9A9;
+    --stormy-gray: #778899;
+    --foggy-gray: #D6D6D6;
+    --pearl-gray: #eaeaea;
+    --moonstone-gray: #AAB2B5;
+    --pebble-gray: #D9D9D9;
+    --granite-gray: #676767;
+    --silver-lining: #C0C0C0;
+    --whale-gray: #7C8388;
+    --warm-gray: #808080;
+    --cool-gray: #B0C4DE;
+    --blue-gray: #6699CC;
+    --taupe-gray: #483C32;
+    --muted-gray: #9E9E9E;
+    /* *** */
+    --light-gray: #e3e3e3;
+    --light-lighter-gray: #f0f0f0;
+    --gray-50: #f7f7f8;
+    --gray-100: #ececf1;
+    --gray-200: #d9d9e3;
+    --gray-300: #c5c5d2;
+    --gray-400: #acacbe;
+    --gray-500: #999;
+    --gray-600: #666;
+    --gray-700: #40414f;
+    --gray-800: #343541;
+    --gray-900: #202123;
+    --gray-950: #0f0f0f;
+    /* Blue */
+    --arctic-blue: #f0f4f9;
+    --pale-ice: #dce5ee;
+    --sky-blizzard: #c8e0f6;
+    --frozen-wave: #9cc8e6;
+    --winter-chill: #bed8e8;
+    --cerulean-ice: #c3e0e8;
+    --arctic-dream: #d6e9f5;
+    --misty-frost: #d0e6f6;
+    --sapphire-breeze: #a5bfdd;
+    --tranquil-tide: #aecfd9;
+    --azure-breeze: #bcdce7;
+    --blue-haze: #bccfd9;
+    --oceanic-whisper: #c4d8e5;
+    --ethereal-blue: #c3d9ea;
+    --moonlit-marine: #8fb2cd;
+    --dreamy-blue: #95bedb;
+    --gentle-tide: #9abce2;
+    --calm-cerulean: #a7cde9;
+    --tranquil-lagoon: #97bed2;
+    --flawed-blue: #22426d;
+    --flawn-blue: #284c7c;
+    --flowing-blue: #264aad;
+    --zenithal-horizon: #88a3b8;
+    --velvet-sea: #6e99b3;
+    --arctic-zen: #7b9db9;
+    --ten-blue: #78adfd;
+    --blue: #a1c0f0;
+    --blue-light: #b8d3fc;
+    --blue-lighter: #cbe0ff;
+    --blue-100: #80aaff;
+    --blue-200: #6699ff;
+    --blue-300: #4d88ff;
+    --blue-400: #3366ff;
+    --blue-500: #1a45ff;
+    --blue-600: #0033cc;
+    --blue-800: #002266;
+    --blue-950: #000f66;
+    /* Red */
+    --crimson-red: #dc143c;
+    --ruby-red: #e74c3c;
+    --scarlet-fire: #ff2400;
+    --deep-cherry: #c0392b;
+    --vibrant-rose: #ff007f;
+    --burgundy-blush: #800020;
+    --cherry-blossom: #de3163;
+    --fiery-red: #b22222;
+    --passionate-pink: #ff4d6d;
+    --raspberry-ripple: #ff3883;
+    --tomato-tango: #ff6347;
+    --flamingo-feather: #fc8c99;
+    --coral-crush: #f88379;
+    --rose-petal: #ff66b2;
+    --candy-apple: #ff0800;
+    --rustic-red: #b7410e;
+    --velvet-vivid: #b91d47;
+    --marsala-magic: #964f4c;
+    --warm-embers: #ad1f21;
+    --chili-pepper: #9b1b30;
+    --crimson-glory: #be0032;
+    --merlot-mist: #7e354d;
+    --vivid-rouge: #a94064;
+    --bittersweet-blaze: #fe6f5e;
+    --mulberry-madness: #c85086;
+    --radiant-raspberry: #c71585;
+    --passion-punch: #ff5588;
+    --rosewood-rhapsody: #65000b;
+    --chocolate-cherry: #700137;
+    --red-50: #ffe6e6;
+    --red-100: #ff6666;
+    --red-200: #ff4d4d;
+    --red-300: #ff3333;
+    --red-400: #ff1a1a;
+    --red-500: #ff0000;
+    --red-600: #cc0000;
+    --red-700: #990000;
+    --red-800: #660000;
+    --red-900: #330000;
+    --red-950: #660f0f;
+    /* Orange */
+    --tangerine-tango: #ff7f50;
+    --pumpkin-spice: #ff7518;
+    --vivid-carrot: #ffA500;
+    --mango-madness: #ff8c1a;
+    --sunrise-orange: #ff6700;
+    --fiery-coral: #ff6f61;
+    --sunset-blaze: #fd5e53;
+    --burnt-sienna: #e97451;
+    --spiced-ginger: #b5651d;
+    --clementine-crush: #ff8000;
+    --orange-zest: #ffae42;
+    --amber-awakening: #ffbf00;
+    --goldenrod-glitter: #db9d00;
+    --marigold-magic: #ffcc00;
+    --honey-harvest: #ffdb58;
+    --autumn-blaze: #d99058;
+    --papaya-whip: #ffefd5;
+    --peach-parfait: #ffcc99;
+    --coral-cream: #ffaa80;
+    --salmon-splash: #ff8c69;
+    --apricot-ambiance: #fdd5b1;
+    --terra-cotta: #e2725b;
+    --cinnamon-spice: #d2691e;
+    --burnt-orange: #cc5500;
+    --rustic-rose: #bc6c25;
+    --copper-canyon: #7e3a12;
+    --sienna-sunrise: #c88a65;
+    --tawny-tan: #cd853f;
+    --nutmeg-nuance: #8a6e5a;
+    --spicy-brown: #ab5236;
+    --orange-light: #ffcc99;
+    --orange-lighter: #ffd9b3;
+    --orange-50: #ffe6cc;
+    --orange-100: #ffaa80;
+    --orange-200: #ff9966;
+    --orange-300: #ff884d;
+    --orange-400: #ff6633;
+    --orange-500: #ff5500;
+    --orange-600: #cc4400;
+    --orange-700: #993300;
+    --orange-800: #662200;
+    --orange-900: #331100;
+    --orange-950: #663f00;
+    /* Purple */
+    --lavender-blush: #F4E1FF;
+    --lilac-love: #B799D6;
+    --amethyst-dream: #9966CC;
+    --plum-perfection: #8E44AD;
+    --violet-velvet: #9400D3;
+    --purple-passion: #800080;
+    --royal-regalia: #6A1B9A;
+    --majestic-mauve: #9B59B6;
+    --mystic-mulberry: #C39BD3;
+    --orchid-opulence: #7D3C98;
+    --deep-purple: #5B2C6F;
+    --indigo-illusion: #4B0082;
+    --blue-violet: #8A2BE2;
+    --periwinkle-princess: #9FA8DA;
+    --twilight-tint: #5D6D7E;
+    --thistle-thrill: #D2B4DE;
+    --heliotrope-harmony: #DF9BFF;
+    --grape-gala: #6F2DA8;
+    --fandango-fuchsia: #B33771;
+    --mulberry-magic: #C8A2C8;
+    --plush-purple: #926EAE;
+    --dark-lavender: #734F96;
+    --shaded-lilac: #9A79A2;
+    --deep-amethyst: #884EA0;
+    --royal-purple: #7851A9;
+    --vivid-violet: #9F81A9;
+    --regal-rhapsody: #79589F;
+    --purple-prose: #634D6D;
+    --nightshade-noir: #2C3E50;
+    --blackberry-bliss: #683C5E;
+    /* Green */
+    --emerald-envy: #2ecc71;
+    --forest-fiesta: #228B22;
+    --jade-jubilation: #00a86b;
+    --minty-meadow: #00B894;
+    --olive-overture: #808000;
+    --lime-luxury: #00FF00;
+    --verdant-victory: #4CAF50;
+    --pine-perfection: #01796F;
+    --chartreuse-charm: #7FFF00;
+    --green-glow: #32CD32;
+    --spring-sensation: #87C735;
+    --teal-tint: #008080;
+    --seaweed-splash: #4E8975;
+    --hunter-green: #355E3B;
+    --fern-frost: #6EAEA1;
+    --emerald-isle: #00A693;
+    --cactus-cream: #5F9E81;
+    --lime-light: #D2F78D;
+    --grass-green: #3D8B37;
+    --sage-serenity: #87AE73;
+    --mint-mist: #D0E9C6;
+    --juniper-jewel: #6D9E8A;
+    --avocado-avenue: #568203;
+    --zesty-zucchini: #7C7F58;
+    --kiwi-kiss: #8EE53F;
+    --olive-ochre: #B5AE4E;
+    --forest-fog: #A2B29F;
+    --green-granite: #8A9A95;
+    --mojito-magic: #95DE64;
+    --lime-lagoon: #B5E3B5;
+    --sunny-splash: #FFD700;
+    /* Yellow */
+    --golden-glow: #FFD700;
+    --canary-craze: #FFFF99;
+    --mellow-yellow: #F8DE7E;
+    --daffodil-dream: #FFF56E;
+    --marigold-mirth: #FFB61E;
+    --lemon-luster: #FFEB3B;
+    --sunflower-spirit: #FDB813;
+    --honey-hue: #FFD966;
+    --mustard-magic: #FFDB58;
+    --butterscotch-blaze: #FFBC5E;
+    --amber-ambiance: #FFC300;
+    --banana-bliss: #FFE135;
+    --saffron-sunrise: #F4C542;
+    --gold-rush: #F9A602;
+    --champagne-charm: #EFD469;
+    --pineapple-promise: #F3D250;
+    --citrine-celebration: #E4D00A;
+    --daisy-delight: #FFDD77;
+    --topaz-tinge: #F8E647;
+    --goldenrod-gleam: #DAA520;
+    --yellow-yarn: #FFD571;
+    --custard-cream: #FFDB58;
+    --cornsilk-comfort: #FFF8DC;
+    --pale-primrose: #ECEAA1;
+    --lemon-lilting: #FFF44F;
+    --sun-kissed: #FFDB00;
+    --radiant-ray: #FAD02E;
+    --dandelion-dazzle: #FFD400;
+    --buttercup-burst: #F3A712;
+    --harvest-honey: #DAA520;
+    --citrus-zest: #FDCD58;
+    --midnight-mystery: #161618;
+    /* Dark */
+    --shadowy-silhouette: #1e1f20;
+    --darkened-depths: #28292b;
+    --charcoal-chasm: #313133;
+    --obsidian-ominous: #17191a;
+    --inky-void: #191a1b;
+    --blackest-night: #1e2122;
+    --pitch-black: #0a0c0d;
+    --abyssal-aura: #333435;
+    --sinister-shade: #14171a;
+    --coal-crevice: #2f3131;
+    --ebony-enigma: #251e1e;
+    --stealthy-shadow: #333536;
+    --murky-midnight: #21232b;
+    --gloomy-gloom: #191c1f;
+    --eclipsed-evening: #181818;
+    --ominous-obscurity: #272331;
+    --phantom-darkness: #0d0f10;
+    --creeping-cloak: #27201d;
+    --nebulous-night: #121416;
+    --void-vortex: #19262c;
+    --gloom-ridden: #171a1c;
+    --shrouded-silence: #0e1011;
+    --sinister-shadow: #14171a;
+    --enigmatic-eclipse: #0c0e0f;
+    --inky-imbalance: #191b1d;
+    --cryptic-cloak: #0f0f1d;
+    --dark-dread: #2e1919;
+    --velvet-vortex: #0a0c0d;
+    --phantom-pitch: #121516;
+    /*
+    *** Feel free to ignore these, I was just talking to someone on discord and had to write here,
+    But decided to keep it here. ***
+
+    Well, what I am doing is set up re-usable codes that I can use to make consistent website )
+    I might be able to earn money online after I learn to code well and get a credit card
+    But I do have a job, so... Its not urgent
+    I mean, I can do other things too, but I am more into tech so I am going with it
+    > ***Courage is not sole strength, courage is the strngth to move on when you dont have the strength to do so*** - Cocell
+    Yeah thats right, coding is not my goal for money, coding is my hobby and passion
+    And my job is something I took as an opportunity to learn from
+    https://tenor.com/view/naruto-naruto-uzumaki-ninja-anime-punch-gif-16891388
+    */
+  }
+
+
+  /* Another root classes for summarized quick widely used variables */
+  :root {
+    /* Easy Defining Light Variables (Goes great with lightmode) */
+    --zen-blue-back: var(--arctic-blue);
+    --zen-front: white;
+    --zen-blue-con: var(--pale-ice);
+    /* Easy Defining Dark Variables (Usefull for darkmodes) */
+    --zen-dark-back: var(--shadowy-silhouette);
+    --zen-dark-front: var(--darkened-depths);
+    --zen-dark-con: var(--charcoal-chasm);
+  }
+
+  :root {
+    --snap-cube: cubic-bezier(1, -1.25, 0, 2);
+  }
+
+  * {
+    transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap, transform;
+    transition-duration: 0.5s;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  body::-webkit-scrollbar {
+    background: none;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: inherit;
+  }
+
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: none;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+    border-radius: 10px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: var(--gray-600);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-600);
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-500);
+  }
+
+  /* Button */
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Track piece */
+  ::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+
+  /* Handle on scrollbar handle */
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  @media (max-width: 800px) {
+    body::-webkit-scrollbar {
+      display: none;
+      height: 5px;
+      width: 5px;
+    }
+
+    main::-webkit-scrollbar {
+      display: none;
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    body::-webkit-scrollbar {
+      width: 2px;
+    }
+
+
+    main::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+  }
+
+  /*
+  *** Short-hands ***
+  These are shorthands, quick classes to add one drop styles
+  */
+  .no-li-bullet {
+    list-style-type: none;
+  }
+
+  .transBg {
+    background: transparent;
+  }
+
+  .full-height {
+    height: 100%;
+  }
+
+  .pos-fixed {
+    position: fixed;
+  }
+
+  .pos-absolute {
+    position: absolute;
+  }
+
+  .pos-relative {
+    position: relative;
+  }
+
+  .full-overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+
+  .margin-auto {
+    margin: auto;
+  }
+
+  .comfortable-width {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .no-size-tran {
+    transition: width 0s, height 0s;
+  }
+
+  .over-hidden {
+    overflow: hidden;
+  }
+
+  .dis-none {
+    display: none;
+  }
+
+  .clip-round {
+    border-radius: 100%;
+  }
+
+  .clip-round-50 {
+    border-radius: 50%;
+  }
+
+  .round {
+    border-radius: 100px;
+  }
+
+  .round2 {
+    border-radius: 2rem;
+  }
+
+  .round1-5 {
+    border-radius: 1.5rem;
+  }
+
+  .round1 {
+    border-radius: 1rem;
+  }
+
+  .round08 {
+    border-radius: 0.8rem;
+  }
+
+  .round05 {
+    border-radius: 0.5rem;
+  }
+
+  .gap20 {
+    gap: 20px;
+  }
+
+  .gap10 {
+    gap: 10px;
+  }
+
+  .gap8 {
+    gap: 8px;
+  }
+
+  .gap5 {
+    gap: 5px;
+  }
+
+  .pad20 {
+    padding: 20px;
+  }
+
+  .pad10 {
+    padding: 10px;
+  }
+
+  .pad8 {
+    padding: 8px;
+  }
+
+  .pad5 {
+    padding: 5px;
+  }
+
+  .flexR {
+    display: flex;
+  }
+
+  .flexC {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blocked {
+    display: block;
+  }
+
+
+  /*
+  *** Dynamic Shorthands ***
+  These are dynamic shorthands, they are handled by media queris below.
+  They are identified and made unique by the prefix `d-` to target them differently than previous shorthands.
+  */
+  .d-round2 {
+    border-radius: 2rem;
+  }
+
+  .d-round1-5 {
+    border-radius: 1.5rem;
+  }
+
+  .d-round1 {
+    border-radius: 1rem;
+  }
+
+  .d-round08 {
+    border-radius: 0.8rem;
+  }
+
+  .d-round05 {
+    border-radius: 0.5rem;
+  }
+
+  .d-gap20 {
+    gap: 20px;
+  }
+
+  .d-gap10 {
+    gap: 10px;
+  }
+
+  .d-gap8 {
+    gap: 8px;
+  }
+
+  .d-gap5 {
+    gap: 5px;
+  }
+
+  .d-pad20 {
+    padding: 20px;
+  }
+
+  .d-pad10 {
+    padding: 10px;
+  }
+
+  .d-pad8 {
+    padding: 8px;
+  }
+
+  .d-pad5 {
+    padding: 5px;
+  }
+
+  /* Another root for dynamic variables*/
+  :root {
+    --d-pad20: 20px;
+    --d-pad-sp-20: 20px;
+    --d-pad1-5: 15px;
+    --d-pad-sp-15: 15px;
+    --d-pad10: 10px;
+    --d-pad8: 8px;
+    --d-pad5: 5px;
+    --d-round2: 2rem;
+    --d-round1-5: 1.5rem;
+    --d-round1: 1rem;
+    --d-round08: 0.8rem;
+    --d-round05: 0.5rem;
+    --d-gap20: 20px;
+    --d-gap10: 10px;
+    --d-gap8: 8px;
+    --d-gap: 5px;
+    --d-20px: 20px;
+    --d-10px: 10px;
+    --d-8px: 8px;
+    --d-5px: 5px;
+
+    --d-3rem: 3rem;
+    --d-2-5rem: 2.5rem;
+    --d-2rem: 2rem;
+    --d-1-5rem: 1.5rem;
+    --d-1rem: 1rem;
+    --d-0-8rem: 0.8rem;
+    --d-0-5rem: 0.5rem;
+  }
+
+  @media (max-width: 800px) {
+    :root {
+      --d-pad20: 10px;
+      --d-pad-sp-20: 15px;
+      --d-pad1-5: 7.5px;
+      --d-pad-sp-15: 10px;
+      --d-pad10: 5px;
+      --d-pad8: 4px;
+      --d-pad5: 2.5px;
+      --d-round2: 1rem;
+      --d-round1-5: 0.75rem;
+      --d-round1: 0.5rem;
+      --d-round08: 0.4rem;
+      --d-round05: 0.25rem;
+      --d-gap20: 10px;
+      --d-gap10: 5px;
+      --d-gap8: 4px;
+      --d-gap: 2.5px;
+      --d-20px: 10px;
+      --d-10px: 5px;
+      --d-8px: 4px;
+      --d-5px: 2.5px;
+
+      --d-3rem: 1.5rem;
+      --d-2-5rem: 1.25rem;
+      --d-2rem: 1rem;
+      --d-1-5rem: 0.75rem;
+      --d-1rem: 0.5rem;
+      --d-0-8rem: 0.4rem;
+      --d-0-5rem: 0.25rem;
+    }
+
+    .d-round2 {
+      border-radius: 1rem;
+    }
+
+    .d-round1-5 {
+      border-radius: 0.75rem;
+    }
+
+    .d-round1 {
+      border-radius: 0.5rem;
+    }
+
+    .d-round08 {
+      border-radius: 0.4rem;
+    }
+
+    .d-round05 {
+      border-radius: 0.25rem;
+    }
+
+    .d-gap20 {
+      gap: 10px;
+    }
+
+    .d-gap10 {
+      gap: 5px;
+    }
+
+    .d-gap8 {
+      gap: 4px;
+    }
+
+    .d-gap5 {
+      gap: 2.5px;
+    }
+
+    .d-pad20 {
+      padding: 10px;
+    }
+
+    .d-pad10 {
+      padding: 5px;
+    }
+
+    .d-pad8 {
+      padding: 4px;
+    }
+
+    .d-pad5 {
+      padding: 2.5px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    :root {
+      --d-pad20: 5px;
+      --d-pad-sp-20: 10px;
+      --d-pad1-5: 3.75px;
+      --d-pad-sp-15: 5px;
+      --d-pad10: 2.5px;
+      --d-pad8: 2px;
+      --d-pad5: 1.25px;
+      --d-round2: 0.5rem;
+      --d-round1-5: 0.375rem;
+      --d-round1: 0;
+      --d-round08: 0;
+      --d-round05: 0;
+      --d-gap20: 5px;
+      --d-gap10: 2.5px;
+      --d-gap8: 2px;
+      --d-gap: 1.25px;
+      --d-20px: 5px;
+      --d-10px: 2.5px;
+      --d-8px: 2px;
+      --d-5px: 1.25px;
+
+      --d-3rem: 0.75rem;
+      --d-2-5rem: 0.625rem;
+      --d-2rem: 0.5rem;
+      --d-1-5rem: 0.375rem;
+      --d-1rem: 0.25rem;
+      --d-0-8rem: 0.2rem;
+      --d-0-5rem: 0.125rem;
+    }
+
+    .d-round2 {
+      border-radius: 0.25rem;
+    }
+
+    .d-round1-5 {
+      border-radius: 0.375rem;
+    }
+
+    .d-round1 {
+      border-radius: 0;
+    }
+
+    .d-round08 {
+      border-radius: 0;
+    }
+
+    .d-round05 {
+      border-radius: 0;
+    }
+
+    .d-gap20 {
+      gap: 5px;
+    }
+
+    .d-gap10 {
+      gap: 2.5px;
+    }
+
+    .d-gap8 {
+      gap: 2px;
+    }
+
+    .d-gap5 {
+      gap: 1.25px;
+    }
+
+    .d-pad20 {
+      padding: 5px;
+    }
+
+    .d-pad10 {
+      padding: 2.5px;
+    }
+
+    .d-pad8 {
+      padding: 2px;
+    }
+
+    .d-pad5 {
+      padding: 1.25px;
+    }
+  }
+
+  /*
+  *** Component Type Classes
+  Usefull for creting quick dynamic components with classes
+  */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--ruby-red);
+    border-radius: 28px;
+    transition: background 0.4s cubic-bezier(1, -1.25, 0, 2);
+  }
+
+  .dark .slider {
+    background: var(--zen-dark-back);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(1, -1.25, 0, 2);
+  }
+
+  input:checked + .slider {
+    background: var(--blue);
+  }
+
+  .dark input:checked + .slider {
+    background: var(--flawn-blue);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+
+  .small-icon {
+    width: 120px;
+  }
+
+  .mid-icon {
+    width: 220px;
+  }
+
+  .big-icon {
+    width: 320px;
+  }
+
+  .-icon {
+    border-radius: 50%;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .tab-window {
+    overflow: auto;
+  }
+
+
+
+  .tabs {
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    padding: 2.5px;
+    border-radius: 0.5rem;
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+    color: inherit;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dark .tabs {
+    background: transparent;
+  }
+
+  /* Tabs shadow is used so that if texts overflow they seamlessly blend into the background instead of creatnig ugly clipping effects */
+  .tabs-shadow-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 35px;
+    display: flex;
+  }
+
+  .tabs-shadow {
+    --shadow-bg-color: var(--vanilla-velour);
+    background: linear-gradient(90deg, transparent, var(--shadow-bg-color) 70%);
+    padding: 5px;
+    flex-grow: 1;
+  }
+
+  .dark .tabs-shadow {
+    --shadow-bg-color: #181818;
+  }
+
+  @media (min-width: 800px) {
+    .tabs:hover {
+      background: var(--pearl-gray);
+    }
+
+    .dark .tabs:hover {
+      background: var(--zen-dark-con);
+    }
+
+    .tabs:hover .tabs-shadow {
+      --shadow-bg-color: var(--pearl-gray);
+    }
+
+    .dark .tabs:hover .tabs-shadow {
+      --shadow-bg-color: var(--zen-dark-con);
+    }
+  }
+
+  .tabs:focus-visible {
+    outline: none;
+    border-color: black;
+  }
+
+  .dark .tabs:focus-visible {
+    border-color: white;
+  }
+
+  .opened-tab .tabs-shadow,
+  .opened-tab:hover .tabs-shadow,
+  .opened-tab:active .tabs-shadow,
+  .tabs:active .tabs-shadow {
+    --shadow-bg-color: var(--foggy-gray);
+  }
+
+  .dark .opened-tab .tabs-shadow,
+  .dark .opened-tab:hover .tabs-shadow,
+  .dark .opened-tab:active .tabs-shadow,
+  .dark .tabs:active .tabs-shadow {
+    --shadow-bg-color: var(--zen-dark-front);
+  }
+
+  .tabs-icon, .tabs-text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .tabs-text {
+    text-wrap: nowrap;
+    width: 80%;
+    justify-content: left;
+  }
+
+  .tabs:active .tabs-icon {
+    font-size: 0.8rem;
+  }
+
+  .tabs-icon {
+    font-size: 1.2rem;
+    padding-inline: 8px;
+    width: 25px;
+    height: 18px;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(1, -0.5, 0.5, 3);
+  }
+
+  .opened-tab, .opened-tab:active,
+  .opened-tab:hover,
+  .tabs:active {
+    background: var(--foggy-gray);
+  }
+
+  .dark .opened-tab,
+  .dark .opened-tab:active,
+  .dark .opened-tab:hover,
+  .dark .tabs:active {
+    background: var(--zen-dark-front);
+  }
+
+  @keyframes scale-in {
+    from {
+      transform: scale(95%);
+      opacity: 0.95;
+    }
+
+    to {
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-out {
+    from {
+      transform: scale(100%);
+      opacity: 1;
+    }
+
+    to {
+
+      transform: scale(95%);
+      opacity: 0.95;
+    }
+  }
+
+  .dropdown-menu {
+    position: relative;
+    background: var(--zen-front);
+    padding: var(--d-10px);
+    border-radius: var(--d-0-5rem);
+    user-select: none;
+  }
+
+  .dropdown-menu .dropdown-modal {
+    visibility: hidden;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--d-10px);
+    background: var(--zen-front);
+    width: 100%;
+    animation: scale-out 1s;
+  }
+
+  .dropdown-menu:hover .dropdown-modal {
+    visibility: visible;
+    animation: scale-in 0.5s;
+  }
+
+  .dropdown-menu .dropdown-modal .dropdown-option {
+    background: var(--zen-front);
+  }
+
+  .zen-sp {
+    background: linear-gradient(90deg, #7aa7fc, #e273ca);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .zen-back {
+    background: var(--zen-blue-back);
+  }
+
+  .dark .zen-back {
+    background: var(--zen-dark-back);
+  }
+
+  .zen-front {
+    background: var(--zen-front);
+  }
+
+  .dark .zen-front {
+    background: var(--zen-dark-front);
+  }
+
+  .zen-front-con {
+    background: var(--zen-blue-con);
+  }
+
+  .dark .zen-front-con {
+    background: var(--zen-dark-con);
+  }
+
+  /* HTML elements */
+  html {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--font-color-black);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: white;
+    height: 100%;
+  }
+
+  iframe {
+    border: none;
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  a {
+    color: #0086ff;
+  }
+
+  a:active {
+    color: #FF7900;
+  }
+
+  button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    font-size: inherit;
+    background: var(--light-gray-accent);
+    color: inherit;
+  }
+
+  button:focus-visible {
+    outline: auto ;
+  }
+
+  button:active {
+    background: var(--light-gray-accent-mono);
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    background: var(--light-gray-accent-zeno);
+  }
+
+  .dark button {
+    background: var(--dark-gray-accent);
+    color: inherit;
+  }
+
+  .dark button:active {
+    background: var(--dark-gray-accent-mono);
+  }
+
+  .dark button:disabled {
+    background: var(--dark-gray-accent-zeno);
+  }
+
+  input, select {
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: inherit;
+    background: white;
+    color: inherit;
+  }
+
+  .dark input, .dark select {
+    background: var(--zen-dark-front);
+    color: inherit;
+  }
+
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: transparent;
+    color: inherit;
+    transition: width 0s, height 0s;
+  }
+
+  .dark {
+    background: var(--zen-dark-back);
+    color: var(--font-color-white);
+  }
+
+  @keyframes dialog-open {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes dialog-close {
+    from {
+      opacity: 1;
+      transform: scale(100%);
+    }
+
+    to {
+      opacity: 0;
+      transform: scale(90%);
+    }
+  }
+
+  dialog {
+    background: var(--zen-front);
+    border: none;
+    border-radius: var(--d-round1);
+    color: inherit;
+    transition: opacity ease-out, transform ease-out, overlay ease-out allow-discrete, display ease-out allow-discrete;
+    transition-duration: 0.5s;
+    animation: dialog-close 0.5s;
+  }
+
+  .dark dialog {
+    background: var(--zen-dark-front);
+    color: inherit;
+  }
+
+  dialog::backdrop {
+    background: black;
+    opacity: 0.5;
+  }
+
+  dialog[open] {
+    animation: dialog-open 0.5s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* zen Ui Styles */
+  .zen-ui-i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .zen-ui button {
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: inherit;
+    padding: var(--d-gap20);
+  }
+
+  .zen-ui-chi button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    padding: var(--d-gap20);
+    border-radius: var(--d-0-5rem);
+  }
+
+  .zen-ui-psubo {
+    background: var(--blue-lighter);
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .dark .zen-ui-psubo {
+    background: var(--flawed-blue);
+  }
+
+  .zen-ui-psubo:active {
+    background: var(--blue-400);
+  }
+
+  .zen-title {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  .zen-title h1 {
+    font-size: 2rem;
+    margin-block: 0;
+  }
+
+  .zen-pallete-pastel-dessert {
+    --hot-pink: #FFAEBC;
+    --tiffany-blue: #A0E7E5;
+    --mint: #B4F8C8;
+    --dessert: #FBE7C6;
+  }
+
+  .zen-pallete-mystic {
+    --cinder: #0B0B12;
+    --biloba-flower: #AAB3EC;
+    --kimberly: #7267A2;
+    --cannon-pink: #914A64;
+  }
+
+  .zen-pallete-twilight-spec {
+    --periwinkle-gray: #CAD5EC;
+    --ebony: #0C0B20;
+    --gigas: #4A41B2;
+    --wild-blue-yonder: #8187AF;
+  }
+
+  .zen-pallete-midnight-ser {
+    --bunting: #17224b;
+    --san-marino: #415DA9;
+    --cold-purple: #B0B0E4;
+    --havelock-blue: #6E93E1;
+  }
+
+  @media (min-width: 800px) {
+    .zen-ui button:hover {
+      background: var(--light-gray-accent-mono);
+    }
+
+    .dark .zen-ui button:hover {
+      background: var(--zen-dark-con);
+    }
+
+    .zen-ui-psubo:hover {
+      background: var(--blue-light);
+    }
+
+    .dark .zen-ui-psubo:hover {
+      background: var(--flawn-blue);
+    }
+
+    .zen-ui-psubo:hover {
+      background: var(--blue-light);
+    }
+
+    .dark .zen-ui-psubo:hover {
+      background: var(--flawn-blue);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .zen-title h1 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .zen-title h1 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .zen-ui button:active {
+    background: var(--gray-500);
+  }
+
+  .dark .zen-ui button:active {
+    background: var(--dark-gray-accent-mono);
+  }
+
+  .zen-ui button:disabled, .dark .zen-ui button:disabled {
+    background: transparent;
+  }
+
+  .dark .zen-ui button:disabled {
+    background: transparent;
+  }
+</style>
+<style>
+  * {
+    box-sizing: unset;
+  }
+
+  .ai-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 800px;
+    max-width: 98%;
+    margin: auto;
+    overflow-x: hidden;
+  }
+
+  .ai-chat #userNameEl,
+  .ai-chat #botNameEl,
+  .ai-chat #ratingReasonEl {
+    background: var(--light-gray-accent);
+    margin-top: var(--d-5px);
+    padding: 6px;
+  }
+
+  .dark .ai-chat #userNameEl,
+  .dark .ai-chat #botNameEl,
+  .dark .ai-chat #ratingReasonEl {
+    background: var(--dark-gray-accent);
+  }
+
+  .ai-chat #ratingReasonEl {
+    margin-block: var(--d-10px);
+  }
+
+  .ai-chat #auto-improve,
+  .ai-chat #autoRespondCtn {
+    padding: 5px;
+    border-radius: 3rem;
+    border: none;
+    font-size: inherit;
+    background: white;
+    color: inherit;
+    background: var(--light-gray-accent);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .ai-chat #auto-improve {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+  }
+
+  .slider {
+    background: var(--ruby-red);
+  }
+
+  .dark .ai-chat #auto-improve,
+  .dark .ai-chat #autoRespondCtn {
+    background: var(--dark-gray-accent);
+    color: inherit;
+  }
+
+  .ai-chat textarea {
+    border: 1px solid var(--light-gray-accent);
+    border-radius: var(--d-1rem);
+    padding: var(--d-10px) !important;
+    height: 30vh;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  .dark .ai-chat textarea {
+    border-color: var(--dark-gray-accent);
+  }
+
+  .ai-chat #chatLogsEl {
+    height: 450px;
+  }
+
+  .ai-chat #inputEl {
+    height: 18vh;
+  }
+
+  .ai-chat #tipEl {
+    padding: var(--d-10px);
+  }
+
+  .ai-chat .tipbox {
+    padding: var(--d-10px);
+    background: var(--zen-blue-back);
+    border-radius: var(--d-1rem);
+  }
+
+  .dark .ai-chat .tipbox {
+    background: var(--zen-dark-back);
+  }
+
+  .dark .fa-moon, .fa-sun {
+    display: none;
+  }
+
+  .dark .fa-sun {
+    display: inline-block;
+  }
+
+  html, body, .main-body {
+    height: 100dvh;
+    overflow: hidden;
+    background: var(--zen-blue-back);
+    transition: 0s;
+  }
+
+  .dark html, .dark body, .dark .main-body {
+    background: var(--zen-dark-back);
+  }
+
+  @keyframes main-pop {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .main-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: var(--d-10px);
+    overflow: auto;
+  }
+
+  .main-wint-body {
+    display: flex;
+    height: 100%;
+  }
+
+  .main-header {
+    padding: 10px;
+    padding-bottom: 0;
+    text-align: right;
+  }
+
+  .main-header button {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    font-size: 1.2rem;
+  }
+
+  .main-header .side-drawer-header {
+    display: none;
+    float: left;
+  }
+
+  .main-wint-body {
+    display: flex;
+  }
+
+  .side-menu-container {
+    display: flex;
+  }
+
+  .side-menu-drawer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-menu-container-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 2;
+    width: 0;
+  }
+
+  .side-menu-drawer button {
+    opacity: 0.3;
+    background: transparent !important;
+    transition: opacity, padding, transform;
+    transition-duration: 0.3s;
+  }
+
+  .side-menu-drawer button:active {
+    transform: scale(1.2);
+  }
+
+  .side-menu-drawer button .fa-xmark {
+    display: none;
+  }
+
+  .side-menu-drawer button:hover {
+    padding-inline: 15px;
+    opacity: 1;
+  }
+
+  .side-menu {
+    width: 300px;
+    background: var(--vanilla-velour);
+    transition: width 0.35s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dark .side-menu {
+    background: #181818;
+  }
+
+  .side-menu-wrapper {
+    width: 280px;
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .side-menu-wrapper-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .side-menu-wrapper-wrapper section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*.side-menu-wrapper button, .dark .side-menu-wrapper button {
+    background: transparent;
+  }*/
+
+  .side-menu-collapse .side-menu {
+    width: 0;
+  }
+
+  .side-menu-collapse .side-menu-drawer button {
+    transform: scale(-1);
+  }
+
+  .backdrop {
+      visibility: hidden;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      transition: visibility 0.2s, opacity 0.2s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: var(--backdrop-light);
+    }
+
+  .dark .backdrop {
+    background: var(--backdrop-dark);
+  }
+
+  @media (max-width: 800px) {
+    .side-menu-wrapper {
+      width: unset;
+    }
+
+    .main-header .side-drawer-header {
+      display: inline-block;
+    }
+
+    .side-menu-container {
+      position: fixed;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: none;
+      z-index: 2;
+    }
+
+    .side-menu-drawer button .fa-chevron-left {
+      display: none;
+    }
+
+    .side-menu-collapse .side-menu-drawer button,
+    .side-menu-collapse .side-menu-drawer button .fa-xmark {
+      font-size: 2rem;
+      display: block;
+      opacity: 1;
+    }
+
+    .side-menu-collapse .side-menu-container-button {
+      align-items: start;
+    }
+
+    @media (max-width: 800px) {
+      .side-menu-container-button {
+        width: unset;
+      }
+    }
+
+    .side-menu-collapse .side-menu-drawer button {
+      padding: var(--d-20px);
+    }
+
+    .side-menu-collapse .side-menu-container {
+      width: 100%;
+    }
+
+    .side-menu-collapse .backdrop {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .side-menu {
+      width: 0;
+    }
+
+    .side-menu-collapse .side-menu-container .side-menu-drawer button {
+      color: var(--font-color-white);
+    }
+
+    .side-menu-collapse .side-menu-drawer {
+      flex: 1;
+    }
+
+    .side-menu-collapse .side-menu {
+      width: 80%;
+    }
+
+    .side-menu-collapse .side-menu-container-button {
+      position: static;
+      flex: 1;
+    }
+  }
+
+  .search-bar {
+    display: flex;
+    padding: 10px;
+    border-radius: var(--d-2rem);
+    background: var(--cool-platinum);
+  }
+
+  .dark .search-bar {
+    background: var(--zen-dark-front);
+  }
+
+  .search-bar input {
+    background: none;
+  }
+
+  #tabsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    flex-grow: 1;
+    overflow-x: auto;
+  }
+
+  #custom-chats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+  }
+
+  .for-custom-chat {
+    width: 90px;
+  }
+
+  .tab-window {
+    height: 100%;
+  }
+
+  .window-panel {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+</style>
+<style>
+  @keyframes chat-backdrop-open {
+    from {
+      opacity: 0;
+      backdrop-filter: blur(0);
+    }
+
+    to {
+      opacity: 1;
+      backdrop-filter: blur(5px);
+    }
+  }
+
+  @keyframes chat-backdrop-close {
+    from {
+      opacity: 1;
+      backdrop-filter: blur(5px);
+    }
+
+    to {
+      opacity: 0;
+      backdrop-filter: blur(0);
+    }
+  }
+
+  .chat-create-backdrop {
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      background: var(--backdrop-light);
+      animation: chat-backdrop 0.3s;
+      backdrop-filter: blur(5px);
+    }
+
+  .dark .chat-create-backdrop {
+    background: var(--backdrop-dark);
+  }
+
+  @keyframes chat-overlay-open {
+    from {
+      opacity: 0;
+      transform: scale(0.9)
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes chat-overlay-close {
+    from {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+
+  .custom-chat-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+
+  .custom-chat-window[closed] .chat-create-backdrop {
+   animation-name: chat-backdrop-close;
+  }
+  
+  .chatLabia {
+    color: #E1341E;
+  }
+  
+  .dark .chatLabia {
+    color: #f93a25;
+  }
+
+  .chat-overlay {
+    animation: chat-overlay-open 0.3s cubic-bezier(1, -0.5, 0.5, 2) 1;
+    z-index: 3;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .custom-chat-window[closed] .chat-overlay {
+    animation-name: chat-overlay-close;
+  }
+
+  .chat-form {
+    text-align: left;
+    max-width: 250px;
+    width: 100%;
+    padding: 10px;
+    background: var(--vanilla-velour);
+    z-index: 3;
+    border-radius: var(--d-1rem);
+  }
+
+  .dark .chat-form {
+    background: #181818;
+  }
+
+  .chat-form input {
+    background: var(--cool-platinum);
+  }
+
+  .dark .chat-form input {
+    background: var(--zen-dark-front);
+  }
+
+  .chat-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .chat-form-container div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-form-container label {
+    display: block;
+    font-size: 0.8rem;
+    user-select: none;
+  }
+
+  #channelName {
+    margin-bottom: 5px;
+  }
+
+  .tabs-wrapper {
+    position: relative;
+  }
+
+  .custom-chat-del {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-chat-del:active {
+    font-size: 0.8rem;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(1, -0.5, 0.5, 3);
+  }
+</style>
+<style>
+  @keyframes page-intro {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes page-load-shadow-animation {
+    0%, 100% {
+      box-shadow: inset 0px 0px 4rem 1.5rem #00000041;
+    }
+
+    20% {
+      box-shadow: inset 0px 0px 4rem 1.2rem #eb78a841;
+    }
+
+    40% {
+      box-shadow: inset 0px 0px 4rem 0.8rem #ebd67841;
+    }
+
+    60% {
+      box-shadow: inset 0px 0px 4rem 1rem #4d68ff41;
+    }
+
+    80% {
+      box-shadow: inset 0px 0px 4rem 1.2rem #128b5941;
+    }
+
+    90% {
+      box-shadow: inset 0px 0px 4rem 1.5rem #ffe60041;
+    }
+  }
+
+  @keyframes page-load-bar-animation {
+    from {
+      left: -100%;
+    }
+
+    to {
+      left: 120%;
+    }
+  }
+
+  @keyframes page-load-close {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .page-load {
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: opacity 1s;
+    visibility: visible;
+  }
+
+  .page-load[closed] {
+    opacity: 0;
+  }
+
+  .page-wrapper {
+    width: 100%;
+    transition: inherit;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: auto;
+    text-wrap: wrap;
+    animation: page-intro 1s;
+    transition: 0s;
+    margin-bottom: 15vh;
+  }
+
+  .page-load[closed], .page-load[closed] .page-wrapper, .page-load[closed] .page-wrapper * {
+    opacity: 0;
+    visibility: hidden;
+    animation: page-load-close 1s;
+  }
+
+  .page-load[sealed], .page-load[sealed] * {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .page-wrapper * {
+    margin: 0 auto;
+  }
+
+  .page-wrapper h1 {
+    font-size: 5em;
+    height: auto;
+    text-wrap: wrap;
+    word-break: break-all;
+    transition: 1s;
+  }
+
+  .page-load-shadow {
+    animation: page-load-shadow-animation 15s infinite;
+  }
+
+  .page-load-indication {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin-block: 8px;
+    border-radius: 10rem;
+    overflow: hidden;
+    background: #18181852;
+  }
+
+  .dark .page-load-indication {
+    background: #181818;
+  }
+
+  .page-load-indication-bar {
+    height: 100%;
+    width: 40%;
+    border-radius: 10rem;
+    background: #0e86ff;
+    animation: page-load-bar-animation 1s infinite !important;
+  }
+
+  @media (max-width: 800px) {
+    .page-wrapper {
+      font-size: 15px;
+    }
+
+    .page-wrapper h1 {
+      font-size: 40px;
+      word-break: unset;
+    }
+
+    .page-load-indication {
+      max-width: 70%;
+    }
+  }
+</style>
+
+<body>
+  <div class="page-load zen-front pos-fixed full-overlay" id="page-load-id">
+    <div class="page-load-shadow pos-absolute full-overlay"></div>
+    <div class="pos-absolute">
+      <div class="page-wrapper">
+        <h1 class="zen-title zen-sp">[$meta.title]</h1>
+        <div class="page-load-indication">
+          <div class="page-load-indication-bar pos-absolute"></div>
+        </div>
+        <div class="page-load-text">Please wait, the page is loading.</div>
+      </div>
+    </div>
+  </div>
+  <div id="main-body-id" class="main-body no-size-tran">
+    <header style="height: 40px;">
+      <div class="main-header zen-ui">
+        <button class="side-drawer-header" onclick="sideMenuDrawer()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button onclick="fullscreen()">
+          <i class="fa-solid fa-expand" aria-hidden="true"></i>
+        </button>
+        <button onclick="darkmode()">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="main-wint-body zen-front d-round1 over-hidden">
+        <nav class="side-menu-container">
+          <div class="side-menu">
+            <div class="side-menu-wrapper">
+              <div class="side-menu-wrapper-wrapper">
+                <section class="search-bar-section">
+                  <div class="search-bar">
+                    <div class="zen-ui-i">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input
+                      type="text"
+                      aria-hidden="true"
+                      oninput="search('tabsContainer')"
+                      placeholder="Search..."
+                      style="width: 100%;"
+                    />
+                  </div>
+                </section>
+                <section id="tabsContainer">
+                  <div class="tabs-wrapper" quer>
+                    <button
+                      class="tabs tab-link opened-tab"
+                      onclick="rembTabFunc(event, 'ai-chat')"
+                    >
+                      <div class="tabs-icon">
+                        <i class="fa-solid fa-comment"></i>
+                      </div>
+                      <div class="tabs-text" ser>AI Chat</div>
+                      <div class="tabs-shadow-wrapper">
+                        <div class="tabs-shadow"></div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="tabs-wrapper" quer>
+                    <button
+                      class="tabs tab-link"
+                      onclick="rembTabFunc(event, 'chat')"
+                    >
+                      <div class="tabs-icon">
+                        <i class="fa-solid fa-comments"></i>
+                      </div>
+                      <div class="tabs-text" ser>Chat</div>
+                      <div class="tabs-shadow-wrapper">
+                        <div class="tabs-shadow"></div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="tabs-wrapper" quer>
+                    <button
+                      class="tabs tab-link"
+                      onclick="rembTabFunc(event, 'canvas')"
+                    >
+                      <div class="tabs-icon">
+                        <i class="fa-solid fa-chalkboard"></i>
+                      </div>
+                      <div class="tabs-text" ser>Canvas</div>
+                      <div class="tabs-shadow-wrapper">
+                        <div class="tabs-shadow"></div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="tabs-wrapper" quer>
+                    <button
+                      class="tabs tab-link"
+                      onclick="rembTabFunc(event, 'rules')"
+                    >
+                      <div class="tabs-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                      </div>
+                      <div class="tabs-text" ser>Rules</div>
+                      <div class="tabs-shadow-wrapper">
+                        <div class="tabs-shadow"></div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="tabs-wrapper" quer>
+                    <button
+                      tabs-channel="custom"
+                      class="tabs tab-link"
+                      onclick="rembTabFunc(event, 'custom-chat'), setCustomChannel(event)"
+                    >
+                      <div class="tabs-icon">
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="tabs-text" ser>Custom Chat</div>
+                      <div class="tabs-shadow-wrapper">
+                        <div class="tabs-shadow"></div>
+                      </div>
+                    </button>
+                  </div>
+                  <span id="custom-chats"></span>
+                </section>
+                <section>
+                  <button
+                    style="text-wrap: nowrap; overflow: hidden;"
+                    onclick="createCustomChat()"
+                  >
+                    Create New Chat
+                  </button>
+                  <!-- <input type="text" oninput="customChannel=this.value; update()" placeholder="Custom channel"> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="side-menu-drawer">
+            <div class="side-menu-container-button">
+              <button id="menu-drawer" onclick="sideMenuDrawer()">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="window-panel">
+          <div class="tab-window" id="ai-chat">
+            <div class="ai-chat">
+              <h1
+                style="margin-bottom:0.5rem; margin-top: 4rem; text-align: center;"
+                class="zen-title zen-sp"
+              >
+                [$meta.title]
+              </h1>
+
+              <div style="font-size:85%; margin-bottom:1rem; margin-top:1rem;">
+                <button
+                  id="generateCharactersAndScenarioBtn"
+                  onclick="generateCharactersAndScenario()"
+                  style="margin-bottom:0.25rem;"
+                >
+                  ✨ generate characters
+                </button>
+                <!--     <button id="shareSessionBtn" onclick="copySessionShareLink()" style="margin-bottom:0.25rem;">🔗 share current chat</button> -->
+                <div id="generateCharactersAndScenarioLoaderEl"></div>
+              </div>
+
+              <div>— Names —</div>
+              <input
+                id="botNameEl"
+                placeholder="The bot's nickname"
+                oninput="localStorage.botName=this.value, update(), updateCharacterNameViews()"
+              />
+              <input
+                id="userNameEl"
+                placeholder="Your nickname"
+                oninput="localStorage.userName=this.value, update(), updateCharacterNameViews()"
+              />
+
+              <div style="margin-top:2rem;">
+                — <b class="containsCharName">[botName]</b> Character
+                Description —
+              </div>
+              <div style="position:relative; width:100%;">
+                <textarea
+                  id="botDescriptionEl"
+                  placeholder="Describe who the bot is and what personality you want them to have."
+                  oninput="localStorage.botDescription=this.value; botDescriptionDeleteBtn.dataset.mode='delete'; botDescriptionDeleteBtn.style.display='';"
+                ></textarea>
+                <div
+                  style="position:absolute; bottom:0.5rem; width:100%; height:0;"
+                >
+                  <button
+                    id="generateBotDescriptionBtn"
+                    onclick="generateCharacterDescription('bot', this); botDescriptionDeleteBtn.dataset.mode='delete';"
+                    style="font-size:70%;"
+                  >
+                    ✨ generate
+                  </button>
+                </div>
+                <button
+                  id="botDescriptionDeleteBtn"
+                  data-mode="delete"
+                  onclick="if(this.dataset.mode==='delete') { window.deletedBotDescription=botDescriptionEl.value; botDescriptionEl.value=''; this.dataset.mode='undo'; } else { botDescriptionEl.value=window.deletedBotDescription; this.dataset.mode='delete'; }; localStorage.botDescription=botDescriptionEl.value;"
+                  style="position:absolute; top:-0.75rem; right:0.5rem; font-size:60%; display:none;"
+                ></button>
+                <style>
+                  #botDescriptionDeleteBtn[data-mode='delete']:before {
+                      content: '🗑️ delete';
+                  }
+
+                  #botDescriptionDeleteBtn[data-mode='undo']:before {
+                      content: '↩️ undo';
+                  }
+                </style>
+              </div>
+
+              <div style="margin-top:2rem;">
+                — <b class="containsCharName">[userName]</b> Character
+                Description —
+              </div>
+              <div style="position:relative; width:100%;">
+                <textarea
+                  id="userDescriptionEl"
+                  placeholder="Describe the character that *you* will be in this chat."
+                  oninput="localStorage.userDescription=this.value; userDescriptionDeleteBtn.dataset.mode='delete'; userDescriptionDeleteBtn.style.display='';"
+                ></textarea>
+                <div
+                  style="position:absolute; bottom:0.5rem; width:100%; height:0;"
+                >
+                  <button
+                    id="generateUserDescriptionBtn"
+                    onclick="generateCharacterDescription('user', this); userDescriptionDeleteBtn.dataset.mode='delete';"
+                    style="font-size:70%;"
+                  >
+                    ✨ generate
+                  </button>
+                </div>
+                <button
+                  id="userDescriptionDeleteBtn"
+                  data-mode="delete"
+                  onclick="if(this.dataset.mode==='delete') { window.deletedUserDescription=userDescriptionEl.value; userDescriptionEl.value=''; this.dataset.mode='undo'; } else { userDescriptionEl.value=window.deletedUserDescription; this.dataset.mode='delete'; }; localStorage.userDescription=userDescriptionEl.value;"
+                  style="position:absolute; top:-0.75rem; right:0.5rem; font-size:60%; display:none;"
+                ></button>
+                <style>
+                  #userDescriptionDeleteBtn[data-mode='delete']:before {
+                      content: '🗑️ delete';
+                  }
+
+                  #userDescriptionDeleteBtn[data-mode='undo']:before {
+                      content: '↩️ undo';
+                  }
+                </style>
+              </div>
+
+              <div style="margin-top:2rem;">— Scenario &amp; Lore —</div>
+              <div style="position:relative; width:100%;">
+                <textarea
+                  id="scenarioEl"
+                  placeholder="Describe the scenario, lore, side characters, and any other relevant information."
+                  oninput="localStorage.scenario=this.value; scenarioDeleteBtn.dataset.mode='delete'; scenarioDeleteBtn.style.display=''; "
+                ></textarea>
+                <div
+                  style="position:absolute; bottom:0.5rem; width:100%; height:0;"
+                >
+                  <button
+                    id="generateScenarioBtn"
+                    onclick="generateScenarioDescription(this); scenarioDeleteBtn.dataset.mode='delete';"
+                    style="font-size:70%;"
+                  >
+                    ✨ generate
+                  </button>
+                </div>
+                <button
+                  id="scenarioDeleteBtn"
+                  data-mode="delete"
+                  onclick="if(this.dataset.mode==='delete') { window.deletedScenario=scenarioEl.value; scenarioEl.value=''; this.dataset.mode='undo'; } else { scenarioEl.value=window.deletedScenario; this.dataset.mode='delete'; }; localStorage.scenario=scenarioEl.value;"
+                  style="position:absolute; top:-0.75rem; right:0.5rem; font-size:60%; display:none;"
+                ></button>
+                <style>
+                  #scenarioDeleteBtn[data-mode='delete']:before {
+                      content: '🗑️ delete';
+                  }
+
+                  #scenarioDeleteBtn[data-mode='undo']:before {
+                      content: '↩️ undo';
+                  }
+                </style>
+              </div>
+
+              <div style="margin-top:2rem;">— Chat Logs —</div>
+              <div style="position:relative; width:100%;">
+                <textarea
+                  id="chatLogsEl"
+                  placeholder="The chat logs will show up here, and you can edit them.&#10;&#10;The text here is completely freeform - for example, if you wanted to add a narrator that comes in every now and then, you could just write something like:&#10;&#10;Narrator: Later that day...&#10;&#10;And you can use *asterisks* for actions, and stuff like that."
+                  oninput="localStorage.chatLogs=this.value; chatLogsDeleteBtn.dataset.mode='delete'; chatLogsDeleteBtn.style.display='';"
+                ></textarea>
+                <div
+                  id="loaderEl"
+                  style="position:absolute; bottom:1.5rem; right:0.5rem;"
+                ></div>
+                <div
+                  id="tipEl"
+                  style="display:none; position:absolute;top:0;left: 0;right: 0; font-size:85%;"
+                >
+                  <div class="tipbox">
+                    <div id="tipMessageEl" style="text-align:left;"></div>
+                    <button
+                      id="tipDismissBtn"
+                      style="margin-top:0.5rem;"
+                      onclick="tipEl.style.display='none';"
+                    >
+                      ✅ understood
+                    </button>
+                  </div>
+                </div>
+                <button
+                  id="chatLogsDeleteBtn"
+                  data-mode="delete"
+                  onclick="if(this.dataset.mode==='delete') { window.deletedChatLogs=chatLogsEl.value; chatLogsEl.value=''; this.dataset.mode='undo'; } else { chatLogsEl.value=window.deletedChatLogs; this.dataset.mode='delete'; }; localStorage.chatLogs=chatLogsEl.value;"
+                  style="position:absolute; top:-0.75rem; right:0.5rem; font-size:60%; display:none;"
+                ></button>
+                <style>
+                  #chatLogsDeleteBtn[data-mode='delete']:before {
+                      content: '🗑️ delete';
+                  }
+
+                  #chatLogsDeleteBtn[data-mode='undo']:before {
+                      content: '↩️ undo';
+                  }
+                </style>
+                <div
+                  id="deleteAndRegenLastMessageCtn"
+                  style="display:[chatLogsEl.value ? 'flex' : 'none']; align-items: center; justify-content:center; text-align: center; margin-block: var(--d-10px); flex-direction: column; gap: var(--d-10px);"
+                >
+                  <div id="rateLastMessageCtn" style="display:none;">
+                    <div id="ratingReasonCtn" style="display:none;">
+                      <div>
+                        <input
+                          id="ratingReasonEl"
+                          list="recentRatingReasonsDataList"
+                          placeholder="(Optional) Reason"
+                          style="width:150px;"
+                        />
+                        <datalist id="recentRatingReasonsDataList"></datalist>
+                      </div>
+                    </div>
+                    <button
+                      id="rateLastMessageBadBtn"
+                      disabled
+                      onclick="rateLastMessage('bad');"
+                    >
+                      👎
+                    </button>
+                    <button
+                      id="rateLastMessageGoodBtn"
+                      disabled
+                      onclick="rateLastMessage('good');"
+                    >
+                      👍
+                    </button>
+                  </div>
+                  <div
+                    style="display:flex; gap: var(--d-10px); margin-block: var(--d-10px); justify-content: center;"
+                  >
+                    <div id="undoRegenMessageCtn" style="display:none;">
+                      <div>
+                        <button
+                          style="width:max-content;"
+                          onclick="undoRegenLastMessage();"
+                        >
+                          ↩️ undo
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      id="regenPrevButton"
+                      class="regenBtn"
+                      onclick="prevRegenMessage(); chatLogsDeleteBtn.dataset.mode='delete';"
+                      disabled
+                    >
+                      ⬅️
+                    </button>
+                    <button
+                      id="regenMessageBtn"
+                      class="regenBtn"
+                      onclick="regenLastMessage(); chatLogsDeleteBtn.dataset.mode='delete';"
+                      data-short-content="🔁 Regen"
+                    >
+                      🔁 Regenerate Last
+                    </button>
+                    <button
+                      id="regenNextButton"
+                      class="regenBtn"
+                      onclick="nextRegenMessage(); chatLogsDeleteBtn.dataset.mode='delete';"
+                      disabled
+                    >
+                      ➡️
+                    </button>
+                    <style>
+                      .regenBtn {
+                          font-size: 75%;
+                          height: min-content;
+                          /* backdrop-filter: blur(200px); */
+                          /* this is a hack to prevent background from being transparent (due to user agent styles - in Chrome, at least) when button is disabled */
+                          /* New code writer: Fk your hack my potato pc cannot handle that!!! Bahhh (╯°□°)╯︵ ┻━┻ */
+                      }
+                    </style>
+                  </div>
+                  <div>
+                    <div
+                      id="undoDeleteLastMessageCtn"
+                      style="display:none; position:absolute; text-align:center; width:100%; font-size:80%; top:0; height:0px;"
+                    >
+                      <div
+                        style="position:absolute; bottom:0.25rem; text-align:center; width:100%;"
+                      >
+                        <button
+                          style="width:max-content;"
+                          onclick="undoDeleteLastMessage();"
+                        >
+                          ↩️ undo
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      id="deleteLastMessageBtn"
+                      onclick="deleteLastMessage(); localStorage.chatLogs=chatLogsEl.value; chatLogsDeleteBtn.dataset.mode='delete';"
+                      style="font-size:75%; min-width:3rem;"
+                      data-short-content="🗑️"
+                    >
+                      🗑️ delete last
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  updateLastMessageButtonsDisplayIfNeeded();
+                </script>
+              </div>
+
+              <div id="messageBox" style="position:relative; width:100%;">
+                <textarea
+                  id="inputEl"
+                  placeholder="Write a message here and click send, or just click send to get the AI to generate the next message for you. You can also directly edit the chat log text above."
+                  onkeydown="if(event.which === 13) { event.preventDefault(); handleSendButtonClick({mode:'normal'}); }"
+                  oninput="localStorage.input=this.value; updateVisibilityOfReplyButtonsAndSelectors();"
+                ></textarea>
+                <div
+                  style="position:absolute; bottom:0.5rem; width:100%; height:0; margin-left: -3px;"
+                >
+                  <div
+                    id="auto-improve"
+                    oninput="if(!localStorage.knowsWhatAutoImproveFeatureDoes) { alert(this.title); localStorage.knowsWhatAutoImproveFeatureDoes='1'; }"
+                    title="This 'auto-improve' feature allows you write a very short/simple message (like 'pick up the apple') and the AI will expand that into a nicely-written message for you."
+                  >
+                    <label class="switch">
+                      <input
+                        id="autoImproveCheckboxEl"
+                        type="checkbox"
+                        style="cursor:pointer;"
+                        onclick="setTimeout(updateVisibilityOfReplyButtonsAndSelectors, 10)"
+                      />
+                      <span class="slider"></span>
+                    </label>
+                    <span
+                      style="margin-left:0.25rem; width:max-content; cursor:pointer;"
+                      onclick="autoImproveCheckboxEl.checked=!autoImproveCheckboxEl.checked;"
+                      >auto-improve</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display:flex; flex-direction:column; margin-top:0.5rem; align-items:center;"
+              >
+                <div
+                  style="display:flex;margin-bottom:0.5rem;align-items: center;"
+                >
+                  <button
+                    id="sendMessageBtn"
+                    onclick="handleSendButtonClick({mode:'normal'}); chatLogsDeleteBtn.dataset.mode='delete';"
+                    style="display:flex; font-weight:bold; font-size:110%;"
+                  >
+                    📨 send message
+                  </button>
+                  <div id="sendAsCharacterCtn" style="display:none;">
+                    <span
+                      style="padding:0 0.25rem; display:flex; align-items:center; font-size:80%; opacity:0.7;"
+                      >as</span
+                    >
+                    <select
+                      id="sendAsCharacterSelectEl"
+                      style="height:min-content; font-size:80%; max-width:90px;"
+                      onchange="if(this.value === '~~~NEW_CHAR~~~') { let name = prompt(`Enter the new character's name:`); if(name === null) { this.value=this.options[0].value; } else if(name.trim()) { let newOption = document.createElement('option'); newOption.textContent=name; this.insertBefore(newOption, this.options[this.selectedIndex]); this.value=name; } }"
+                    ></select>
+                  </div>
+                </div>
+                <div
+                  id="autoRespondCtn"
+                  style="display:flex; align-items:center; justify-content:center; margin-bottom:0.5rem;"
+                >
+                  <label class="switch">
+                    <input
+                      id="autoRespondCheckboxEl"
+                      type="checkbox"
+                      style="cursor:pointer;"
+                      checked
+                      onchange="localStorage.user_autoRespond=this.checked||'';"
+                    />
+                    <span class="slider"></span>
+                  </label>
+                  <span
+                    style="padding-inline: 4px;"
+                    style="cursor:pointer; user-select:none;"
+                    onclick="autoRespondCheckboxEl.checked=!autoRespondCheckboxEl.checked;"
+                    >auto-respond</span
+                  >
+                </div>
+                <script>
+                  if (localStorage.user_autoResponder)
+                    autoRespondCheckboxEl.checked =
+                      !!localStorage.user_autoResponder;
+                </script>
+                <div
+                  id="quickReplyButtonsCtn"
+                  style="display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;"
+                ></div>
+                <div
+                  id="futureSuggestionsCtn"
+                  style="display:none; gap:0.5rem; flex-wrap:wrap; justify-content:center;"
+                ></div>
+              </div>
+
+              <div style="position:relative; width:100%; margin-top:1rem;">
+                <textarea
+                  id="writingInstructionsEl"
+                  placeholder="(Optional) Brief writing instructions for the AI - e.g. writing style, what should happen next, message length, general reminders, things to avoid, etc."
+                  style="width:100%; height:80px; resize:vertical; font-size:85%; display:block;"
+                  oninput="localStorage.writingInstructions=this.value; writingInstructionsDeleteBtn.dataset.mode='delete'; writingInstructionsDeleteBtn.style.display='';"
+                  onchange="this.value=this.value.replace(/\n+/g, ' ')"
+                  onkeydown="if(event.keyCode == 13) { event.preventDefault(); }"
+                ></textarea>
+                <script>
+                  if (window.innerWidth > 600)
+                    writingInstructionsEl.placeholder +=
+                      " Keep this pretty short and 'to the point'. Use the scenario/lore box for longer stuff.";
+                </script>
+                <button
+                  id="writingInstructionsDeleteBtn"
+                  data-mode="delete"
+                  onclick="if(this.dataset.mode==='delete') { window.deletedWritingInstructions=writingInstructionsEl.value; writingInstructionsEl.value=''; this.dataset.mode='undo'; } else { writingInstructionsEl.value=window.deletedWritingInstructions; this.dataset.mode='delete'; }; localStorage.writingInstructions=writingInstructionsEl.value;"
+                  style="position:absolute; top:-0.75rem; right:0.5rem; font-size:60%; display:none;"
+                ></button>
+                <div style="font-size:75%; opacity:0.7; margin-top:0.125rem;">
+                  (remember to keep the "what happens next" part up-to-date if
+                  you include that in the above instructions)
+                </div>
+                <style>
+                  #writingInstructionsDeleteBtn[data-mode='delete']:before {
+                      content: '🗑️ delete';
+                  }
+
+                  #writingInstructionsDeleteBtn[data-mode='undo']:before {
+                      content: '↩️ undo';
+                  }
+                </style>
+              </div>
+
+              <div style="margin-top:3rem;">
+                <button onclick="saveChatDataToUsersDevice()">
+                  💾 save this chat
+                </button>
+                <button onclick="loadChatDataFromUsersDevice()">
+                  📁 load a chat
+                </button>
+              </div>
+
+              <div style="margin-block:1rem;">
+                <button id="shareChatBtn" onclick="generateShareLinkForChat()">
+                  🔗 share this chat
+                </button>
+                <div id="shareLinkCtn" style="display:none; margin-top:0.5rem;">
+                  <input
+                    style="width:300px;"
+                    id="shareChatLinkInputEl"
+                    disabled
+                  />
+                  <button
+                    style="min-width:80px;"
+                    onclick="navigator.clipboard.writeText(shareChatLinkInputEl.value).then(r => this.innerHTML='✅'); setTimeout(() => this.innerHTML='copy link', 2000);"
+                  >
+                    copy link
+                  </button>
+                  <div style="font-size:70%; opacity:0.7;">
+                    (this link contains a snapshot of the chat data at the time
+                    the link was generated)
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function chatDataChangedHandler() {
+                  shareChatBtn.style.display = "";
+                  shareLinkCtn.style.display = "none";
+                }
+                botNameEl.addEventListener("keydown", chatDataChangedHandler);
+                userNameEl.addEventListener("keydown", chatDataChangedHandler);
+                botDescriptionEl.addEventListener(
+                  "keydown",
+                  chatDataChangedHandler
+                );
+                userDescriptionEl.addEventListener(
+                  "keydown",
+                  chatDataChangedHandler
+                );
+                scenarioEl.addEventListener("keydown", chatDataChangedHandler);
+                chatLogsEl.addEventListener("keydown", chatDataChangedHandler);
+                writingInstructionsEl.addEventListener(
+                  "keydown",
+                  chatDataChangedHandler
+                );
+
+                sendMessageBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                writingInstructionsDeleteBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                regenPrevButton.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                regenMessageBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                regenNextButton.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                undoRegenMessageCtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                scenarioDeleteBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                generateScenarioBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                generateUserDescriptionBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                userDescriptionDeleteBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                generateBotDescriptionBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+                botDescriptionDeleteBtn.addEventListener(
+                  "click",
+                  chatDataChangedHandler
+                );
+              </script>
+
+              <script>
+                function trackCaretPosition(textArea, callback) {
+                  let copy = createCopy(textArea);
+                  copy.style.visibility = "hidden";
+                  // copy.style.pointerEvents = 'none';
+                  // copy.style.color = 'red';
+                  // copy.style.opacity = '0.3';
+
+                  function updateShadowPositionAndSize() {
+                    let rect = textArea.getBoundingClientRect();
+                    let scrollLeft =
+                      window.pageXOffset || document.documentElement.scrollLeft;
+                    let scrollTop =
+                      window.pageYOffset || document.documentElement.scrollTop;
+                    copy.style.left = `${rect.left + scrollLeft}px`;
+                    copy.style.top = `${rect.top + scrollTop}px`;
+                    copy.style.width = `${textArea.offsetWidth}px`;
+                    copy.style.height = `${textArea.offsetHeight}px`;
+                    copy.scrollTop = textArea.scrollTop;
+                  }
+
+                  function update() {
+                    updateShadowPositionAndSize();
+                    const position = getCaretPosition(textArea, copy);
+                    callback(position);
+                  }
+
+                  textArea.addEventListener("input", update);
+                  textArea.addEventListener("click", update);
+                  textArea.addEventListener("scroll", update);
+                  textArea.addEventListener("keydown", function (e) {
+                    if (
+                      [
+                        "ArrowRight",
+                        "ArrowLeft",
+                        "ArrowUp",
+                        "ArrowDown",
+                      ].includes(e.key)
+                    ) {
+                      update();
+                    }
+                  });
+
+                  let resizeObserver = new ResizeObserver(() =>
+                    updateShadowPositionAndSize()
+                  );
+                  resizeObserver.observe(textArea);
+
+                  let mutationObserver = new MutationObserver((mutations) => {
+                    for (const mutation of mutations) {
+                      if (
+                        Array.from(mutation.removedNodes).includes(textArea)
+                      ) {
+                        copy.remove();
+                        mutationObserver.disconnect();
+                        resizeObserver.disconnect();
+                      }
+                    }
+                  });
+                  mutationObserver.observe(textArea.parentNode, {
+                    childList: true,
+                  });
+
+                  function createCopy(textArea) {
+                    let copy = document.createElement("div");
+                    let style = getComputedStyle(textArea);
+
+                    let propertiesToCopy = [
+                      "overflow-x",
+                      "overflow-y",
+                      "display",
+                      "font-family",
+                      "font-size",
+                      "font-weight",
+                      "word-wrap",
+                      "white-space",
+                      "padding-left",
+                      "padding-right",
+                      "padding-top",
+                      "padding-bottom",
+                      "border-left-width",
+                      "border-top-width",
+                      "border-right-width",
+                      "border-bottom-width",
+                      "border-style",
+                      "text-align",
+                    ];
+                    propertiesToCopy.forEach(
+                      (key) => (copy.style[key] = style[key])
+                    );
+
+                    Object.assign(copy.style, {
+                      position: "absolute",
+                      left: `${textArea.offsetLeft}px`,
+                      top: `${textArea.offsetTop}px`,
+                    });
+
+                    document.body.appendChild(copy);
+                    return copy;
+                  }
+
+                  function getCaretPosition(textArea, copy) {
+                    let { selectionStart, selectionEnd } = textArea;
+                    let value = textArea.value;
+                    let phantomNewline = false;
+
+                    if (
+                      selectionStart === selectionEnd &&
+                      value[selectionStart - 1] === "\n"
+                    ) {
+                      phantomNewline = true;
+                    }
+
+                    copy.textContent = phantomNewline
+                      ? value.substring(0, selectionStart) +
+                        " " +
+                        value.substring(selectionStart)
+                      : value;
+
+                    if (!copy.firstChild) {
+                      let style = getComputedStyle(textArea);
+                      return {
+                        x: textArea.offsetLeft + parseFloat(style.paddingLeft),
+                        y: textArea.offsetTop + parseFloat(style.paddingTop),
+                      };
+                    }
+
+                    let range = document.createRange();
+                    range.setStart(
+                      copy.firstChild,
+                      phantomNewline ? selectionStart + 1 : selectionStart
+                    );
+                    range.setEnd(
+                      copy.firstChild,
+                      phantomNewline ? selectionEnd + 1 : selectionEnd
+                    );
+
+                    const rect = range.getBoundingClientRect();
+                    const scrollLeft =
+                      window.pageXOffset || document.documentElement.scrollLeft;
+                    const scrollTop =
+                      window.pageYOffset || document.documentElement.scrollTop;
+
+                    return {
+                      x: rect.left + scrollLeft, // - textArea.scrollLeft,
+                      y: rect.top + scrollTop, // - textArea.scrollTop,
+                    };
+                  }
+                }
+
+                if (typeof continueMessageBtn === "undefined") {
+                  // <-- just so, while generator is being edited, multiple buttons aren't created
+                  let tmp = document.createElement("div");
+                  tmp.innerHTML = `<button id="continueMessageBtn" style="position:absolute; cursor:pointer; font-size:65%; display:none;">▶️</button>`;
+                  let btn = tmp.firstElementChild;
+                  btn.onmousedown = function () {
+                    handleSendButtonClick({ mode: "continue" });
+                  };
+                  document.body.append(btn); // must be in the body, so it's position is relative to the body, and not e.g. the chatLogs container element
+                }
+                let chatLogsLineHeightPixels =
+                  getLineHeightInPixels(chatLogsEl);
+                trackCaretPosition(chatLogsEl, (pos) => {
+                  // console.log(pos.x, pos.y);
+                  let thereIsOnlyWhiteSpaceAfterCaret = /^\s*$/.test(
+                    chatLogsEl.value.slice(chatLogsEl.selectionStart)
+                  );
+                  if (
+                    document.activeElement === chatLogsEl &&
+                    thereIsOnlyWhiteSpaceAfterCaret &&
+                    pageXYIsInsideElement(pos.x, pos.y, chatLogsEl)
+                  ) {
+                    continueMessageBtn.style.display = "block";
+                    let buttonHeight = continueMessageBtn.offsetHeight;
+                    continueMessageBtn.style.left = `${pos.x + 10}px`;
+                    continueMessageBtn.style.top = `${
+                      pos.y - 0.5 * (buttonHeight - chatLogsLineHeightPixels)
+                    }px`;
+                  } else {
+                    continueMessageBtn.style.display = "none";
+                  }
+                });
+                chatLogsEl.addEventListener("blur", () => {
+                  continueMessageBtn.style.display = "none";
+                });
+                document.addEventListener("click", (event) => {
+                  if (event.target !== chatLogsEl) {
+                    continueMessageBtn.style.display = "none"; // not sure why this is required in Chrome Android (blur event handler should be enough)
+                  }
+                });
+
+                function getLineHeightInPixels(element) {
+                  const style = window.getComputedStyle(element);
+                  let lineHeight = style.lineHeight;
+                  if (lineHeight === "normal") {
+                    // Normal line heights are usually 1.2 times the font size
+                    const fontSize = parseFloat(style.fontSize);
+                    lineHeight = fontSize * 1.2;
+                  } else {
+                    lineHeight = parseFloat(lineHeight);
+                  }
+                  return lineHeight;
+                }
+                function pageXYIsInsideElement(x, y, element) {
+                  const { left, top, right, bottom } =
+                    element.getBoundingClientRect();
+                  return (
+                    x >= left + window.pageXOffset &&
+                    x <= right + window.pageXOffset &&
+                    y >= top + window.pageYOffset &&
+                    y <= bottom + window.pageYOffset
+                  );
+                }
+              </script>
+
+              <script>
+                (async function () {
+                  let hash = window.location.hash.slice(1);
+                  if (hash && hash.startsWith("data=")) {
+                    let result = await loadDataFromUrlHash();
+                    if (!result.success) {
+                      loadChatDataFromLocalStorage();
+                    }
+                  } else {
+                    loadChatDataFromLocalStorage();
+                  }
+
+                  updateDeleteButtonVisibility();
+                  updateCharacterNameViews();
+                  sendAsCharacterCtn.style.display = inputEl.value.trim()
+                    ? "flex"
+                    : "none";
+                  update();
+                  updateVisibilityOfReplyButtonsAndSelectors();
+
+                  chatLogsEl.scrollTop = 999999999; // scroll to the bottom of the chat logs
+                  setTimeout(() => {
+                    chatLogsEl.scrollTop = 999999999;
+                  }, 3000); // <-- because ad load on mobile causes screen height to change which causes text area height to change. not full-proof, but it'll do for now
+                })();
+              </script>
+            </div>
+          </div>
+          <div class="tab-window dis-none" style="overflow: hidden;" id="chat">
+            [chat(chatOne)]
+          </div>
+          <div
+            class="tab-window dis-none"
+            style="overflow: hidden;"
+            id="canvas"
+          >
+            [tldraw(canvas)]
+          </div>
+          <div
+            class="tab-window dis-none"
+            style="text-align: justify; padding-inline: 1rem;"
+            id="rules"
+          >
+            <h1>Rules</h1>
+<p>
+  These are the rules that are required to be followed before interacting with
+  other users.
+</p>
+<h2 id="etiquette-and-behavior">Etiquette and Behavior</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Greet Politely</strong>: Start conversations with a friendly
+      greeting. A simple &quot;hello&quot; or &quot;hi&quot; goes a long way in
+      creating a welcoming atmosphere.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Be Patient</strong>: Understand that not everyone may respond
+      immediately. Be patient and give others time to participate in the
+      conversation.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Use Emojis Wisely</strong>: Emojis can add personality to your
+      messages, but use them sparingly and appropriately. Avoid overusing emojis
+      or using them inappropriately.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Avoid Spamming</strong>: Refrain from sending multiple repetitive
+      messages or flooding the chat with unnecessary content. Respect
+      others&#39; space and allow everyone to contribute.
+    </p>
+  </li>
+</ol>
+<h2 id="content-guidelines">Content Guidelines</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Respect Copyrights</strong>: Do not share copyrighted material
+      without proper permission. Respect the intellectual property rights of
+      others.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Stay Safe Online</strong>: Be cautious when sharing links or
+      clicking on links shared by others. Avoid visiting suspicious websites or
+      sharing personal information in public chats.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Keep it PG-13</strong>: Keep the content of your messages suitable
+      for a general audience. Refrain from sharing explicit content, including
+      images, videos, or links.
+    </p>
+  </li>
+</ol>
+<h2 id="community-interaction">Community Interaction</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Participate Actively</strong>: Engage in conversations and
+      contribute to the community. Your active participation helps create a
+      vibrant and enjoyable environment for everyone.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Offer Help</strong>: If someone has a question or needs
+      assistance, offer your help if you can. Supportive interactions strengthen
+      the sense of community.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Be Open-Minded</strong>: Be open to different perspectives and
+      opinions. Engage in discussions with an open mind, and be willing to learn
+      from others.
+    </p>
+  </li>
+</ol>
+<h2 id="moderation-and-enforcement">Moderation and Enforcement</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Follow Moderator Instructions</strong>: Respect the authority of
+      moderators and follow their instructions. They are there to ensure a
+      positive and safe environment for everyone.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Accept Decisions</strong>: Accept decisions made by moderators,
+      even if you disagree with them. Arguing with moderators can escalate
+      issues and disrupt the community.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Report Violations</strong>: If you witness any violations of the
+      rules, report them to the moderators promptly. Your vigilance helps
+      maintain the integrity of the community.
+    </p>
+  </li>
+</ol>
+<h2 id="private-channel-interactions">Private Channel Interactions</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Respect Channel Code</strong>: Only join private channels if you
+      have been given the channel code by the owner or a member with permission
+      to share it. Do not share channel codes without permission.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Privacy Awareness</strong>: Respect the privacy of others in
+      private channels. Avoid sharing personal information about yourself or
+      others without consent.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Consent for Sharing</strong>: Before sharing content from private
+      channels outside of the channel, obtain consent from all involved members.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Discretion is Key</strong>: Understand that private channels
+      provide a space for more personal or specific discussions. Use discretion
+      and respect the boundaries of the channel&#39;s purpose.
+    </p>
+  </li>
+</ol>
+<h2 id="moderator-intervention-in-private-channels">
+  Moderator Intervention in Private Channels
+</h2>
+<ol>
+  <li>
+    <p>
+      <strong>Request for Assistance</strong>: If you encounter behavior in a
+      private channel that violates the gen&#39;s rules or makes you
+      uncomfortable, you can request assistance from a moderator.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Enforcement of Rules</strong>: When a moderator is asked to
+      intervene in a private channel, they have the authority to enforce the
+      general rules of the gen.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Fair Enforcement</strong>: Moderators will consider the context of
+      the situation and the severity of the violation before taking action.
+      Enforcement will be fair and consistent with the gen&#39;s guidelines.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Respect Moderator Authority</strong>: Accept decisions made by
+      moderators regarding the enforcement of rules in private channels.
+      Disrespect or refusal to comply may result in further action.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Confidentiality</strong>: Moderators will handle interventions in
+      private channels with discretion, respecting the privacy of all involved
+      parties.
+    </p>
+  </li>
+</ol>
+
+          </div>
+          <div
+            class="tab-window dis-none"
+            style="overflow: hidden;"
+            id="custom-chat"
+          >
+            [chat(custom)] [customChannel]
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="backdrop" style="backdrop-filter: blur(2.5px);" onclick="sideMenuDrawer()"></div>
+  </div>
+
+  <script>
+    function sideMenuDrawer() {
+      var sideMenuContainer = document.getElementById("main-body-id");
+
+      if (sideMenuContainer.classList.contains("side-menu-collapse")) {
+        sideMenuContainer.classList.remove("side-menu-collapse");
+      } else {
+        sideMenuContainer.classList.add("side-menu-collapse");
+      }
+    }
+
+    function search(containerId) {
+      var filter = document.querySelector('input[type="text"]').value;
+      var container, elements, i, querElement, querText, serElement, serText;
+
+      // Remove special characters from the search query using regular expression
+      filter = filter
+        .replace(/[^\w\s]/g, "")
+        .trim()
+        .toLowerCase();
+
+      container = document.getElementById(containerId);
+      elements = container.querySelectorAll("[quer]");
+
+      for (i = 0; i < elements.length; i++) {
+        querElement = elements[i].getAttribute("quer");
+        serElement = elements[i].querySelector("[ser]"); // Get the first element with ser attribute
+
+        if (serElement) {
+          serText = serElement.textContent || serElement.innerText;
+          // Remove special characters from text content using regular expression
+          querText = serText.replace(/[^\w\s]/g, "").toLowerCase();
+        } else {
+          querText = querElement.toLowerCase();
+        }
+
+        // Use includes() for case-insensitive comparison
+        if (querText.includes(filter)) {
+          elements[i].style.display = "";
+        } else {
+          elements[i].style.display = "none";
+        }
+      }
+    }
+
+    var tabsContainer = document.getElementById("tabsContainer");
+    var sideMenuButtons = document.getElementsByClassName(
+      "side-menu-container-button"
+    );
+    tabsContainer.addEventListener("click", function (event) {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth <= 800) {
+        var mainBody = document.getElementById("main-body-id");
+        if (mainBody.classList.contains("side-menu-collapse")) {
+          mainBody.classList.remove("side-menu-collapse");
+        }
+      }
+    });
+
+    for (var i = 0; i < sideMenuButtons.length; i++) {
+      sideMenuButtons[i].addEventListener("click", function (event) {
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth <= 800) {
+          var mainBody = document.getElementById("main-body-id");
+          if (mainBody.classList.contains("side-menu-collapse")) {
+            mainBody.classList.remove("side-menu-collapse");
+          }
+        }
+      });
+    }
+
+    // Select all elements with the class "wint"
+    const wintElements = document.querySelectorAll(".wint");
+
+    // Get the height of the element with the id "header-id"
+    const headerHeight = document.getElementById("header-id").offsetHeight;
+
+    // Variable to store the previous scroll position
+    let prevScrollPos = 0;
+
+    // Threshold to determine if scroll position is near the bottom
+    const bottomThreshold = 10;
+
+    // Iterate over each wint element and attach a scroll event listener
+    wintElements.forEach((wintElement) => {
+      wintElement.addEventListener("scroll", () => {
+        // Get the current scroll position and maximum scroll position
+        const currentScrollPos = wintElement.scrollTop;
+        const maxScrollPos =
+          wintElement.scrollHeight - wintElement.clientHeight;
+
+        // Check if scrolled towards the top
+        if (currentScrollPos < prevScrollPos) {
+          // If scrolled towards the top, set the height of the header back
+          document.getElementById("header-id").style.height =
+            headerHeight + "px";
+        } else if (currentScrollPos > 0) {
+          // If scrolled below 0, set the height of the header to 0
+          document.getElementById("header-id").style.height = "0";
+        }
+
+        // Check if scrolled near the bottom within the threshold
+        if (maxScrollPos - currentScrollPos <= bottomThreshold) {
+          // If near the bottom, set the height of the header to 0
+          document.getElementById("header-id").style.height = "0";
+        }
+
+        // Update the previous scroll position
+        prevScrollPos = currentScrollPos;
+      });
+    });
+  </script>
+
+  <script>
+    function createCustomChat() {
+      // Create wrapper div
+      const chatWindow = document.createElement("div");
+      chatWindow.classList.add("custom-chat-window");
+
+      // Create form overlay
+      chatWindow.innerHTML = `
+        <div class="chat-create-backdrop"></div>
+        <div class="chat-overlay">
+            <div class="chat-form">
+                <div class="chat-form-container">
+                  <div>
+                    <div class="chatLabia">This is not a new "ai chat," this will create a new isolated chat using the comments plugin.</div>
+                    <label for="chatName" class="input-label">Name:</label>
+                    <input id="chatName" type="text" class="input-field" placeholder="Enter chat name (optional)">
+                  </div>
+                  <div>
+                    <label for="channelName" class="input-label">Channel Name:</label>
+                    <input id="channelName" type="text" class="input-field" placeholder="Enter channel name" required>
+                  </div>
+                  <div style="display: flex; gap: 5px; flex-direction: row;">
+                    <button style="flex: 1;" class="cancel-button">Cancel</button>
+                    <button style="flex: 1;" class="create-button" onclick="customChatAdd()">Create</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+      const backdrop = chatWindow.querySelector(".chat-create-backdrop");
+      const cancelButton = chatWindow.querySelector(".cancel-button");
+      const createButton = chatWindow.querySelector(".create-button");
+      const channelInput = chatWindow.querySelector("#channelName");
+
+      // Function to enable/disable Create button based on channel input
+      const toggleCreateButton = () => {
+        if (channelInput.value.trim() === "") {
+          createButton.disabled = true;
+        } else {
+          createButton.disabled = false;
+        }
+      };
+
+      // Initially check the input value
+      toggleCreateButton();
+
+      // Event listener for input changes
+      channelInput.addEventListener("input", toggleCreateButton);
+
+      // Cancel button functionality
+      const cancelFunction = () => {
+        chatWindow.setAttribute("closed", "");
+        setTimeout(() => {
+          chatWindow.remove();
+        }, 300);
+      };
+
+      cancelButton.addEventListener("click", cancelFunction);
+      backdrop.addEventListener("click", cancelFunction);
+
+      // Listen for 'Esc' key press
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          cancelFunction();
+        }
+      });
+
+      // Create button functionality
+      createButton.addEventListener("click", () => {
+        chatWindow.setAttribute("closed", "");
+        setTimeout(() => {
+          chatWindow.remove();
+        }, 300);
+      });
+
+      // Append wrapper to the body
+      document.body.appendChild(chatWindow);
+    }
+
+    function setCustomChannel(event) {
+      // Get the value of the tabs-channel attribute from the button element
+      var channelValue = event.currentTarget.getAttribute("tabs-channel");
+
+      // Change the value of the variable customChannel to the obtained value
+      if (channelValue) {
+        customChannel = channelValue;
+        console.log("Custom channel set to: " + customChannel);
+        update();
+      } else {
+        console.log("tabs-channel attribute value not found.");
+      }
+    }
+  </script>
+  <script>
+    // Function to create custom chat tab
+    function createCustomChatTab(channelName, chatName) {
+      try {
+        // Format the channel name
+        let formattedChannelName = formatChannelName(channelName);
+
+        // Check for duplicates
+        if (isDuplicateChannel(formattedChannelName)) {
+          throw new Error("Cannot create duplicate chat channel.");
+        }
+
+        // Create tabs wrapper element
+        let tabsWrapper = document.createElement("div");
+        tabsWrapper.className = "tabs-wrapper";
+
+        // Create tabs button element
+        let tabsButton = document.createElement("button");
+        tabsButton.className = "tabs tab-link";
+        tabsButton.setAttribute(
+          "onclick",
+          "rembTabFunc(event, 'custom-chat'), setCustomChannel(event); update('custom-chat')"
+        );
+        tabsButton.setAttribute("tabs-channel", formattedChannelName);
+
+        // Create tabs text element
+        let tabsText = document.createElement("div");
+        tabsText.className = "tabs-text";
+        tabsText.textContent = chatName ? chatName : formattedChannelName;
+
+        // Create tabs shadow wrapper element
+        let tabsShadowWrapper = document.createElement("div");
+        tabsShadowWrapper.className = "tabs-shadow-wrapper";
+
+        // Create tabs shadow element
+        let tabsShadow = document.createElement("div");
+        tabsShadow.className = "tabs-shadow";
+
+        // Create custom chat delete element
+        let customChatDel = document.createElement("div");
+        customChatDel.className = "custom-chat-del";
+        customChatDel.setAttribute("onclick", "deleteCustomChannel(event)");
+
+        // Create trash icon element
+        let trashIcon = document.createElement("i");
+        trashIcon.className = "fa-solid fa-trash";
+
+        // Append elements to their respective parents
+        customChatDel.appendChild(trashIcon);
+        tabsShadowWrapper.appendChild(tabsShadow);
+        tabsButton.appendChild(tabsText);
+        tabsButton.appendChild(tabsShadowWrapper);
+        tabsButton.appendChild(customChatDel);
+        tabsWrapper.appendChild(tabsButton);
+
+        // Append tabs wrapper to custom chats element
+        let customChats = document.getElementById("custom-chats");
+        customChats.appendChild(tabsWrapper);
+
+        // Save to local storage
+        saveChatToLocalStorage(formattedChannelName, chatName);
+      } catch (error) {
+        console.error(error); // Log error to console
+        alert(error.message); // Display error as alert
+      }
+    }
+
+    // Function to format channel name
+    function formatChannelName(channelName) {
+      return channelName.toLowerCase().replace(/[^a-z0-9]/g, "-");
+    }
+
+    // Function to check for duplicate channel
+    function isDuplicateChannel(channelName) {
+      let chatChannels = JSON.parse(localStorage.getItem("chatChannels")) || [];
+      return chatChannels.includes(channelName);
+    }
+
+    // Function to retrieve saved chat channels and chat names from local storage
+    function retrieveSavedChats() {
+      let chatChannels = JSON.parse(localStorage.getItem("chatChannels")) || [];
+      let chatNames = JSON.parse(localStorage.getItem("chatNames")) || [];
+      let onclicks = JSON.parse(localStorage.getItem("onclicks")) || [];
+      for (let i = 0; i < chatChannels.length; i++) {
+        createCustomChatTabFromStorage(
+          chatChannels[i],
+          chatNames[i],
+          onclicks[i]
+        );
+      }
+    }
+
+    // Function to save chat to local storage
+    function saveChatToLocalStorage(channelName, chatName) {
+      let chatChannels = JSON.parse(localStorage.getItem("chatChannels")) || [];
+      let chatNames = JSON.parse(localStorage.getItem("chatNames")) || [];
+      let onclicks = JSON.parse(localStorage.getItem("onclicks")) || [];
+      chatChannels.push(channelName);
+      chatNames.push(chatName);
+      onclicks.push(
+        "rembTabFunc(event, 'custom-chat'), setCustomChannel(event); update()"
+      );
+      localStorage.setItem("chatChannels", JSON.stringify(chatChannels));
+      localStorage.setItem("chatNames", JSON.stringify(chatNames));
+      localStorage.setItem("onclicks", JSON.stringify(onclicks));
+    }
+
+    // Function to create custom chat tab from stored data
+    function createCustomChatTabFromStorage(channelName, chatName, onclick) {
+      // Create tabs wrapper element
+      let tabsWrapper = document.createElement("div");
+      tabsWrapper.className = "tabs-wrapper";
+
+      // Create tabs button element
+      let tabsButton = document.createElement("button");
+      tabsButton.className = "tabs tab-link";
+      tabsButton.setAttribute("onclick", onclick);
+      tabsButton.setAttribute("tabs-channel", channelName);
+
+      // Create tabs text element
+      let tabsText = document.createElement("div");
+      tabsText.className = "tabs-text";
+      tabsText.textContent = chatName ? chatName : channelName;
+
+      // Create tabs shadow wrapper element
+      let tabsShadowWrapper = document.createElement("div");
+      tabsShadowWrapper.className = "tabs-shadow-wrapper for-custom-chat";
+
+      // Create tabs shadow element
+      let tabsShadow = document.createElement("div");
+      tabsShadow.className = "tabs-shadow";
+
+      // Create custom chat delete element
+      let customChatDel = document.createElement("div");
+      customChatDel.className = "custom-chat-del";
+      customChatDel.setAttribute("onclick", "deleteCustomChannel(event)");
+
+      // Create trash icon element
+      let trashIcon = document.createElement("i");
+      trashIcon.className = "fa-solid fa-trash";
+
+      // Append elements to their respective parents
+      customChatDel.appendChild(trashIcon);
+      tabsShadowWrapper.appendChild(tabsShadow);
+      tabsButton.appendChild(tabsText);
+      tabsButton.appendChild(tabsShadowWrapper);
+      tabsButton.appendChild(customChatDel);
+      tabsWrapper.appendChild(tabsButton);
+
+      // Append tabs wrapper to custom chats element
+      let customChats = document.getElementById("custom-chats");
+      customChats.appendChild(tabsWrapper);
+    }
+
+    // Function to delete custom chat channel
+    function deleteCustomChannel(event) {
+      let tabsWrapper = event.target.closest(".tabs-wrapper");
+      let tabsButton = tabsWrapper.querySelector(".tabs");
+      let chatChannel = tabsButton.getAttribute("tabs-channel");
+      let customChats = document.getElementById("custom-chats");
+      customChats.removeChild(tabsWrapper);
+      deleteChatFromLocalStorage(chatChannel);
+    }
+
+    // Function to delete chat from local storage
+    function deleteChatFromLocalStorage(channelName) {
+      let chatChannels = JSON.parse(localStorage.getItem("chatChannels")) || [];
+      let chatNames = JSON.parse(localStorage.getItem("chatNames")) || [];
+      let onclicks = JSON.parse(localStorage.getItem("onclicks")) || [];
+      let index = chatChannels.indexOf(channelName);
+      if (index > -1) {
+        chatChannels.splice(index, 1);
+        chatNames.splice(index, 1);
+        onclicks.splice(index, 1);
+      }
+      localStorage.setItem("chatChannels", JSON.stringify(chatChannels));
+      localStorage.setItem("chatNames", JSON.stringify(chatNames));
+      localStorage.setItem("onclicks", JSON.stringify(onclicks));
+    }
+
+    // Function to handle custom chat addition
+    function customChatAdd() {
+      let channelName = document.getElementById("channelName").value;
+      let chatName = document.getElementById("chatName").value;
+      createCustomChatTab(channelName, chatName);
+    }
+
+    // Event listener for window load
+    window.addEventListener("load", function () {
+      retrieveSavedChats();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/Cocell0/Cocell-s-Perchance@main/script.js"></script>
+  <script>
+    function checkPageLoad() {
+      // Check if there is a 'sealed' attribute in sessionStorage
+      if (sessionStorage.getItem("sealed")) {
+        applySealed();
+      } else {
+        // Check if all resources are loaded
+        if (document.readyState === "complete") {
+          setTimeout(() => {
+            addClosedAttribute();
+            saveToSessionStorage();
+            setTimeout(() => {
+              applySealed();
+            }, 300);
+          }, 1500);
+        } else {
+          // If resources are not loaded, wait for them to load
+          setTimeout(checkPageLoad, 100);
+        }
+      }
+    }
+
+    function addClosedAttribute() {
+      const pageLoadElement = document.getElementById("page-load-id");
+      if (pageLoadElement) {
+        pageLoadElement.setAttribute("closed", "");
+      }
+    }
+
+    function applySealed() {
+      const pageLoadElement = document.getElementById("page-load-id");
+      if (pageLoadElement) {
+        pageLoadElement.setAttribute("sealed", "");
+      }
+    }
+
+    function saveToSessionStorage() {
+      sessionStorage.setItem("sealed", "true");
+    }
+
+    checkPageLoad();
+
+    loadTab();
+  </script>
+</body>

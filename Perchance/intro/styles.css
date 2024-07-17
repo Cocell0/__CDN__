@@ -1,0 +1,134 @@
+#INTRO {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: hsl(0, 0%, 91%);
+  background: hsl(0, 0, 13%);
+}
+
+#INTRO * {
+  margin: 0;
+}
+
+@keyframes INTRO_SHADOW_ANIM {
+
+  0%,
+  100% {
+    box-shadow: inset hsl(0, 0%, 0%, 0.8) 0 0 80px 60px;
+  }
+
+  25% {
+    box-shadow: inset hsl(0, 20%, 5%, 0.8) 0 0 40px;
+  }
+
+  50% {
+    box-shadow: inset hsl(80, 20%, 5%, 0.8) 0 0 20px 10px;
+  }
+
+  75% {
+    box-shadow: inset hsl(200, 20%, 5%, 0.8) 0 0 40px 20px;
+  }
+}
+
+#INTRO_SHADOW {
+  box-shadow: inset hsl(0, 0%, 0%) 0 0 80px;
+  animation: INTRO_SHADOW_ANIM 30s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+#INTRO_CONTENT {
+  display: grid;
+  align-content: center;
+  place-items: center;
+  text-align: center;
+  text-shadow: 0 0 1.5px white;
+}
+
+#INTRO_TITLE_OPENING_PRE {
+  display: grid;
+  place-items: center;
+}
+
+#INTRO_CONTENT #INTRO_TITLE {
+  background: linear-gradient(90deg, #7aa7fc, #e273ca);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px hsl(0, 0%, 100%, 15%);
+}
+
+@keyframes HEIGHT_OPEN {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: var(--HEIGHT_OPEN_VARIABLE);
+  }
+}
+
+#INTRO_TITLE_OPENING {
+  animation: HEIGHT_OPEN 0.8s ease-in-out 1s 1 both;
+  overflow-y: hidden;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  height: 0;
+}
+
+@media (min-width: 800px) {
+  #INTRO_CONTENT #INTRO_TITLE {
+    font-size: 2.5rem;
+  }
+
+  #INTRO_TITLE_OPENING {
+    --HEIGHT_OPEN_VARIABLE: 65px
+  }
+}
+
+@media (max-width: 800px) {
+  #INTRO_CONTENT #INTRO_TITLE {
+    font-size: 1.5rem;
+  }
+
+  #INTRO_TITLE_OPENING {
+    --HEIGHT_OPEN_VARIABLE: 40px
+  }
+}
+
+@keyframes INTRO_TITLE_OPENING_LINE_ANIME {
+  0% {
+    width: 0;
+  }
+
+  30%, 60%, 80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.INTRO_OPENING_TITLE_LINE {
+  animation: INTRO_TITLE_OPENING_LINE_ANIME 1.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s 1 both;
+  height: 1.5px;
+  background: linear-gradient(90deg, #7aa7fc, #e273ca);
+  border-radius: 10px;
+}
+
+#INTRO_DESCRIPTION {
+  animation: HEIGHT_OPEN 0.8s ease-in-out 2.5s 1 both;
+  --HEIGHT_OPEN_VARIABLE: 23px;
+  overflow-y: hidden;
+}
+
+#INTRO_TEXT_BOTTOM_LEFT {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  text-align: left;
+}

@@ -47,13 +47,6 @@ function isExternalLink(link) {
     return /^(https?:)?\/\//.test(link);
 }
 
-async function replaceIntroPlaceholders(content, introData) {
-    const introPlaceholderRegex = /INTRO\${(.*?)}/g;
-    return content.replace(introPlaceholderRegex, (match, key) => {
-        return introData[key] || match;
-    });
-}
-
 async function compileFile(filePath) {
     const baseDir = path.dirname(filePath);
     const fileName = path.basename(filePath);
@@ -62,14 +55,6 @@ async function compileFile(filePath) {
 
     try {
         let content = await readFileContent(filePath);
-        const introFilePath = path.join(baseDir, 'intro.json');
-        let introData = {};
-
-        if (await fs.pathExists(introFilePath)) {
-            introData = JSON.parse(await readFileContent(introFilePath));
-            content = await replaceIntroPlaceholders(content, introData);
-        }
-
         content = await replaceReferences(content, baseDir);
         await fs.writeFile(compiledFilePath, content, 'utf8');
         console.log(`Compiled file saved as: ${compiledFilePath}`);

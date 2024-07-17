@@ -14,6 +14,9 @@
   "license": "GPL-3.0",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
+    "clipboard-cli": "^4.0.0",
+    "clipboardy": "^4.0.0",
+    "copy-paste": "^1.5.3",
     "express": "^4.19.2",
     "fs-extra": "^11.2.0"
   }

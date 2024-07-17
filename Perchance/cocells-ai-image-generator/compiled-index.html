@@ -3,896 +3,897 @@
 <head>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <style>@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  font-family: 'Work Sans';
-  font-weight: 500;
-  background: var(--secondary);
-  color: var(--text);
+    :root {
+      font-family: 'Work Sans';
+      font-weight: 500;
+      background: var(--secondary);
+      color: var(--text);
 
-  font-size: 17px;
-  --snap-cube: cubic-bezier(1, -1.25, 0, 2);
-  --snap-1: cubic-bezier(1, 0, 0, 1);
+      font-size: 17px;
+      --snap-cube: cubic-bezier(1, -1.25, 0, 2);
+      --snap-1: cubic-bezier(1, 0, 0, 1);
 
-  --backdrop: hsla(0, 0%, 0%, 0.6);
+      --backdrop: hsla(0, 0%, 0%, 0.6);
 
-  --light-gray-accent: #cdd1d3;
-  --light-gray-accent-mono: #aeb5b9;
-  --light-gray-accent-zeno: #858a8d;
-  --dark-gray-accent: #3C4347;
-  --dark-gray-accent-mono: #535D63;
-  --dark-gray-accent-zeno: #222525;
+      --light-gray-accent: #cdd1d3;
+      --light-gray-accent-mono: #aeb5b9;
+      --light-gray-accent-zeno: #858a8d;
+      --dark-gray-accent: #3C4347;
+      --dark-gray-accent-mono: #535D63;
+      --dark-gray-accent-zeno: #222525;
 
-  --font-color-black: hsl(217, 12%, 20%);
-  --font-color-mid-black: hsl(217, 12%, 40%);
-  --font-color-low-black: hsl(217, 12%, 60%);
-  --font-color-white: hsl(220 10% 80%);
-  --font-color-mid-white: hsl(220, 3%, 50%);
-  --font-color-low-white: hsl(220, 3%, 40%);
+      --font-color-black: hsl(217, 12%, 20%);
+      --font-color-mid-black: hsl(217, 12%, 40%);
+      --font-color-low-black: hsl(217, 12%, 60%);
+      --font-color-white: hsl(220 10% 80%);
+      --font-color-mid-white: hsl(220, 3%, 50%);
+      --font-color-low-white: hsl(220, 3%, 40%);
 
-  --text: var(--font-color-black);
-  --text-light: var(--font-color-mid-black);
-  --text-lighter: var(--font-color-low-black);
+      --text: var(--font-color-black);
+      --text-light: var(--font-color-mid-black);
+      --text-lighter: var(--font-color-low-black);
 
-  --background: hsl(0, 0%, 100%);
-  --background-darker: hsl(0, 0%, 90%);
-  --primary-theme_light: hsl(224, 12%, 68%);
-  --secondary-theme_light: hsl(224 25% 95%);
-  --tertiary-theme_light: hsl(224, 15.3%, 70%);
-  --accent-theme_light: hsl(222, 15%, 83%);
+      --background: hsl(0, 0%, 100%);
+      --background-darker: hsl(0, 0%, 90%);
+      --primary-theme_light: hsl(224, 12%, 68%);
+      --secondary-theme_light: hsl(224 25% 95%);
+      --tertiary-theme_light: hsl(224, 15.3%, 70%);
+      --accent-theme_light: hsl(222, 15%, 83%);
 
-  --text-theme_dark: hsl(219, 9%, 71%);
-  --background-theme_dark: hsl(0, 0%, 5%);
-  --primary-theme_dark: hsl(240, 4%, 22%);
-  --secondary-theme_dark: hsl(210, 3%, 12%);
-  --tertiary-theme_dark: hsl(222, 7%, 30%);
-  --accent-theme_dark: hsl(216, 5%, 20%);
+      --text-theme_dark: hsl(219, 9%, 71%);
+      --background-theme_dark: hsl(0, 0%, 5%);
+      --primary-theme_dark: hsl(240, 4%, 22%);
+      --secondary-theme_dark: hsl(210, 3%, 12%);
+      --tertiary-theme_dark: hsl(222, 7%, 30%);
+      --accent-theme_dark: hsl(216, 5%, 20%);
 
-  --primary: var(--primary-theme_light);
-  --secondary: var(--secondary-theme_light);
-  --tertiary: var(--tertiary-theme_light);
-  --accent: var(--accent-theme_light);
+      --primary: var(--primary-theme_light);
+      --secondary: var(--secondary-theme_light);
+      --tertiary: var(--tertiary-theme_light);
+      --accent: var(--accent-theme_light);
 
-  --button: hsl(223, 5%, 85%);
-  --button-active: hsl(223, 5%, 60%);
-  --button-disabled: hsl(223, 5%, 30%);
+      --button: hsl(223, 5%, 85%);
+      --button-active: hsl(223, 5%, 60%);
+      --button-disabled: hsl(223, 5%, 30%);
 
-  --active: hsl(220, 84%, 65%);
-  --error: hsl(0, 90%, 61%);
-  --success: hsl(130, 70%, 58%);
-}
+      --active: hsl(220, 84%, 65%);
+      --error: hsl(0, 90%, 61%);
+      --success: hsl(130, 70%, 58%);
+    }
 
-.bg-foreground {
-  background: var(--background);
-}
+    .bg-foreground {
+      background: var(--background);
+    }
 
-.bg-background {
-  background: var(--secondary);
-}
+    .bg-background {
+      background: var(--secondary);
+    }
 
-.dark {
-  --text: var(--font-color-white);
-  --text-light: var(--font-color-mid-white);
-  --text-lighter: var(--font-color-low-white);
+    .dark {
+      --text: var(--font-color-white);
+      --text-light: var(--font-color-mid-white);
+      --text-lighter: var(--font-color-low-white);
 
-  --background: var(--background-theme_dark);
-  --background-dark: hsl(0, 0%, 90%);
+      --background: var(--background-theme_dark);
+      --background-dark: hsl(0, 0%, 90%);
 
-  --primary: var(--primary-theme_dark);
-  --secondary: var(--secondary-theme_dark);
-  --tertiary: var(--tertiary-theme_dark);
-  --accent: var(--accent-theme_dark);
-
-
-  --button: hsl(223, 5%, 25%);
-  --button-active: hsl(223, 5%, 40%);
-  --button-disabled: hsl(223, 5%, 15%);
-
-  --active: hsl(220, 84%, 65%);
-  --error: hsl(0, 90%, 61%);
-  --success: hsl(130, 70%, 58%);
-}
+      --primary: var(--primary-theme_dark);
+      --secondary: var(--secondary-theme_dark);
+      --tertiary: var(--tertiary-theme_dark);
+      --accent: var(--accent-theme_dark);
 
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Mochiy Pop One';
-  font-weight: 700;
-}
+      --button: hsl(223, 5%, 25%);
+      --button-active: hsl(223, 5%, 40%);
+      --button-disabled: hsl(223, 5%, 15%);
 
-h1 {
-  font-size: 4.210rem;
-  /* 67.36px */
-}
-
-h2 {
-  font-size: 3.158rem;
-  /* 50.56px */
-}
-
-h3 {
-  font-size: 2.369rem;
-  /* 37.92px */
-}
-
-h4 {
-  font-size: 1.777rem;
-  /* 28.48px */
-}
-
-h5 {
-  font-size: 1.333rem;
-  /* 21.28px */
-}
-
-small {
-  font-size: 0.750rem;
-  /* 12px */
-}
-
-* {
-  --def-transition: all 0.5s, background 0.3s, color 0.2s, font-size 0.2s, color, 0s, width, padding 0.5s;
-  transition: var(--def-transition), width 0.4s, height 0.4s;
-  box-sizing: unset;
-  user-select: none;
-  color: inherit;
-}
-
-*:focus {
-  outline: none;
-}
-
-body::-webkit-scrollbar {
-  background: none;
-}
-
-body::-webkit-scrollbar-track {
-  background: inherit;
-}
-
-::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-  background: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--tertiary);
-}
-
-/* Button */
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Track piece */
-::-webkit-scrollbar-track-piece {
-  background: transparent;
-}
-
-/* Handle on scrollbar handle */
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-@media (max-width: 800px) {
-  body::-webkit-scrollbar {
-    display: none;
-    height: 5px;
-    width: 5px;
-  }
-
-  main::-webkit-scrollbar {
-    display: none;
-    width: 5px;
-  }
-
-  ::-webkit-scrollbar {
-    height: 5px;
-    width: 5px;
-  }
-
-  .no-scroll-from-mid::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-@media (max-width: 300px) {
-  body::-webkit-scrollbar {
-    width: 2px;
-  }
+      --active: hsl(220, 84%, 65%);
+      --error: hsl(0, 90%, 61%);
+      --success: hsl(130, 70%, 58%);
+    }
 
 
-  main::-webkit-scrollbar {
-    width: 2px;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Mochiy Pop One';
+      font-weight: 700;
+    }
 
-  ::-webkit-scrollbar {
-    width: 2px;
-  }
-}
+    h1 {
+      font-size: 4.210rem;
+      /* 67.36px */
+    }
 
-.no-scroll::-webkit-scrollbar,
-.hover-scroll::-webkit-scrollbar {
-  display: none;
-}
+    h2 {
+      font-size: 3.158rem;
+      /* 50.56px */
+    }
 
-.hover-scroll:hover::-webkit-scrollbar {
-  display: unset;
-}
+    h3 {
+      font-size: 2.369rem;
+      /* 37.92px */
+    }
 
-.bg-trans-scroll-hover::-webkit-scrollbar {
-  background: transparent;
-}
+    h4 {
+      font-size: 1.777rem;
+      /* 28.48px */
+    }
 
-/*
+    h5 {
+      font-size: 1.333rem;
+      /* 21.28px */
+    }
+
+    small {
+      font-size: 0.750rem;
+      /* 12px */
+    }
+
+    * {
+      --def-transition: all 0.5s, background 0.3s, color 0.2s, font-size 0.2s, color, 0s, width, padding 0.5s;
+      transition: var(--def-transition), width 0.4s, height 0.4s;
+      box-sizing: unset;
+      user-select: none;
+      color: inherit;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    body::-webkit-scrollbar {
+      background: none;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: inherit;
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+      background: none;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--tertiary);
+    }
+
+    /* Button */
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Track piece */
+    ::-webkit-scrollbar-track-piece {
+      background: transparent;
+    }
+
+    /* Handle on scrollbar handle */
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+
+    @media (max-width: 800px) {
+      body::-webkit-scrollbar {
+        display: none;
+        height: 5px;
+        width: 5px;
+      }
+
+      main::-webkit-scrollbar {
+        display: none;
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+      }
+
+      .no-scroll-from-mid::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    @media (max-width: 300px) {
+      body::-webkit-scrollbar {
+        width: 2px;
+      }
+
+
+      main::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 2px;
+      }
+    }
+
+    .no-scroll::-webkit-scrollbar,
+    .hover-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hover-scroll:hover::-webkit-scrollbar {
+      display: unset;
+    }
+
+    .bg-trans-scroll-hover::-webkit-scrollbar {
+      background: transparent;
+    }
+
+    /*
 *** Short-hands ***
 These are shorthands, quick classes to add one drop styles
 */
-.no-li-bullet {
-  list-style-type: none;
-}
+    .no-li-bullet {
+      list-style-type: none;
+    }
 
-.transBg {
-  background: transparent;
-}
+    .transBg {
+      background: transparent;
+    }
 
-.full-height {
-  height: 100%;
-}
+    .full-height {
+      height: 100%;
+    }
 
-.pos-fixed {
-  position: fixed;
-}
+    .pos-fixed {
+      position: fixed;
+    }
 
-.pos-absolute {
-  position: absolute;
-}
+    .pos-absolute {
+      position: absolute;
+    }
 
-.pos-relative {
-  position: relative;
-}
+    .pos-relative {
+      position: relative;
+    }
 
-.full-overlay {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
+    .full-overlay {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
 
-.full-width {
-  width: 100%;
-}
+    .full-width {
+      width: 100%;
+    }
 
-.text-center {
-  text-align: center;
-}
+    .text-center {
+      text-align: center;
+    }
 
-.text-justify {
-  text-align: justify;
-}
+    .text-justify {
+      text-align: justify;
+    }
 
-.margin-auto {
-  margin: auto;
-}
+    .margin-auto {
+      margin: auto;
+    }
 
-.comfortable-width {
-  max-width: 800px;
-  width: 100%;
-}
+    .comfortable-width {
+      max-width: 800px;
+      width: 100%;
+    }
 
-.no-size-tran {
-  transition: width 0s, height 0s;
-}
+    .no-size-tran {
+      transition: width 0s, height 0s;
+    }
 
-.over-hidden {
-  overflow: hidden;
-}
+    .over-hidden {
+      overflow: hidden;
+    }
 
-.dis-none {
-  display: none;
-}
+    .dis-none {
+      display: none;
+    }
 
-.clip-round {
-  border-radius: 100%;
-}
+    .clip-round {
+      border-radius: 100%;
+    }
 
-.clip-round-50 {
-  border-radius: 50%;
-}
+    .clip-round-50 {
+      border-radius: 50%;
+    }
 
-.round {
-  border-radius: 100px;
-}
+    .round {
+      border-radius: 100px;
+    }
 
-.round2 {
-  border-radius: 2rem;
-}
+    .round2 {
+      border-radius: 2rem;
+    }
 
-.round1-5 {
-  border-radius: 1.5rem;
-}
+    .round1-5 {
+      border-radius: 1.5rem;
+    }
 
-.round1 {
-  border-radius: 1rem;
-}
+    .round1 {
+      border-radius: 1rem;
+    }
 
-.round08 {
-  border-radius: 0.8rem;
-}
+    .round08 {
+      border-radius: 0.8rem;
+    }
 
-.round05 {
-  border-radius: 0.5rem;
-}
+    .round05 {
+      border-radius: 0.5rem;
+    }
 
-.gap20 {
-  gap: 20px;
-}
+    .gap20 {
+      gap: 20px;
+    }
 
-.gap10 {
-  gap: 10px;
-}
+    .gap10 {
+      gap: 10px;
+    }
 
-.gap8 {
-  gap: 8px;
-}
+    .gap8 {
+      gap: 8px;
+    }
 
-.gap5 {
-  gap: 5px;
-}
+    .gap5 {
+      gap: 5px;
+    }
 
-.pad20 {
-  padding: 20px;
-}
+    .pad20 {
+      padding: 20px;
+    }
 
-.pad10 {
-  padding: 10px;
-}
+    .pad10 {
+      padding: 10px;
+    }
 
-.pad8 {
-  padding: 8px;
-}
+    .pad8 {
+      padding: 8px;
+    }
 
-.pad5 {
-  padding: 5px;
-}
+    .pad5 {
+      padding: 5px;
+    }
 
-.flexR {
-  display: flex;
-}
+    .flexR {
+      display: flex;
+    }
 
-.flexC {
-  display: flex;
-  flex-direction: column;
-}
+    .flexC {
+      display: flex;
+      flex-direction: column;
+    }
 
-.blocked {
-  display: block;
-}
+    .blocked {
+      display: block;
+    }
 
 
-/*
+    /*
 *** Dynamic Shorthands ***
 These are dynamic shorthands, they are handled by media queris below.
 They are identified and made unique by the prefix `d-` to target them differently than previous shorthands.
 */
-.d-round2 {
-  border-radius: 2rem;
-}
+    .d-round2 {
+      border-radius: 2rem;
+    }
 
-.d-round1-5 {
-  border-radius: 1.5rem;
-}
+    .d-round1-5 {
+      border-radius: 1.5rem;
+    }
 
-.d-round1 {
-  border-radius: 1rem;
-}
+    .d-round1 {
+      border-radius: 1rem;
+    }
 
-.d-round08 {
-  border-radius: 0.8rem;
-}
+    .d-round08 {
+      border-radius: 0.8rem;
+    }
 
-.d-round05 {
-  border-radius: 0.5rem;
-}
+    .d-round05 {
+      border-radius: 0.5rem;
+    }
 
-.d-gap20 {
-  gap: 20px;
-}
+    .d-gap20 {
+      gap: 20px;
+    }
 
-.d-gap10 {
-  gap: 10px;
-}
+    .d-gap10 {
+      gap: 10px;
+    }
 
-.d-gap8 {
-  gap: 8px;
-}
+    .d-gap8 {
+      gap: 8px;
+    }
 
-.d-gap5 {
-  gap: 5px;
-}
+    .d-gap5 {
+      gap: 5px;
+    }
 
-.d-pad20 {
-  padding: 20px;
-}
+    .d-pad20 {
+      padding: 20px;
+    }
 
-.d-pad10 {
-  padding: 10px;
-}
+    .d-pad10 {
+      padding: 10px;
+    }
 
-.d-pad8 {
-  padding: 8px;
-}
+    .d-pad8 {
+      padding: 8px;
+    }
 
-.d-pad5 {
-  padding: 5px;
-}
+    .d-pad5 {
+      padding: 5px;
+    }
 
-/* Another root for dynamic variables*/
-:root {
-  --d-pad20: 20px;
-  --d-pad-sp-20: 20px;
-  --d-pad1-5: 15px;
-  --d-pad-sp-15: 15px;
-  --d-pad10: 10px;
-  --d-pad8: 8px;
-  --d-pad5: 5px;
-  --d-round2: 2rem;
-  --d-round1-5: 1.5rem;
-  --d-round1: 1rem;
-  --d-round08: 0.8rem;
-  --d-round05: 0.5rem;
-  --d-gap20: 20px;
-  --d-gap10: 10px;
-  --d-gap8: 8px;
-  --d-gap: 5px;
-  --d-20px: 20px;
-  --d-10px: 10px;
-  --d-8px: 8px;
-  --d-5px: 5px;
+    /* Another root for dynamic variables*/
+    :root {
+      --d-pad20: 20px;
+      --d-pad-sp-20: 20px;
+      --d-pad1-5: 15px;
+      --d-pad-sp-15: 15px;
+      --d-pad10: 10px;
+      --d-pad8: 8px;
+      --d-pad5: 5px;
+      --d-round2: 2rem;
+      --d-round1-5: 1.5rem;
+      --d-round1: 1rem;
+      --d-round08: 0.8rem;
+      --d-round05: 0.5rem;
+      --d-gap20: 20px;
+      --d-gap10: 10px;
+      --d-gap8: 8px;
+      --d-gap: 5px;
+      --d-20px: 20px;
+      --d-10px: 10px;
+      --d-8px: 8px;
+      --d-5px: 5px;
 
-  --d-3rem: 3rem;
-  --d-2-5rem: 2.5rem;
-  --d-2rem: 2rem;
-  --d-1-5rem: 1.5rem;
-  --d-1rem: 1rem;
-  --d-0-8rem: 0.8rem;
-  --d-0-5rem: 0.5rem;
-}
+      --d-3rem: 3rem;
+      --d-2-5rem: 2.5rem;
+      --d-2rem: 2rem;
+      --d-1-5rem: 1.5rem;
+      --d-1rem: 1rem;
+      --d-0-8rem: 0.8rem;
+      --d-0-5rem: 0.5rem;
+    }
 
-@media (max-width: 800px) {
-  :root {
-    --d-pad20: 10px;
-    --d-pad-sp-20: 15px;
-    --d-pad1-5: 7.5px;
-    --d-pad-sp-15: 10px;
-    --d-pad10: 5px;
-    --d-pad8: 4px;
-    --d-pad5: 2.5px;
-    --d-round2: 1rem;
-    --d-round1-5: 0.75rem;
-    --d-round1: 0.5rem;
-    --d-round08: 0.4rem;
-    --d-round05: 0.25rem;
-    --d-gap20: 10px;
-    --d-gap10: 5px;
-    --d-gap8: 4px;
-    --d-gap: 2.5px;
-    --d-20px: 10px;
-    --d-10px: 5px;
-    --d-8px: 4px;
-    --d-5px: 2.5px;
+    @media (max-width: 800px) {
+      :root {
+        --d-pad20: 10px;
+        --d-pad-sp-20: 15px;
+        --d-pad1-5: 7.5px;
+        --d-pad-sp-15: 10px;
+        --d-pad10: 5px;
+        --d-pad8: 4px;
+        --d-pad5: 2.5px;
+        --d-round2: 1rem;
+        --d-round1-5: 0.75rem;
+        --d-round1: 0.5rem;
+        --d-round08: 0.4rem;
+        --d-round05: 0.25rem;
+        --d-gap20: 10px;
+        --d-gap10: 5px;
+        --d-gap8: 4px;
+        --d-gap: 2.5px;
+        --d-20px: 10px;
+        --d-10px: 5px;
+        --d-8px: 4px;
+        --d-5px: 2.5px;
 
-    --d-3rem: 1.5rem;
-    --d-2-5rem: 1.25rem;
-    --d-2rem: 1rem;
-    --d-1-5rem: 0.75rem;
-    --d-1rem: 0.5rem;
-    --d-0-8rem: 0.4rem;
-    --d-0-5rem: 0.25rem;
-  }
+        --d-3rem: 1.5rem;
+        --d-2-5rem: 1.25rem;
+        --d-2rem: 1rem;
+        --d-1-5rem: 0.75rem;
+        --d-1rem: 0.5rem;
+        --d-0-8rem: 0.4rem;
+        --d-0-5rem: 0.25rem;
+      }
 
-  .d-round2 {
-    border-radius: 1rem;
-  }
+      .d-round2 {
+        border-radius: 1rem;
+      }
 
-  .d-round1-5 {
-    border-radius: 0.75rem;
-  }
+      .d-round1-5 {
+        border-radius: 0.75rem;
+      }
 
-  .d-round1 {
-    border-radius: 0.5rem;
-  }
+      .d-round1 {
+        border-radius: 0.5rem;
+      }
 
-  .d-round08 {
-    border-radius: 0.4rem;
-  }
+      .d-round08 {
+        border-radius: 0.4rem;
+      }
 
-  .d-round05 {
-    border-radius: 0.25rem;
-  }
+      .d-round05 {
+        border-radius: 0.25rem;
+      }
 
-  .d-gap20 {
-    gap: 10px;
-  }
+      .d-gap20 {
+        gap: 10px;
+      }
 
-  .d-gap10 {
-    gap: 5px;
-  }
+      .d-gap10 {
+        gap: 5px;
+      }
 
-  .d-gap8 {
-    gap: 4px;
-  }
+      .d-gap8 {
+        gap: 4px;
+      }
 
-  .d-gap5 {
-    gap: 2.5px;
-  }
+      .d-gap5 {
+        gap: 2.5px;
+      }
 
-  .d-pad20 {
-    padding: 10px;
-  }
+      .d-pad20 {
+        padding: 10px;
+      }
 
-  .d-pad10 {
-    padding: 5px;
-  }
+      .d-pad10 {
+        padding: 5px;
+      }
 
-  .d-pad8 {
-    padding: 4px;
-  }
+      .d-pad8 {
+        padding: 4px;
+      }
 
-  .d-pad5 {
-    padding: 2.5px;
-  }
-}
+      .d-pad5 {
+        padding: 2.5px;
+      }
+    }
 
-@media (max-width: 300px) {
-  :root {
-    --d-pad20: 5px;
-    --d-pad-sp-20: 10px;
-    --d-pad1-5: 3.75px;
-    --d-pad-sp-15: 5px;
-    --d-pad10: 2.5px;
-    --d-pad8: 2px;
-    --d-pad5: 1.25px;
-    --d-round2: 0.5rem;
-    --d-round1-5: 0.375rem;
-    --d-round1: 0;
-    --d-round08: 0;
-    --d-round05: 0;
-    --d-gap20: 5px;
-    --d-gap10: 2.5px;
-    --d-gap8: 2px;
-    --d-gap: 1.25px;
-    --d-20px: 5px;
-    --d-10px: 2.5px;
-    --d-8px: 2px;
-    --d-5px: 1.25px;
+    @media (max-width: 300px) {
+      :root {
+        --d-pad20: 5px;
+        --d-pad-sp-20: 10px;
+        --d-pad1-5: 3.75px;
+        --d-pad-sp-15: 5px;
+        --d-pad10: 2.5px;
+        --d-pad8: 2px;
+        --d-pad5: 1.25px;
+        --d-round2: 0.5rem;
+        --d-round1-5: 0.375rem;
+        --d-round1: 0;
+        --d-round08: 0;
+        --d-round05: 0;
+        --d-gap20: 5px;
+        --d-gap10: 2.5px;
+        --d-gap8: 2px;
+        --d-gap: 1.25px;
+        --d-20px: 5px;
+        --d-10px: 2.5px;
+        --d-8px: 2px;
+        --d-5px: 1.25px;
 
-    --d-3rem: 0.75rem;
-    --d-2-5rem: 0.625rem;
-    --d-2rem: 0.5rem;
-    --d-1-5rem: 0.375rem;
-    --d-1rem: 0.25rem;
-    --d-0-8rem: 0.2rem;
-    --d-0-5rem: 0.125rem;
-  }
+        --d-3rem: 0.75rem;
+        --d-2-5rem: 0.625rem;
+        --d-2rem: 0.5rem;
+        --d-1-5rem: 0.375rem;
+        --d-1rem: 0.25rem;
+        --d-0-8rem: 0.2rem;
+        --d-0-5rem: 0.125rem;
+      }
 
-  .d-round2 {
-    border-radius: 0.25rem;
-  }
+      .d-round2 {
+        border-radius: 0.25rem;
+      }
 
-  .d-round1-5 {
-    border-radius: 0.375rem;
-  }
+      .d-round1-5 {
+        border-radius: 0.375rem;
+      }
 
-  .d-round1 {
-    border-radius: 0;
-  }
+      .d-round1 {
+        border-radius: 0;
+      }
 
-  .d-round08 {
-    border-radius: 0;
-  }
+      .d-round08 {
+        border-radius: 0;
+      }
 
-  .d-round05 {
-    border-radius: 0;
-  }
+      .d-round05 {
+        border-radius: 0;
+      }
 
-  .d-gap20 {
-    gap: 5px;
-  }
+      .d-gap20 {
+        gap: 5px;
+      }
 
-  .d-gap10 {
-    gap: 2.5px;
-  }
+      .d-gap10 {
+        gap: 2.5px;
+      }
 
-  .d-gap8 {
-    gap: 2px;
-  }
+      .d-gap8 {
+        gap: 2px;
+      }
 
-  .d-gap5 {
-    gap: 1.25px;
-  }
+      .d-gap5 {
+        gap: 1.25px;
+      }
 
-  .d-pad20 {
-    padding: 5px;
-  }
+      .d-pad20 {
+        padding: 5px;
+      }
 
-  .d-pad10 {
-    padding: 2.5px;
-  }
+      .d-pad10 {
+        padding: 2.5px;
+      }
 
-  .d-pad8 {
-    padding: 2px;
-  }
+      .d-pad8 {
+        padding: 2px;
+      }
 
-  .d-pad5 {
-    padding: 1.25px;
-  }
-}
+      .d-pad5 {
+        padding: 1.25px;
+      }
+    }
 
-/*
+    /*
 *** Component Type Classes
 Usefull for creting quick dynamic components with classes
 */
 
-.backdrop {
-  --def-transition-duration: 0.35s;
-  --def-transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  transition-property: visibility, opacity;
-  transition-timing-function: var(--def-transition-timing-function);
-  transition-duration: var(--def-transition-duration);
-  background: var(--backdrop);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
+    .backdrop {
+      --def-transition-duration: 0.35s;
+      --def-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+      transition-property: visibility, opacity;
+      transition-timing-function: var(--def-transition-timing-function);
+      transition-duration: var(--def-transition-duration);
+      background: var(--backdrop);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
 
-@media (min-width: 800px) {
-  .backdrop {
-    backdrop-filter: blur(1.6px);
-  }
-}
+    @media (min-width: 800px) {
+      .backdrop {
+        backdrop-filter: blur(1.6px);
+      }
+    }
 
-.backdrop-display {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.zen-footer {
-  text-align: center;
-  --def-bg: #1E1F20;
-  --def-cg: #7a7a7c;
-  font-size: 1.15rem;
-  background: linear-gradient(var(--def-bg) 10%, black);
-  color: var(--def-cg);
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-.zen-footer .vert {
-  color: var(--def-cg);
-}
-
-.zen-footer .gicon {
-  font-size: 3.5rem;
-}
-
-.gicon-filled,
-.gicon-fill span {
-  font-variation-settings: 'FILL' 1;
-}
-
-.comp-shadow {
-  --shadow-color: white;
-  position: absolute;
-}
-
-.dark #aimg-outputs-shadow {
-  --shadow-color: var(--zen-dark-front);
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 54px;
-  height: 28px;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #181818;
-  border-radius: 0.4rem;
-}
-
-.dark .slider {
-  background: var(--zen-dark-back);
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 20px;
-  left: 3px;
-  bottom: 3px;
-  background: #323232;
-  border-radius: 0.35rem;
-  transition-property: width, transform;
-  transition-duration: 0.25s;
-}
-
-input:checked+.slider:before {
-  background: white;
-}
-
-input:active+.slider:before,
-input:checked:active+.slider:before {
-  transform: translateX(10px);
-  width: 30px;
-}
-
-input:checked+.slider:before {
-  transform: translateX(28px);
-}
-
-.small-icon {
-  width: 120px;
-}
-
-.mid-icon {
-  width: 220px;
-}
-
-.big-icon {
-  width: 320px;
-}
-
-.-icon {
-  border-radius: 50%;
-  display: block;
-  pointer-events: none;
-  user-select: none;
-}
-
-.tab-window {
-  overflow: auto;
-}
-
-.tabs {
-  --shadow-bg-color: var(--secondary);
-  --active: hsl(225, 15%, 88%);
-  --hover: hsl(225, 10%, 84%);
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  text-align: left;
-  display: flex;
-  width: 100%;
-  min-height: 43px;
-  max-height: 43px;
-  padding: 2.5px;
-  border-radius: 0.5rem;
-  background: unset;
-  user-select: none;
-  cursor: pointer;
-  color: inherit;
-  background: unset;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.dark .tabs {
-  background: unset;
-  --active: hsl(224, 4%, 20%);
-  --hover: hsl(224, 4%, 15.5%);
-}
+    .backdrop-display {
+      visibility: visible;
+      opacity: 1;
+    }
 
 
-@media (min-width: 800px) {
+    .zen-footer {
+      text-align: center;
+      --def-bg: #1E1F20;
+      --def-cg: #7a7a7c;
+      font-size: 1.15rem;
+      background: linear-gradient(var(--def-bg) 10%, black);
+      color: var(--def-cg);
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
 
-  .tabs:not(.opened-tab, .tabs:active):hover,
-  .dark .tabs:not(.opened-tab, .tabs:active):hover {
-    background: var(--hover);
-    --shadow-bg-color: var(--hover);
-  }
-}
+    .zen-footer .vert {
+      color: var(--def-cg);
+    }
 
-.tabs:active,
-.dark .tabs:active {
-  background: var(--active);
-  --shadow-bg-color: var(--active);
-}
+    .zen-footer .gicon {
+      font-size: 3.5rem;
+    }
 
-.opened-tab,
-.dark .opened-tab {
-  --shadow-bg-color: var(--active);
-  background: var(--active);
-}
+    .gicon-filled,
+    .gicon-fill span {
+      font-variation-settings: 'FILL' 1;
+    }
 
-l
+    .comp-shadow {
+      --shadow-color: white;
+      position: absolute;
+    }
 
-/* Tabs shadow is used so that if texts overflow they seamlessly blend into the background instead of creatnig ugly clipping effects */
-.tabs-shadow-wrapper {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 35px;
-  display: flex;
-}
+    .dark #aimg-outputs-shadow {
+      --shadow-color: var(--zen-dark-front);
+    }
 
-.tabs-shadow {
-  background: linear-gradient(90deg, transparent, var(--shadow-bg-color) 70%);
-  padding: 5px;
-  flex-grow: 1;
-}
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 54px;
+      height: 28px;
+    }
 
-.tabs:focus-visible {
-  outline: none;
-  border-color: black;
-}
+    .switch input {
+      display: none;
+    }
 
-.dark .tabs:focus-visible {
-  border-color: white;
-}
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #181818;
+      border-radius: 0.4rem;
+    }
 
-.tabs-icon,
-.tabs-text {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
+    .dark .slider {
+      background: var(--zen-dark-back);
+    }
 
-.tabs-text {
-  text-wrap: nowrap;
-  width: 80%;
-  justify-content: left;
-}
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background: #323232;
+      border-radius: 0.35rem;
+      transition-property: width, transform;
+      transition-duration: 0.25s;
+    }
 
-.tabs:active .tabs-icon {
-  transform: scale(0.8);
-}
+    input:checked+.slider:before {
+      background: white;
+    }
 
-.tabs-icon {
-  font-size: 1.2rem;
-  min-width: 30px;
-  max-width: 30px;
-  min-height: 20px;
-  overflow: hidden;
-  transition: transform 0.5s cubic-bezier(0, 1.4, 0, 2);
-}
+    input:active+.slider:before,
+    input:checked:active+.slider:before {
+      transform: translateX(10px);
+      width: 30px;
+    }
 
-/*
+    input:checked+.slider:before {
+      transform: translateX(28px);
+    }
+
+    .small-icon {
+      width: 120px;
+    }
+
+    .mid-icon {
+      width: 220px;
+    }
+
+    .big-icon {
+      width: 320px;
+    }
+
+    .-icon {
+      border-radius: 50%;
+      display: block;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .tab-window {
+      overflow: auto;
+    }
+
+    .tabs {
+      --shadow-bg-color: var(--secondary);
+      --active: hsl(225, 15%, 88%);
+      --hover: hsl(225, 10%, 84%);
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      text-align: left;
+      display: flex;
+      width: 100%;
+      min-height: 43px;
+      max-height: 43px;
+      padding: 2.5px;
+      border-radius: 0.5rem;
+      background: unset;
+      user-select: none;
+      cursor: pointer;
+      color: inherit;
+      background: unset;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dark .tabs {
+      background: unset;
+      --active: hsl(224, 4%, 20%);
+      --hover: hsl(224, 4%, 15.5%);
+    }
+
+
+    @media (min-width: 800px) {
+
+      .tabs:not(.opened-tab, .tabs:active):hover,
+      .dark .tabs:not(.opened-tab, .tabs:active):hover {
+        background: var(--hover);
+        --shadow-bg-color: var(--hover);
+      }
+    }
+
+    .tabs:active,
+    .dark .tabs:active {
+      background: var(--active);
+      --shadow-bg-color: var(--active);
+    }
+
+    .opened-tab,
+    .dark .opened-tab {
+      --shadow-bg-color: var(--active);
+      background: var(--active);
+    }
+
+    l
+
+    /* Tabs shadow is used so that if texts overflow they seamlessly blend into the background instead of creatnig ugly clipping effects */
+    .tabs-shadow-wrapper {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 35px;
+      display: flex;
+    }
+
+    .tabs-shadow {
+      background: linear-gradient(90deg, transparent, var(--shadow-bg-color) 70%);
+      padding: 5px;
+      flex-grow: 1;
+    }
+
+    .tabs:focus-visible {
+      outline: none;
+      border-color: black;
+    }
+
+    .dark .tabs:focus-visible {
+      border-color: white;
+    }
+
+    .tabs-icon,
+    .tabs-text {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .tabs-text {
+      text-wrap: nowrap;
+      width: 80%;
+      justify-content: left;
+    }
+
+    .tabs:active .tabs-icon {
+      transform: scale(0.8);
+    }
+
+    .tabs-icon {
+      font-size: 1.2rem;
+      min-width: 30px;
+      max-width: 30px;
+      min-height: 20px;
+      overflow: hidden;
+      transition: transform 0.5s cubic-bezier(0, 1.4, 0, 2);
+    }
+
+    /*
 .opened-tab:hover,
 .opened-tab,
 .opened-tab:active,
@@ -908,132 +909,132 @@ l
 }
 */
 
-@keyframes scale-in {
-  from {
-    transform: scale(95%);
-    opacity: 0.95;
-  }
+    @keyframes scale-in {
+      from {
+        transform: scale(95%);
+        opacity: 0.95;
+      }
 
-  to {
-    transform: scale(100%);
-    opacity: 1;
-  }
-}
+      to {
+        transform: scale(100%);
+        opacity: 1;
+      }
+    }
 
-@keyframes scale-out {
-  from {
-    transform: scale(100%);
-    opacity: 1;
-  }
+    @keyframes scale-out {
+      from {
+        transform: scale(100%);
+        opacity: 1;
+      }
 
-  to {
+      to {
 
-    transform: scale(95%);
-    opacity: 0.95;
-  }
-}
-
-
-/* New Tabs */
-.tab-window {
-  transition: opacity, visibility, scale;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  scale: 0.95;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: var(--d-1rem);
-}
-
-@media (max-width: 800px) {
-  .tab-window {
-    transition-delay: 0.25s;
-    transition-duration: 0.5s;
-  }
-}
+        transform: scale(95%);
+        opacity: 0.95;
+      }
+    }
 
 
-.tab-window-display {
-  scale: 1;
-  opacity: 1;
-  visibility: visible;
-}
+    /* New Tabs */
+    .tab-window {
+      transition: opacity, visibility, scale;
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(1, 0, 0, 1);
+      scale: 0.95;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: var(--d-1rem);
+    }
 
-.dropdown-menu {
-  position: relative;
-  background: var(--zen-front);
-  padding: var(--d-10px);
-  border-radius: var(--d-0-5rem);
-  user-select: none;
-}
+    @media (max-width: 800px) {
+      .tab-window {
+        transition-delay: 0.25s;
+        transition-duration: 0.5s;
+      }
+    }
 
-.dropdown-menu .dropdown-modal {
-  visibility: hidden;
-  position: absolute;
-  top: calc(100%);
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--d-10px);
-  background: var(--zen-front);
-  width: 100%;
-  animation: scale-out 1s;
-}
 
-.dropdown-menu:hover .dropdown-modal {
-  visibility: visible;
-  animation: scale-in 0.5s;
-}
+    .tab-window-display {
+      scale: 1;
+      opacity: 1;
+      visibility: visible;
+    }
 
-.dropdown-menu .dropdown-modal .dropdown-option {
-  background: var(--zen-front);
-}
+    .dropdown-menu {
+      position: relative;
+      background: var(--zen-front);
+      padding: var(--d-10px);
+      border-radius: var(--d-0-5rem);
+      user-select: none;
+    }
 
-.zen-sp {
-  background: linear-gradient(90deg, #7aa7fc, #e273ca);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+    .dropdown-menu .dropdown-modal {
+      visibility: hidden;
+      position: absolute;
+      top: calc(100%);
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--d-10px);
+      background: var(--zen-front);
+      width: 100%;
+      animation: scale-out 1s;
+    }
 
-.zen-back {
-  background: var(--zen-blue-back);
-}
+    .dropdown-menu:hover .dropdown-modal {
+      visibility: visible;
+      animation: scale-in 0.5s;
+    }
 
-.dark .zen-back {
-  background: var(--zen-dark-back);
-}
+    .dropdown-menu .dropdown-modal .dropdown-option {
+      background: var(--zen-front);
+    }
 
-.zen-front {
-  background: var(--zen-front);
-}
+    .zen-sp {
+      background: linear-gradient(90deg, #7aa7fc, #e273ca);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
 
-.dark .zen-front {
-  background: var(--zen-dark-front);
-}
+    .zen-back {
+      background: var(--zen-blue-back);
+    }
 
-.zen-front-con {
-  background: var(--zen-blue-con);
-}
+    .dark .zen-back {
+      background: var(--zen-dark-back);
+    }
 
-.dark .zen-front-con {
-  background: var(--zen-dark-con);
-}
+    .zen-front {
+      background: var(--zen-front);
+    }
 
-.shine-pre-container {
-  --shine-bg: #949494;
-  --shine-fg: #5a5a5a;
-  --shine-width: 60px;
-  --shine-height: 300%;
-  --shine-top: -200%;
-  --shine-start: -100px;
-  --shine-stop: 500px;
-  --shine-multiplication-value: 3;
-  --shine-start-function-value: calc(var(--shine-start) * var(--shine-multiplication-value));
-  --shine-stop-function-value: calc(var(--shine-stop) * var(--shine-multiplication-value));
-  --shine-anim-duration: 3.5s;
-  --shine-anim-delay: 2s;
-  /*
+    .dark .zen-front {
+      background: var(--zen-dark-front);
+    }
+
+    .zen-front-con {
+      background: var(--zen-blue-con);
+    }
+
+    .dark .zen-front-con {
+      background: var(--zen-dark-con);
+    }
+
+    .shine-pre-container {
+      --shine-bg: #949494;
+      --shine-fg: #5a5a5a;
+      --shine-width: 60px;
+      --shine-height: 300%;
+      --shine-top: -200%;
+      --shine-start: -100px;
+      --shine-stop: 500px;
+      --shine-multiplication-value: 3;
+      --shine-start-function-value: calc(var(--shine-start) * var(--shine-multiplication-value));
+      --shine-stop-function-value: calc(var(--shine-stop) * var(--shine-multiplication-value));
+      --shine-anim-duration: 3.5s;
+      --shine-anim-delay: 2s;
+      /*
   The reason I used multiplication is to ensure delays between each shine turn.
   I have set up bunch of variables instead of using directly property is to make sure
   anyone can easily edit the variable when implementing it to make it work anywhere.
@@ -1042,1319 +1043,1322 @@ l
   not be the case for every element.
   It is recommended to use this while defining `--shine-stop` variable style in the element itself.
   */
-  position: relative;
-  height: 100%;
-  width: 0;
-}
+      position: relative;
+      height: 100%;
+      width: 0;
+    }
 
-.shine-en-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: var(--shine-top);
-  left: var(--shine-start-function-value);
-  animation: shine-anim var(--shine-anim-duration) ease-in-out var(--shine-anim-delay) infinite;
-}
+    .shine-en-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: var(--shine-top);
+      left: var(--shine-start-function-value);
+      animation: shine-anim var(--shine-anim-duration) ease-in-out var(--shine-anim-delay) infinite;
+    }
 
-.shine-object-bg {
-  width: var(--shine-width);
-  height: var(--shine-height);
-  background: linear-gradient(90deg, transparent, var(--shine-bg) 50%, transparent);
-  display: flex;
-  flex-direction: column;
-  opacity: 0.25;
-  align-items: center;
-  transform: rotate(35deg);
-  padding-inline: 30px;
-}
+    .shine-object-bg {
+      width: var(--shine-width);
+      height: var(--shine-height);
+      background: linear-gradient(90deg, transparent, var(--shine-bg) 50%, transparent);
+      display: flex;
+      flex-direction: column;
+      opacity: 0.25;
+      align-items: center;
+      transform: rotate(35deg);
+      padding-inline: 30px;
+    }
 
-.shine-object-fg {
-  background: linear-gradient(90deg, transparent, var(--shine-fg), transparent);
-  opacity: 0.5;
-  width: 100%;
-  height: var(--shine-height);
-}
+    .shine-object-fg {
+      background: linear-gradient(90deg, transparent, var(--shine-fg), transparent);
+      opacity: 0.5;
+      width: 100%;
+      height: var(--shine-height);
+    }
 
-@keyframes shine-anim {
-  from {
-    left: var(--shine-start-function-value);
-  }
+    @keyframes shine-anim {
+      from {
+        left: var(--shine-start-function-value);
+      }
 
-  to {
-    left: var(--shine-stop-function-value);
-  }
-}
+      to {
+        left: var(--shine-stop-function-value);
+      }
+    }
 
-.select-text {
-  user-select: text;
-}
+    .select-text {
+      user-select: text;
+    }
 
-/*
+    /*
 Name: Mat Icon Animations
 Description: A set of reusable icon animation with variations
 for added customisation.
 */
-.bt-mat-icon-anim {
-  --bt-width: 36px;
-  --bt-height: 36px;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  width: var(--bt-width);
-  height: var(--bt-height);
-  --def-pos: 6px;
-  --snap-1: cubic-bezier(1, 0.08, 0, 1.2);
-  --snap-2: cubic-bezier(1, 0, 0, 1);
-  --def-transition-property: ease-in-out;
-  --def-transition-duration: 0.35s;
-}
+    .bt-mat-icon-anim {
+      --bt-width: 36px;
+      --bt-height: 36px;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      width: var(--bt-width);
+      height: var(--bt-height);
+      --def-pos: 6px;
+      --snap-1: cubic-bezier(1, 0.08, 0, 1.2);
+      --snap-2: cubic-bezier(1, 0, 0, 1);
+      --def-transition-property: ease-in-out;
+      --def-transition-duration: 0.35s;
+    }
 
-.bt-mat-icon-anim span {
-  position: absolute;
-  transition-property: top, bottom, left, right, opacity, scale, transform;
-  transition-duration: var(--def-transition-duration);
-  transition-timing-function: var(--def-transition-property);
-  transition-delay: 0s;
-  top: var(--def-pos);
-  left: var(--def-pos);
-}
+    .bt-mat-icon-anim span {
+      position: absolute;
+      transition-property: top, bottom, left, right, opacity, scale, transform;
+      transition-duration: var(--def-transition-duration);
+      transition-timing-function: var(--def-transition-property);
+      transition-delay: 0s;
+      top: var(--def-pos);
+      left: var(--def-pos);
+    }
 
-/*
+    /*
 Name: Icon Zoom
 Description: Displays mat-1 as default, on state button active scales and
 hides mat-1 into the background while scaling the mat-2 into the foreground.
 */
-.mat-icon-anim-zoom {
-  --def-transition-property: var(--snap-2);
-  --def-transition-duration: 0.2s;
-}
+    .mat-icon-anim-zoom {
+      --def-transition-property: var(--snap-2);
+      --def-transition-duration: 0.2s;
+    }
 
-.mat-icon-anim-zoom .mat-2 {
-  opacity: 0;
-  scale: 0;
-}
+    .mat-icon-anim-zoom .mat-2 {
+      opacity: 0;
+      scale: 0;
+    }
 
-.mat-icon-anim-zoom:not(:disabled):active .mat-1 {
-  opacity: 0;
-  scale: 0;
-}
+    .mat-icon-anim-zoom:not(:disabled):active .mat-1 {
+      opacity: 0;
+      scale: 0;
+    }
 
-.mat-icon-anim-zoom:not(:disabled):active .mat-2 {
-  scale: 1;
-  opacity: 1;
-}
+    .mat-icon-anim-zoom:not(:disabled):active .mat-2 {
+      scale: 1;
+      opacity: 1;
+    }
 
-/*
+    /*
 Name: Pos Shift-1
 Description: Shifts the position of mat-1 at button state active to
 above the button; hidden by overflow hidden. Shifts the position of
 mat-2 to def pos at button state active.
 */
 
-.mat-icon-pos-shift-1 {
-  --def-transition-property: var(--snap-1);
-}
+    .mat-icon-pos-shift-1 {
+      --def-transition-property: var(--snap-1);
+    }
 
-.mat-icon-pos-shift-1 .mat-2 {
-  top: var(--bt-height);
-}
+    .mat-icon-pos-shift-1 .mat-2 {
+      top: var(--bt-height);
+    }
 
-.mat-icon-pos-shift-1:not(:disabled):active .mat-1 {
-  top: -var(--bt-height);
-}
+    .mat-icon-pos-shift-1:not(:disabled):active .mat-1 {
+      top: -var(--bt-height);
+    }
 
-.mat-icon-pos-shift-1 .mat-2 {
-  top: var(--def-pos);
-}
+    .mat-icon-pos-shift-1 .mat-2 {
+      top: var(--def-pos);
+    }
 
-/*
+    /*
 Name: Fade and Rotate
 Description: Fades out the current icon while rotating it 180 degrees clockwise,
 and fades in the next icon while rotating it 180 degrees counterclockwise.
 */
-.mat-icon-fade-and-rotate {
-  --def-transition-property: ease-in-out;
-}
-
-.mat-icon-fade-and-rotate .mat-1,
-.mat-icon-fade-and-rotate .mat-2 {
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
-.mat-icon-fade-and-rotate .mat-2 {
-  opacity: 0;
-  transform: rotate(180deg);
-}
-
-.mat-icon-fade-and-rotate:active .mat-1 {
-  opacity: 0;
-  transform: rotate(180deg);
-}
-
-.mat-icon-fade-and-rotate:active .mat-2 {
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
-/* HTML elements */
-html {
-  font-family: sans-serif;
-  font-size: 16px;
-  scroll-behavior: smooth;
-  background: black;
-}
-
-body {
-  margin: 0;
-  background: var(--secondary);
-  height: 100%;
-  color: var(--text);
-}
-
-iframe {
-  border: none;
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-a {
-  color: #0086ff;
-}
-
-a:active {
-  color: #FF7900;
-}
-
-button {
-  border: none;
-  border-radius: 0.5rem;
-  padding: 5px;
-  user-select: none;
-  cursor: pointer;
-  font-size: inherit;
-  background: var(--button);
-  color: inherit;
-}
-
-button:focus-visible {
-  outline: auto;
-}
-
-button:active {
-  background: var(--button-active);
-}
-
-button:disabled {
-  cursor: not-allowed;
-  background: var(--button-disabled);
-  color: var(--text-lighter);
-}
-
-button.flat-button {
-  background: transparent;
-}
-
-button.flat-button:active {
-  background: var(--light-gray-accent);
-}
-
-.dark button.flat-button:active {
-  background: var(--dark-gray-accent);
-}
-
-input,
-select {
-  padding: 5px;
-  border-radius: 0.5rem;
-  border: none;
-  font-size: inherit;
-  background: white;
-  color: inherit;
-}
+    .mat-icon-fade-and-rotate {
+      --def-transition-property: ease-in-out;
+    }
+
+    .mat-icon-fade-and-rotate .mat-1,
+    .mat-icon-fade-and-rotate .mat-2 {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+
+    .mat-icon-fade-and-rotate .mat-2 {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+
+    .mat-icon-fade-and-rotate:active .mat-1 {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+
+    .mat-icon-fade-and-rotate:active .mat-2 {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+
+    /* HTML elements */
+    html {
+      font-family: sans-serif;
+      font-size: 16px;
+      scroll-behavior: smooth;
+      background: black;
+    }
+
+    body {
+      margin: 0;
+      background: var(--secondary);
+      height: 100%;
+      color: var(--text);
+    }
+
+    iframe {
+      border: none;
+    }
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    a {
+      color: #0086ff;
+    }
+
+    a:active {
+      color: #FF7900;
+    }
+
+    button {
+      border: none;
+      border-radius: 0.5rem;
+      padding: 5px;
+      user-select: none;
+      cursor: pointer;
+      font-size: inherit;
+      background: var(--button);
+      color: inherit;
+    }
+
+    button:focus-visible {
+      outline: auto;
+    }
+
+    button:active {
+      background: var(--button-active);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      background: var(--button-disabled);
+      color: var(--text-lighter);
+    }
+
+    button.flat-button {
+      background: transparent;
+    }
+
+    button.flat-button:active {
+      background: var(--light-gray-accent);
+    }
+
+    .dark button.flat-button:active {
+      background: var(--dark-gray-accent);
+    }
+
+    input,
+    select {
+      padding: 5px;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: inherit;
+      background: white;
+      color: inherit;
+    }
 
-.dark input,
-.dark select {
-  background: var(--zen-dark-front);
-  color: inherit;
-}
+    .dark input,
+    .dark select {
+      background: var(--zen-dark-front);
+      color: inherit;
+    }
 
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  background: transparent;
-  color: inherit;
-  transition: width 0s, height 0s;
-}
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      background: transparent;
+      color: inherit;
+      transition: width 0s, height 0s;
+    }
 
-@keyframes dialog-open {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 10%, 0);
-  }
+    @keyframes dialog-open {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 10%, 0);
+      }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
 
-@keyframes dialog-close {
-  from {
-    opacity: 1;
-    transform: scale(100%);
-  }
+    @keyframes dialog-close {
+      from {
+        opacity: 1;
+        transform: scale(100%);
+      }
 
-  to {
-    opacity: 0;
-    transform: scale(90%);
-  }
-}
+      to {
+        opacity: 0;
+        transform: scale(90%);
+      }
+    }
 
-dialog {
-  background: var(--zen-front);
-  border: none;
-  border-radius: var(--d-round1);
-  color: inherit;
-  transition: opacity ease-out, transform ease-out, overlay ease-out allow-discrete, display ease-out allow-discrete;
-  transition-duration: 0.5s;
-  animation: dialog-close 0.5s;
-}
+    dialog {
+      background: var(--zen-front);
+      border: none;
+      border-radius: var(--d-round1);
+      color: inherit;
+      transition: opacity ease-out, transform ease-out, overlay ease-out allow-discrete, display ease-out allow-discrete;
+      transition-duration: 0.5s;
+      animation: dialog-close 0.5s;
+    }
 
-.dark dialog {
-  background: var(--zen-dark-front);
-  color: inherit;
-}
-
-dialog::backdrop {
-  background: black;
-  opacity: 0.5;
-}
-
-dialog[open] {
-  animation: dialog-open 0.5s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* zen Ui Styles */
-.zen-ui-i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-
-.zen-ui button {
-  border-radius: 100px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: inherit;
-  padding: var(--d-gap20);
-}
-
-.zen-ui-chi button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  padding: var(--d-gap20);
-  border-radius: var(--d-0-5rem);
-}
-
-.zen-ui-psubo {
-  background: var(--blue-lighter);
-  user-select: none;
-  cursor: pointer;
-}
-
-.dark .zen-ui-psubo {
-  background: var(--flawed-blue);
-}
-
-.zen-ui-psubo:active {
-  background: var(--blue-400);
-}
-
-.zen-title {
-  display: inline-flex;
-  align-items: center;
-  height: 40px;
-}
-
-.zen-title h1 {
-  font-size: 2rem;
-  margin-block: 0;
-}
-
-.zen-pallete-pastel-dessert {
-  --hot-pink: #FFAEBC;
-  --tiffany-blue: #A0E7E5;
-  --mint: #B4F8C8;
-  --dessert: #FBE7C6;
-}
-
-.zen-pallete-mystic {
-  --cinder: #0B0B12;
-  --biloba-flower: #AAB3EC;
-  --kimberly: #7267A2;
-  --cannon-pink: #914A64;
-}
-
-.zen-pallete-twilight-spec {
-  --periwinkle-gray: #CAD5EC;
-  --ebony: #0C0B20;
-  --gigas: #4A41B2;
-  --wild-blue-yonder: #8187AF;
-}
-
-.zen-pallete-midnight-ser {
-  --bunting: #17224b;
-  --san-marino: #415DA9;
-  --cold-purple: #B0B0E4;
-  --havelock-blue: #6E93E1;
-}
-
-@media (min-width: 800px) {
-  .zen-ui button:hover {
-    background: var(--accent);
-  }
-
-  .zen-ui-psubo:hover {
-    background: var(--blue-light);
-  }
-
-  .dark .zen-ui-psubo:hover {
-    background: var(--flawn-blue);
-  }
-
-  .zen-ui-psubo:hover {
-    background: var(--blue-light);
-  }
-
-  .dark .zen-ui-psubo:hover {
-    background: var(--flawn-blue);
-  }
-}
-
-@media (max-width: 800px) {
-  .zen-title h1 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 300px) {
-  .zen-title h1 {
-    font-size: 0.8rem;
-  }
-}
-
-.zen-ui button:active {
-  background: var(--primary);
-}
-
-.zen-ui button:disabled,
-.dark .zen-ui button:disabled {
-  background: transparent;
-}
-
-.dark .zen-ui button:disabled {
-  background: transparent;
-}
-
-/* Animations */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes scale-fade-in {
-  from {
-    opacity: 0;
-    scale: 0;
-  }
-
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-@keyframes scale-fade-out {
-  from {
-    opacity: 1;
-    scale: 1;
-  }
-
-  to {
-    opacity: 0;
-    scale: 0;
-  }
-}
-
-.material-symbols-rounded {
-  font-variation-settings: 'FILL' 1;
-}
-
-@font-face {
-  font-family: 'Material Symbols Rounded';
-  src: url(mat-font.woff2) format('woff2');
-}
-
-button.flat-button {
-  background: transparent;
-}
-
-button.flat-button:active {
-  background: var(--light-gray-accent);
-}
-
-.dark button.flat-button:active {
-  background: var(--dark-gray-accent);
-}
-
-html,
-body,
-.main-body {
-  height: 100dvh;
-  overflow: hidden;
-  transition: 0s;
-}
-
-@keyframes main-pop {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.main-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-  padding: var(--d-10px);
-  overflow: auto;
-}
-
-.main-wint-body {
-  display: flex;
-  height: 100%;
-}
-
-.main-header {
-  padding: 10px;
-  padding-bottom: 0;
-  text-align: right;
-}
-
-.main-header button {
-  padding: 0;
-  height: 34px;
-  width: 34px;
-  font-size: 1.2rem;
-}
-
-.main-header .side-drawer-header {
-  display: none;
-  float: left;
-}
-
-.main-wint-body {
-  display: flex;
-}
-
-.side-menu-container {
-  display: flex;
-}
-
-.side-menu-drawer {
-  display: flex;
-  flex-direction: column;
-}
-
-.side-menu-container-button {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  z-index: 2;
-  width: 0;
-}
-
-.side-menu-drawer button {
-  opacity: 0.3;
-  background: transparent !important;
-  transition: opacity, padding, transform;
-  transition-duration: 0.3s;
-  display: flex;
-}
-
-.side-menu-drawer button:active {
-  transform: scale(1.2);
-}
-
-.side-menu-drawer button .close {
-  display: none;
-}
-
-.side-menu-drawer button:hover {
-  padding-inline: 15px;
-  opacity: 1;
-}
-
-.side-menu {
-  --width: 250px;
-  width: var(--width);
-  max-width: var(--width);
-  transition: width 0.35s;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background: var(--secondary);
-}
-
-.side-menu-wrapper {
-  flex-grow: 1;
-  padding: 10px;
-  padding-left: 0;
-  overflow-y: auto;
-}
-
-.side-menu-wrapper-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.side-menu-wrapper-wrapper section {
-  display: flex;
-  flex-direction: column;
-}
-
-/*.side-menu-wrapper button, .dark .side-menu-wrapper button {
+    .dark dialog {
+      background: var(--zen-dark-front);
+      color: inherit;
+    }
+
+    dialog::backdrop {
+      background: black;
+      opacity: 0.5;
+    }
+
+    dialog[open] {
+      animation: dialog-open 0.5s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* zen Ui Styles */
+    .zen-ui-i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .zen-ui button {
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: inherit;
+      padding: var(--d-gap20);
+    }
+
+    .zen-ui-chi button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: inherit;
+      padding: var(--d-gap20);
+      border-radius: var(--d-0-5rem);
+    }
+
+    .zen-ui-psubo {
+      background: var(--blue-lighter);
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .dark .zen-ui-psubo {
+      background: var(--flawed-blue);
+    }
+
+    .zen-ui-psubo:active {
+      background: var(--blue-400);
+    }
+
+    .zen-title {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+    }
+
+    .zen-title h1 {
+      font-size: 2rem;
+      margin-block: 0;
+    }
+
+    .zen-pallete-pastel-dessert {
+      --hot-pink: #FFAEBC;
+      --tiffany-blue: #A0E7E5;
+      --mint: #B4F8C8;
+      --dessert: #FBE7C6;
+    }
+
+    .zen-pallete-mystic {
+      --cinder: #0B0B12;
+      --biloba-flower: #AAB3EC;
+      --kimberly: #7267A2;
+      --cannon-pink: #914A64;
+    }
+
+    .zen-pallete-twilight-spec {
+      --periwinkle-gray: #CAD5EC;
+      --ebony: #0C0B20;
+      --gigas: #4A41B2;
+      --wild-blue-yonder: #8187AF;
+    }
+
+    .zen-pallete-midnight-ser {
+      --bunting: #17224b;
+      --san-marino: #415DA9;
+      --cold-purple: #B0B0E4;
+      --havelock-blue: #6E93E1;
+    }
+
+    @media (min-width: 800px) {
+      .zen-ui button:hover {
+        background: var(--accent);
+      }
+
+      .zen-ui-psubo:hover {
+        background: var(--blue-light);
+      }
+
+      .dark .zen-ui-psubo:hover {
+        background: var(--flawn-blue);
+      }
+
+      .zen-ui-psubo:hover {
+        background: var(--blue-light);
+      }
+
+      .dark .zen-ui-psubo:hover {
+        background: var(--flawn-blue);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .zen-title h1 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 300px) {
+      .zen-title h1 {
+        font-size: 0.8rem;
+      }
+    }
+
+    .zen-ui button:active {
+      background: var(--primary);
+    }
+
+    .zen-ui button:disabled,
+    .dark .zen-ui button:disabled {
+      background: transparent;
+    }
+
+    .dark .zen-ui button:disabled {
+      background: transparent;
+    }
+
+    /* Animations */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-out {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes scale-fade-in {
+      from {
+        opacity: 0;
+        scale: 0;
+      }
+
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    @keyframes scale-fade-out {
+      from {
+        opacity: 1;
+        scale: 1;
+      }
+
+      to {
+        opacity: 0;
+        scale: 0;
+      }
+    }
+
+    .material-symbols-rounded {
+      font-variation-settings: 'FILL' 1;
+    }
+
+    @font-face {
+      font-family: 'Material Symbols Rounded';
+      src: url(mat-font.woff2) format('woff2');
+    }
+
+    button.flat-button {
+      background: transparent;
+    }
+
+    button.flat-button:active {
+      background: var(--light-gray-accent);
+    }
+
+    .dark button.flat-button:active {
+      background: var(--dark-gray-accent);
+    }
+
+    html,
+    body,
+    .main-body {
+      height: 100dvh;
+      overflow: hidden;
+      transition: 0s;
+    }
+
+    @keyframes main-pop {
+      from {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    .main-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: var(--d-10px);
+      overflow: auto;
+    }
+
+    .main-wint-body {
+      display: flex;
+      height: 100%;
+    }
+
+    .main-header {
+      padding: 10px;
+      padding-bottom: 0;
+      text-align: right;
+    }
+
+    .main-header button {
+      padding: 0;
+      height: 34px;
+      width: 34px;
+      font-size: 1.2rem;
+    }
+
+    .main-header .side-drawer-header {
+      display: none;
+      float: left;
+    }
+
+    .main-wint-body {
+      display: flex;
+    }
+
+    .side-menu-container {
+      display: flex;
+    }
+
+    .side-menu-drawer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-menu-container-button {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      z-index: 2;
+      width: 0;
+    }
+
+    .side-menu-drawer button {
+      opacity: 0.3;
+      background: transparent !important;
+      transition: opacity, padding, transform;
+      transition-duration: 0.3s;
+      display: flex;
+    }
+
+    .side-menu-drawer button:active {
+      transform: scale(1.2);
+    }
+
+    .side-menu-drawer button .close {
+      display: none;
+    }
+
+    .side-menu-drawer button:hover {
+      padding-inline: 15px;
+      opacity: 1;
+    }
+
+    .side-menu {
+      --width: 250px;
+      width: var(--width);
+      max-width: var(--width);
+      transition: width 0.35s;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--secondary);
+    }
+
+    .side-menu-wrapper {
+      flex-grow: 1;
+      padding: 10px;
+      padding-left: 0;
+      overflow-y: auto;
+    }
+
+    .side-menu-wrapper-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .side-menu-wrapper-wrapper section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*.side-menu-wrapper button, .dark .side-menu-wrapper button {
         background: transparent;
       }*/
 
-.side-menu-collapse .side-menu {
-  width: 0;
-}
-
-.side-menu-collapse .side-menu-drawer button {
-  transform: scale(-1);
-}
-
-@media (max-width: 800px) {
-  .side-menu-wrapper {
-    padding-left: 10px;
-    width: unset;
-  }
-
-  .main-header .side-drawer-header {
-    display: inline-block;
-  }
-
-  .side-menu-container {
-    position: fixed;
-    width: 0;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: none;
-    z-index: 2;
-  }
-
-  .side-menu-drawer button .arrow {
-    display: none;
-  }
-
-  .side-menu-collapse .side-menu-drawer button,
-  .side-menu-collapse .side-menu-drawer button .close {
-    font-size: 2rem;
-    display: block;
-    opacity: 1;
-  }
-
-  .side-menu-collapse .side-menu-container-button {
-    align-items: start;
-  }
-
-  @media (max-width: 800px) {
-    .side-menu-container-button {
+    .side-menu-collapse .side-menu {
       width: 0;
     }
-  }
-
-  .side-menu-collapse .side-menu-drawer button {
-    padding: var(--d-20px);
-  }
-
-  .side-menu-collapse .side-menu-container {
-    width: 100%;
-  }
-
-  .side-menu-collapse .backdrop {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .side-menu {
-    width: 0;
-  }
-
-  .side-menu-collapse .side-menu-container .side-menu-drawer button {
-    color: var(--font-color-white);
-  }
-
-  .side-menu-collapse .side-menu-drawer {
-    flex: 1;
-  }
-
-  .side-menu-collapse .side-menu {
-    width: 100%;
-  }
-
-  .side-menu-collapse .side-menu-container-button {
-    position: static;
-    flex: 1;
-  }
-
-  #menu-drawer {
-    transform: scale(0);
-  }
-
-  .side-menu-collapse #menu-drawer {
-    transform: scale(1);
-  }
-}
-
-.search-bar {
-  display: flex;
-  padding: 10px;
-  border-radius: var(--d-2rem);
-  background: var(--cool-platinum);
-}
-
-.search-bar input {
-  background: none;
-}
-
-#tabsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: relative;
-  flex-grow: 1;
-  overflow-x: auto;
-}
-
-#custom-chats {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: relative;
-}
-
-.for-custom-chat {
-  width: 90px;
-}
-
-.tab-window {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.window-panel {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  position: relative;
-}
-
-@keyframes page-intro {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes page-load-shadow-animation {
-
-  0%,
-  100% {
-    box-shadow: inset 0px 0px 4rem 1.5rem #00000041;
-  }
-
-  20% {
-    box-shadow: inset 0px 0px 4rem 1.2rem #eb78a841;
-  }
-
-  40% {
-    box-shadow: inset 0px 0px 4rem 0.8rem #ebd67841;
-  }
-
-  60% {
-    box-shadow: inset 0px 0px 4rem 1rem #4d68ff41;
-  }
-
-  80% {
-    box-shadow: inset 0px 0px 4rem 1.2rem #128b5941;
-  }
-
-  90% {
-    box-shadow: inset 0px 0px 4rem 1.5rem #ffe60041;
-  }
-}
-
-@keyframes page-load-bar-animation {
-  from {
-    left: -100%;
-  }
-
-  to {
-    left: 120%;
-  }
-}
-
-@keyframes page-load-close {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.page-load {
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  transition: opacity 1s;
-  visibility: visible;
-}
-
-.page-load[closed] {
-  opacity: 0;
-}
-
-.page-wrapper {
-  width: 100%;
-  transition: inherit;
-  text-align: center;
-  justify-content: center;
-  padding: 10px;
-  overflow: auto;
-  text-wrap: wrap;
-  animation: page-intro 1s;
-  transition: 0s;
-  margin-bottom: 15vh;
-}
-
-.page-load[closed],
-.page-load[closed] .page-wrapper,
-.page-load[closed] .page-wrapper * {
-  opacity: 0;
-  visibility: hidden;
-  animation: page-load-close 1s;
-}
-
-.page-load[sealed],
-.page-load[sealed] * {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.page-wrapper * {
-  margin: 0 auto;
-}
-
-.page-wrapper h1 {
-  font-size: 5em;
-  height: auto;
-  text-wrap: wrap;
-  word-break: break-all;
-  transition: 1s;
-}
-
-.page-load-shadow {
-  animation: page-load-shadow-animation 15s infinite;
-}
-
-.page-load-indication {
-  position: relative;
-  height: 10px;
-  width: 100%;
-  max-width: 250px;
-  margin-block: 8px;
-  border-radius: 10rem;
-  overflow: hidden;
-  background: #18181852;
-}
-
-.dark .page-load-indication {
-  background: #181818;
-}
-
-.page-load-indication-bar {
-  height: 100%;
-  width: 40%;
-  border-radius: 10rem;
-  background: #0e86ff;
-  animation: page-load-bar-animation 1s infinite !important;
-}
-
-@media (max-width: 800px) {
-  .page-wrapper {
-    font-size: 15px;
-  }
-
-  .page-wrapper h1 {
-    font-size: 40px;
-    word-break: unset;
-  }
-
-  .page-load-indication {
-    max-width: 70%;
-  }
-}
-
-header button {
-  overflow: hidden;
-  position: relative;
-  width: 34px;
-  height: 34px;
-  --def-span-pos: 5px;
-  --def-mid: 17px;
-}
-
-header button:not(.side-drawer-header) span {
-  position: absolute;
-  transition-property: top, bottom;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(1, 0.08, 0, 1.2);
-  top: var(--def-span-pos);
-}
-
-.darkmode-button span.light-mode {
-  top: 34px;
-}
-
-.darkmode-button:active span.light-mode,
-.dark .darkmode-button:active span.light-mode {
-  top: 20px;
-}
-
-.darkmode-button:active span.dark-mode,
-.dark .darkmode-button:active span.dark-mode {
-  top: -10px;
-}
-
-.dark .darkmode-button span.dark-mode {
-  top: -34px;
-}
-
-.dark .darkmode-button span.light-mode {
-  top: var(--def-span-pos);
-}
-
-header button span.close-fullscreen,
-header button span.open-fullscreen {
-  transition-property: opacity, scale;
-  transition-duration: 0.35s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.08s;
-}
-
-.in-fullscreen .open-fullscreen,
-.close-fullscreen {
-  opacity: 0;
-}
-
-.in-fullscreen .close-fullscreen {
-  opacity: 1;
-}</style>
-  <style>.aimg-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.aimg-output-container {
-  flex-grow: 1;
-  overflow: auto;
-  position: relative;
-}
-
-@keyframes aimg-block-load {
-  from {
-    transform: scale(0.6);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.aimg-output-block {
-  transition: height 0.2s;
-  display: inline-block;
-  overflow: hidden;
-  animation: aimg-block-load 0.8s cubic-bezier(1, 0, 0, 1) 1;
-}
-
-#aimg-output {
-  padding: var(--d-10px);
-  flex: 1;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--d-1rem);
-  transition: gap 0.4s cubic-bezier(1, 0, 0, 1);
-  transition-delay: 0.3s;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  grid-row-gap: 100px;
-}
-
-#aimg-outputs-shadow {
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  --tensra: 90%;
-  background: linear-gradient(transparent, var(--shadow-color) var(--tensra));
-}
-
-#aimg[aimg-state-running] #aimg-outputs-shadow {
-  height: 40px;
-}
-
-.aimg-img {
-  display: inline-block;
-  border-radius: 1rem;
-}
-
-.aimg-output-twiga {
-  justify-content: center;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-#aimg[aimg-state-running] .aimg-output-twiga {
-  margin-bottom: 10px;
-}
-
-.aimg-output-en-twiga {
-  display: flex;
-  justify-content: center;
-}
-
-.aimg-output-en-twiga div {
-  flex: 1;
-  display: flex;
-}
-
-.aimg-output-en-twiga button {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.aimg-output-en-twiga button span {
-  margin-right: 5px;
-}
-
-.aimg-output-flow-countdown-span {
-  height: 0;
-  overflow: hidden;
-  margin-block: 0;
-  transition-property: height, margin;
-  transition-duration: 0.5s;
-}
-
-#aimg[aimg-state-auto-flow] .aimg-output-flow-countdown-span {
-  height: 18px;
-  margin-block: 10px;
-}
-
-#aimg-output-twiga-id {
-  /*height: 0;*/
-  overflow: hidden;
-}
-
-#aimg[aimg-state-running] #aimg-output-twiga-id {
-  height: 120px;
-}
-
-#aimg[aimg-state-auto-flow] .auto-creation-button,
-#aimg .stop-auto-creation-button {
-  display: none;
-}
-
-#aimg[aimg-state-auto-flow] .stop-auto-creation-button {
-  display: flex;
-}
-
-#aimg .stop-auto-creation-button {
-  color: #f53131;
-}
-
-.dark #aimg .stop-auto-creation-button {
-  color: #ff5e5e;
-}
-
-.aimg-output-twiga .aimg-output-vr {
-  border-left: 1px solid;
-  height: 30px;
-  margin-inline: 10px;
-}
-
-.aimg-output-twiga .aimg-output-vr {
-  border-color: var(--light-gray-accent);
-}
-
-.dark .aimg-output-twiga .aimg-output-vr {
-  border-color: var(--dark-gray-accent);
-}
-
-.aimg-prompt-pre-wrapper {
-  padding: var(--d-10px);
-  display: flex;
-  justify-content: center;
-}
-
-.aimg-prompt-wrapper {
-  max-width: 700px;
-  width: 100%;
-  border-radius: 1rem;
-  overflow: hidden;
-  border: 1px solid var(--accent);
-}
-
-.dark .aimg-prompt-wrapper {
-  border-color: var(--dark-gray-accent);
-}
-
-.aimg-prompt {
-  position: relative;
-  display: flex;
-}
-
-.aimg-textarea-wrapper {
-  flex-grow: 1;
-  display: flex;
-}
-
-.aimg-prompt textarea {
-  resize: none;
-  flex-grow: 1;
-  padding: 10px;
-  padding-right: 58px;
-  transition: 0.5s, color 0s;
-  height: 36px;
-  text-align: justify;
-}
-
-.aimg-button-wrapper {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.aimg-prompt-overlay {
-  background: transparent;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.aimg-close-extra:active,
-.dark .aimg-close-extra:active {
-  background: transparent;
-}
-
-.aimg-toggle-bg-quick:hover {
-  background: #18181840;
-}
-
-.dark .aimg-toggle-bg-quick:hover {
-  background: #3a3e42bb;
-}
-
-.aimg-toggle .aimg-prompt-overlay {
-  display: none;
-}
-
-#aimg:not(.aimg-toggle) .aimg-prompt textarea {
-  overflow-y: hidden;
-  margin-right: var(--d-10px);
-}
-
-.aimg-toggle .aimg-prompt textarea {
-  height: 120px;
-}
-
-.aimg-toggle .aimg-output-overlay {
-  background: #18181840;
-}
-
-.aimg-prompt-extra {
-  height: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  --def-value: 8px;
-}
-
-.aimg-toggle .aimg-prompt-extra {
-  height: 50vh;
-  position: relative;
-}
-
-.aimg-extra-wrapper {
-  flex-grow: 1;
-  overflow-y: auto;
-}
-
-.aimg-extra-wrapper-wrapper {
-  padding: var(--def-value);
-  padding-bottom: 0;
-  gap: var(--def-value);
-}
-
-.aimg-extra-wrapper-wrapper input,
-.aimg-extra-wrapper-wrapper select,
-.aimg-extra-wrapper-wrapper textarea {
-  padding: var(--def-value);
-  background: #c5cbcc75;
-  background: #f6f9fb;
-}
-
-.dark .aimg-extra-wrapper-wrapper input,
-.dark .aimg-extra-wrapper-wrapper select,
-.dark .aimg-extra-wrapper-wrapper textarea {
-  background: #38393fa6;
-  background: #1d1d1d;
-}
-
-.aimg-extra-opt-card {
-  padding: var(--def-value);
-  border-radius: var(--def-value);
-  background: #eaeef0;
-  background: #dbdfe2;
-}
-
-.dark .aimg-extra-opt-card {
-  background: #343436;
-}
-
-.aimg-extra-opt-label {
-  text-align: left;
-  font-size: 12px;
-  margin-bottom: var(--def-value);
-  user-select: none;
-  font-weight: 700;
-  background: transparent;
-}
-
-.aimg-extra-opt-card .aimg-extra-opts {
-  display: flex;
-}
-
-.aimg-extra-opt-card .aimg-extra-opts input,
-.aimg-extra-opt-card .aimg-extra-opts select,
-.aimg-extra-opt-card .aimg-extra-opts textarea {
-  padding: var(--def-value);
-  width: 100%;
-  border-radius: var(--def-value);
-}
-
-.aimg-close-extra,
-.dark .aimg-close-extra {
-  background: transparent;
-  height: 20px;
-  transition: background 0.5s;
-  padding: var(--def-value);
-  border-radius: 0.5rem;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  flex: 1;
-}
-
-.aimg-extra-hr {
-  margin-top: var(--def-value);
-  border-bottom: 1px solid;
-  border-color: var(--light-gray-accent);
-}
-
-.aimg-extra-vr {
-  border-left: 1px solid;
-  border-color: var(--light-gray-accent);
-}
-
-.dark .aimg-extra-hr,
-.dark .aimg-extra-vr {
-  border-color: var(--dark-gray-accent);
-}</style>
+
+    .side-menu-collapse .side-menu-drawer button {
+      transform: scale(-1);
+    }
+
+    @media (max-width: 800px) {
+      .side-menu-wrapper {
+        padding-left: 10px;
+        width: unset;
+      }
+
+      .main-header .side-drawer-header {
+        display: inline-block;
+      }
+
+      .side-menu-container {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: none;
+        z-index: 2;
+      }
+
+      .side-menu-drawer button .arrow {
+        display: none;
+      }
+
+      .side-menu-collapse .side-menu-drawer button,
+      .side-menu-collapse .side-menu-drawer button .close {
+        font-size: 2rem;
+        display: block;
+        opacity: 1;
+      }
+
+      .side-menu-collapse .side-menu-container-button {
+        align-items: start;
+      }
+
+      @media (max-width: 800px) {
+        .side-menu-container-button {
+          width: 0;
+        }
+      }
+
+      .side-menu-collapse .side-menu-drawer button {
+        padding: var(--d-20px);
+      }
+
+      .side-menu-collapse .side-menu-container {
+        width: 100%;
+      }
+
+      .side-menu-collapse .backdrop {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .side-menu {
+        width: 0;
+      }
+
+      .side-menu-collapse .side-menu-container .side-menu-drawer button {
+        color: var(--font-color-white);
+      }
+
+      .side-menu-collapse .side-menu-drawer {
+        flex: 1;
+      }
+
+      .side-menu-collapse .side-menu {
+        width: 100%;
+      }
+
+      .side-menu-collapse .side-menu-container-button {
+        position: static;
+        flex: 1;
+      }
+
+      #menu-drawer {
+        transform: scale(0);
+      }
+
+      .side-menu-collapse #menu-drawer {
+        transform: scale(1);
+      }
+    }
+
+    .search-bar {
+      display: flex;
+      padding: 10px;
+      border-radius: var(--d-2rem);
+      background: var(--cool-platinum);
+    }
+
+    .search-bar input {
+      background: none;
+    }
+
+    #tabsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: relative;
+      flex-grow: 1;
+      overflow-x: auto;
+    }
+
+    #custom-chats {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: relative;
+    }
+
+    .for-custom-chat {
+      width: 90px;
+    }
+
+    .tab-window {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .window-panel {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      position: relative;
+    }
+
+    @keyframes page-intro {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes page-load-shadow-animation {
+
+      0%,
+      100% {
+        box-shadow: inset 0px 0px 4rem 1.5rem #00000041;
+      }
+
+      20% {
+        box-shadow: inset 0px 0px 4rem 1.2rem #eb78a841;
+      }
+
+      40% {
+        box-shadow: inset 0px 0px 4rem 0.8rem #ebd67841;
+      }
+
+      60% {
+        box-shadow: inset 0px 0px 4rem 1rem #4d68ff41;
+      }
+
+      80% {
+        box-shadow: inset 0px 0px 4rem 1.2rem #128b5941;
+      }
+
+      90% {
+        box-shadow: inset 0px 0px 4rem 1.5rem #ffe60041;
+      }
+    }
+
+    @keyframes page-load-bar-animation {
+      from {
+        left: -100%;
+      }
+
+      to {
+        left: 120%;
+      }
+    }
+
+    @keyframes page-load-close {
+      from {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .page-load {
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      transition: opacity 1s;
+      visibility: visible;
+    }
+
+    .page-load[closed] {
+      opacity: 0;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      transition: inherit;
+      text-align: center;
+      justify-content: center;
+      padding: 10px;
+      overflow: auto;
+      text-wrap: wrap;
+      animation: page-intro 1s;
+      transition: 0s;
+      margin-bottom: 15vh;
+    }
+
+    .page-load[closed],
+    .page-load[closed] .page-wrapper,
+    .page-load[closed] .page-wrapper * {
+      opacity: 0;
+      visibility: hidden;
+      animation: page-load-close 1s;
+    }
+
+    .page-load[sealed],
+    .page-load[sealed] * {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .page-wrapper * {
+      margin: 0 auto;
+    }
+
+    .page-wrapper h1 {
+      font-size: 5em;
+      height: auto;
+      text-wrap: wrap;
+      word-break: break-all;
+      transition: 1s;
+    }
+
+    .page-load-shadow {
+      animation: page-load-shadow-animation 15s infinite;
+    }
+
+    .page-load-indication {
+      position: relative;
+      height: 10px;
+      width: 100%;
+      max-width: 250px;
+      margin-block: 8px;
+      border-radius: 10rem;
+      overflow: hidden;
+      background: #18181852;
+    }
+
+    .dark .page-load-indication {
+      background: #181818;
+    }
+
+    .page-load-indication-bar {
+      height: 100%;
+      width: 40%;
+      border-radius: 10rem;
+      background: #0e86ff;
+      animation: page-load-bar-animation 1s infinite !important;
+    }
+
+    @media (max-width: 800px) {
+      .page-wrapper {
+        font-size: 15px;
+      }
+
+      .page-wrapper h1 {
+        font-size: 40px;
+        word-break: unset;
+      }
+
+      .page-load-indication {
+        max-width: 70%;
+      }
+    }
+
+    header button {
+      overflow: hidden;
+      position: relative;
+      width: 34px;
+      height: 34px;
+      --def-span-pos: 5px;
+      --def-mid: 17px;
+    }
+
+    header button:not(.side-drawer-header) span {
+      position: absolute;
+      transition-property: top, bottom;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(1, 0.08, 0, 1.2);
+      top: var(--def-span-pos);
+    }
+
+    .darkmode-button span.light-mode {
+      top: 34px;
+    }
+
+    .darkmode-button:active span.light-mode,
+    .dark .darkmode-button:active span.light-mode {
+      top: 20px;
+    }
+
+    .darkmode-button:active span.dark-mode,
+    .dark .darkmode-button:active span.dark-mode {
+      top: -10px;
+    }
+
+    .dark .darkmode-button span.dark-mode {
+      top: -34px;
+    }
+
+    .dark .darkmode-button span.light-mode {
+      top: var(--def-span-pos);
+    }
+
+    header button span.close-fullscreen,
+    header button span.open-fullscreen {
+      transition-property: opacity, scale;
+      transition-duration: 0.35s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.08s;
+    }
+
+    .in-fullscreen .open-fullscreen,
+    .close-fullscreen {
+      opacity: 0;
+    }
+
+    .in-fullscreen .close-fullscreen {
+      opacity: 1;
+    }
+  </style>
+  <style>
+    .aimg-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .aimg-output-container {
+      flex-grow: 1;
+      overflow: auto;
+      position: relative;
+    }
+
+    @keyframes aimg-block-load {
+      from {
+        transform: scale(0.6);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .aimg-output-block {
+      transition: height 0.2s;
+      display: inline-block;
+      overflow: hidden;
+      animation: aimg-block-load 0.8s cubic-bezier(1, 0, 0, 1) 1;
+    }
+
+    #aimg-output {
+      padding: var(--d-10px);
+      flex: 1;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--d-1rem);
+      transition: gap 0.4s cubic-bezier(1, 0, 0, 1);
+      transition-delay: 0.3s;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+      grid-row-gap: 100px;
+    }
+
+    #aimg-outputs-shadow {
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      --tensra: 90%;
+      background: linear-gradient(transparent, var(--shadow-color) var(--tensra));
+    }
+
+    #aimg[aimg-state-running] #aimg-outputs-shadow {
+      height: 40px;
+    }
+
+    .aimg-img {
+      display: inline-block;
+      border-radius: 1rem;
+    }
+
+    .aimg-output-twiga {
+      justify-content: center;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    #aimg[aimg-state-running] .aimg-output-twiga {
+      margin-bottom: 10px;
+    }
+
+    .aimg-output-en-twiga {
+      display: flex;
+      justify-content: center;
+    }
+
+    .aimg-output-en-twiga div {
+      flex: 1;
+      display: flex;
+    }
+
+    .aimg-output-en-twiga button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .aimg-output-en-twiga button span {
+      margin-right: 5px;
+    }
+
+    .aimg-output-flow-countdown-span {
+      height: 0;
+      overflow: hidden;
+      margin-block: 0;
+      transition-property: height, margin;
+      transition-duration: 0.5s;
+    }
+
+    #aimg[aimg-state-auto-flow] .aimg-output-flow-countdown-span {
+      height: 18px;
+      margin-block: 10px;
+    }
+
+    #aimg-output-twiga-id {
+      /*height: 0;*/
+      overflow: hidden;
+    }
+
+    #aimg[aimg-state-running] #aimg-output-twiga-id {
+      height: 120px;
+    }
+
+    #aimg[aimg-state-auto-flow] .auto-creation-button,
+    #aimg .stop-auto-creation-button {
+      display: none;
+    }
+
+    #aimg[aimg-state-auto-flow] .stop-auto-creation-button {
+      display: flex;
+    }
+
+    #aimg .stop-auto-creation-button {
+      color: #f53131;
+    }
+
+    .dark #aimg .stop-auto-creation-button {
+      color: #ff5e5e;
+    }
+
+    .aimg-output-twiga .aimg-output-vr {
+      border-left: 1px solid;
+      height: 30px;
+      margin-inline: 10px;
+    }
+
+    .aimg-output-twiga .aimg-output-vr {
+      border-color: var(--light-gray-accent);
+    }
+
+    .dark .aimg-output-twiga .aimg-output-vr {
+      border-color: var(--dark-gray-accent);
+    }
+
+    .aimg-prompt-pre-wrapper {
+      padding: var(--d-10px);
+      display: flex;
+      justify-content: center;
+    }
+
+    .aimg-prompt-wrapper {
+      max-width: 700px;
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 1px solid var(--accent);
+    }
+
+    .dark .aimg-prompt-wrapper {
+      border-color: var(--dark-gray-accent);
+    }
+
+    .aimg-prompt {
+      position: relative;
+      display: flex;
+    }
+
+    .aimg-textarea-wrapper {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    .aimg-prompt textarea {
+      resize: none;
+      flex-grow: 1;
+      padding: 10px;
+      padding-right: 58px;
+      transition: 0.5s, color 0s;
+      height: 36px;
+      text-align: justify;
+    }
+
+    .aimg-button-wrapper {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .aimg-prompt-overlay {
+      background: transparent;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .aimg-close-extra:active,
+    .dark .aimg-close-extra:active {
+      background: transparent;
+    }
+
+    .aimg-toggle-bg-quick:hover {
+      background: #18181840;
+    }
+
+    .dark .aimg-toggle-bg-quick:hover {
+      background: #3a3e42bb;
+    }
+
+    .aimg-toggle .aimg-prompt-overlay {
+      display: none;
+    }
+
+    #aimg:not(.aimg-toggle) .aimg-prompt textarea {
+      overflow-y: hidden;
+      margin-right: var(--d-10px);
+    }
+
+    .aimg-toggle .aimg-prompt textarea {
+      height: 120px;
+    }
+
+    .aimg-toggle .aimg-output-overlay {
+      background: #18181840;
+    }
+
+    .aimg-prompt-extra {
+      height: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      --def-value: 8px;
+    }
+
+    .aimg-toggle .aimg-prompt-extra {
+      height: 50vh;
+      position: relative;
+    }
+
+    .aimg-extra-wrapper {
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .aimg-extra-wrapper-wrapper {
+      padding: var(--def-value);
+      padding-bottom: 0;
+      gap: var(--def-value);
+    }
+
+    .aimg-extra-wrapper-wrapper input,
+    .aimg-extra-wrapper-wrapper select,
+    .aimg-extra-wrapper-wrapper textarea {
+      padding: var(--def-value);
+      background: #c5cbcc75;
+      background: #f6f9fb;
+    }
+
+    .dark .aimg-extra-wrapper-wrapper input,
+    .dark .aimg-extra-wrapper-wrapper select,
+    .dark .aimg-extra-wrapper-wrapper textarea {
+      background: #38393fa6;
+      background: #1d1d1d;
+    }
+
+    .aimg-extra-opt-card {
+      padding: var(--def-value);
+      border-radius: var(--def-value);
+      background: #eaeef0;
+      background: #dbdfe2;
+    }
+
+    .dark .aimg-extra-opt-card {
+      background: #343436;
+    }
+
+    .aimg-extra-opt-label {
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: var(--def-value);
+      user-select: none;
+      font-weight: 700;
+      background: transparent;
+    }
+
+    .aimg-extra-opt-card .aimg-extra-opts {
+      display: flex;
+    }
+
+    .aimg-extra-opt-card .aimg-extra-opts input,
+    .aimg-extra-opt-card .aimg-extra-opts select,
+    .aimg-extra-opt-card .aimg-extra-opts textarea {
+      padding: var(--def-value);
+      width: 100%;
+      border-radius: var(--def-value);
+    }
+
+    .aimg-close-extra,
+    .dark .aimg-close-extra {
+      background: transparent;
+      height: 20px;
+      transition: background 0.5s;
+      padding: var(--def-value);
+      border-radius: 0.5rem;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      flex: 1;
+    }
+
+    .aimg-extra-hr {
+      margin-top: var(--def-value);
+      border-bottom: 1px solid;
+      border-color: var(--light-gray-accent);
+    }
+
+    .aimg-extra-vr {
+      border-left: 1px solid;
+      border-color: var(--light-gray-accent);
+    }
+
+    .dark .aimg-extra-hr,
+    .dark .aimg-extra-vr {
+      border-color: var(--dark-gray-accent);
+    }
+  </style>
 </head>
 
 <body>
@@ -3024,700 +3028,700 @@ header button span.open-fullscreen {
     var load_tabs = true;
   </script>
   <script>(function () {
-  // Check if 'load_tabs' variable exists
-  if (typeof load_tabs !== "undefined" && load_tabs) {
-    // Check local storage for the name of the saved tab window
-    var savedTab = localStorage.getItem("saved_tab_window");
-    // If there's a saved tab window, set 'tab-window-display' class to it
-    if (savedTab) {
-      var tabWindowToDisplay = document.querySelector(
-        '.tab-window[name="' + savedTab + '"]'
-      );
-      if (tabWindowToDisplay) {
-        tabWindowToDisplay.classList.add("tab-window-display");
-        // Add 'opened-tab' class to the corresponding tab
-        var correspondingTab = document.querySelector(
-          '.tabs[name="' + savedTab + '"]'
-        );
-        if (correspondingTab) {
-          correspondingTab.classList.add("opened-tab");
+      // Check if 'load_tabs' variable exists
+      if (typeof load_tabs !== "undefined" && load_tabs) {
+        // Check local storage for the name of the saved tab window
+        var savedTab = localStorage.getItem("saved_tab_window");
+        // If there's a saved tab window, set 'tab-window-display' class to it
+        if (savedTab) {
+          var tabWindowToDisplay = document.querySelector(
+            '.tab-window[name="' + savedTab + '"]'
+          );
+          if (tabWindowToDisplay) {
+            tabWindowToDisplay.classList.add("tab-window-display");
+            // Add 'opened-tab' class to the corresponding tab
+            var correspondingTab = document.querySelector(
+              '.tabs[name="' + savedTab + '"]'
+            );
+            if (correspondingTab) {
+              correspondingTab.classList.add("opened-tab");
+            }
+          }
+        } else {
+          // If no saved tab window, set 'tab-window-display' to the highest in the hierarchy
+          var highestTabWindow = document.querySelector(".tab-window");
+          if (highestTabWindow) {
+            highestTabWindow.classList.add("tab-window-display");
+            // Add 'opened-tab' class to the corresponding tab
+            var correspondingTab = document.querySelector(
+              '.tabs[name="' + highestTabWindow.getAttribute("name") + '"]'
+            );
+            if (correspondingTab) {
+              correspondingTab.classList.add("opened-tab");
+            }
+          }
         }
       }
-    } else {
-      // If no saved tab window, set 'tab-window-display' to the highest in the hierarchy
-      var highestTabWindow = document.querySelector(".tab-window");
-      if (highestTabWindow) {
-        highestTabWindow.classList.add("tab-window-display");
-        // Add 'opened-tab' class to the corresponding tab
-        var correspondingTab = document.querySelector(
-          '.tabs[name="' + highestTabWindow.getAttribute("name") + '"]'
-        );
-        if (correspondingTab) {
-          correspondingTab.classList.add("opened-tab");
+
+      // Verify the existence of elements with the class 'tabs'
+      var tabs = document.getElementsByClassName("tabs");
+      if (tabs.length > 0) {
+        // Iterate over all elements with the class 'tabs'
+        for (var j = 0; j < tabs.length; j++) {
+          var tabName = tabs[j].getAttribute("name");
+          // Add event listener for clicks to the 'tabs'
+          tabs[j].addEventListener("click", function () {
+            // Get the name attribute of the clicked tab
+            var clickedTabName = this.getAttribute("name");
+            console.log("Clicked tab:", clickedTabName); // Log the clicked tab name
+            // Remove 'tab-window-display' from all tab windows
+            var allTabWindows = document.getElementsByClassName("tab-window");
+            for (var k = 0; k < allTabWindows.length; k++) {
+              allTabWindows[k].classList.remove("tab-window-display");
+            }
+            // Apply 'tab-window-display' to the tab window with the corresponding name
+            var tabWindowToShow = document.querySelector(
+              '.tab-window[name="' + clickedTabName + '"]'
+            );
+            if (tabWindowToShow) {
+              tabWindowToShow.classList.add("tab-window-display");
+              // Save the displayed tab window's name to local storage
+              localStorage.setItem("saved_tab_window", clickedTabName);
+              console.log("Displayed tab window:", clickedTabName); // Log the displayed tab window name
+            }
+            // Remove 'opened-tab' class from all tabs
+            for (var l = 0; l < tabs.length; l++) {
+              tabs[l].classList.remove("opened-tab");
+            }
+            // Add 'opened-tab' class to the clicked tab
+            this.classList.add("opened-tab");
+          });
+        }
+      }
+    })();
+
+
+    function tabFunc(event, tabName) {
+      var i, tabWindow, tablinks;
+
+      // Hide all tab windows
+      tabWindow = document.getElementsByClassName("tab-window");
+      for (i = 0; i < tabWindow.length; i++) {
+        tabWindow[i].style.display = "none";
+      }
+
+      // Remove the "openedTab" class from all tab links
+      tablinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("opened-tab");
+      }
+
+      // Display the selected tab window
+      document.getElementById(tabName).style.display = "block";
+
+      // Add the "openedTab" class to the clicked tab link
+      event.currentTarget.classList.add("opened-tab");
+    }
+
+    function rembTabFunc(event, tabName) {
+      var i, tabWindow, tablinks;
+
+      // Hide all tab windows
+      tabWindow = document.getElementsByClassName("tab-window");
+      for (i = 0; i < tabWindow.length; i++) {
+        tabWindow[i].style.display = "none";
+      }
+
+      // Remove the "openedTab" class from all tab links
+      tablinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("opened-tab");
+      }
+
+      // Display the selected tab window
+      document.getElementById(tabName).style.display = "block";
+
+      // Add the "openedTab" class to the clicked tab link
+      event.currentTarget.classList.add("opened-tab");
+
+      // Remember the last selected tab using localStorage
+      localStorage.setItem("lastTab", tabName);
+    }
+
+    // Function to retrieve the last selected tab when the page loads
+    function loadTab() {
+      var lastTab = localStorage.getItem("lastTab");
+      if (lastTab) {
+        var allTabs = document.getElementsByClassName("tab-window");
+        for (var i = 0; i < allTabs.length; i++) {
+          // Hide all tabs except for the last selected one
+          if (allTabs[i].id === lastTab) {
+            allTabs[i].style.display = "block";
+          } else {
+            allTabs[i].style.display = "none";
+          }
+        }
+
+        // Remove the "openedTab" class from all tab links
+        var tablinks = document.getElementsByClassName("tab-link");
+        for (var j = 0; j < tablinks.length; j++) {
+          tablinks[j].classList.remove("opened-tab");
+        }
+
+        // Add the "openedTab" class to the corresponding tab link
+        var tabLink = document.querySelector(`[data-tab="${lastTab}"]`);
+        if (tabLink) {
+          tabLink.classList.add("opened-tab");
         }
       }
     }
-  }
 
-  // Verify the existence of elements with the class 'tabs'
-  var tabs = document.getElementsByClassName("tabs");
-  if (tabs.length > 0) {
-    // Iterate over all elements with the class 'tabs'
-    for (var j = 0; j < tabs.length; j++) {
-      var tabName = tabs[j].getAttribute("name");
-      // Add event listener for clicks to the 'tabs'
-      tabs[j].addEventListener("click", function () {
-        // Get the name attribute of the clicked tab
-        var clickedTabName = this.getAttribute("name");
-        console.log("Clicked tab:", clickedTabName); // Log the clicked tab name
-        // Remove 'tab-window-display' from all tab windows
-        var allTabWindows = document.getElementsByClassName("tab-window");
-        for (var k = 0; k < allTabWindows.length; k++) {
-          allTabWindows[k].classList.remove("tab-window-display");
-        }
-        // Apply 'tab-window-display' to the tab window with the corresponding name
-        var tabWindowToShow = document.querySelector(
-          '.tab-window[name="' + clickedTabName + '"]'
-        );
-        if (tabWindowToShow) {
-          tabWindowToShow.classList.add("tab-window-display");
-          // Save the displayed tab window's name to local storage
-          localStorage.setItem("saved_tab_window", clickedTabName);
-          console.log("Displayed tab window:", clickedTabName); // Log the displayed tab window name
-        }
-        // Remove 'opened-tab' class from all tabs
-        for (var l = 0; l < tabs.length; l++) {
-          tabs[l].classList.remove("opened-tab");
-        }
-        // Add 'opened-tab' class to the clicked tab
-        this.classList.add("opened-tab");
-      });
-    }
-  }
-})();
+    function dragElement(elmnt) {
+      var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+      var dragWindow = elmnt.querySelector(".dragElWind");
+      var header = elmnt.querySelector(".dragElHeader");
+      var main = elmnt.querySelector(".dragElMain");
 
-
-function tabFunc(event, tabName) {
-  var i, tabWindow, tablinks;
-
-  // Hide all tab windows
-  tabWindow = document.getElementsByClassName("tab-window");
-  for (i = 0; i < tabWindow.length; i++) {
-    tabWindow[i].style.display = "none";
-  }
-
-  // Remove the "openedTab" class from all tab links
-  tablinks = document.getElementsByClassName("tab-link");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("opened-tab");
-  }
-
-  // Display the selected tab window
-  document.getElementById(tabName).style.display = "block";
-
-  // Add the "openedTab" class to the clicked tab link
-  event.currentTarget.classList.add("opened-tab");
-}
-
-function rembTabFunc(event, tabName) {
-  var i, tabWindow, tablinks;
-
-  // Hide all tab windows
-  tabWindow = document.getElementsByClassName("tab-window");
-  for (i = 0; i < tabWindow.length; i++) {
-    tabWindow[i].style.display = "none";
-  }
-
-  // Remove the "openedTab" class from all tab links
-  tablinks = document.getElementsByClassName("tab-link");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("opened-tab");
-  }
-
-  // Display the selected tab window
-  document.getElementById(tabName).style.display = "block";
-
-  // Add the "openedTab" class to the clicked tab link
-  event.currentTarget.classList.add("opened-tab");
-
-  // Remember the last selected tab using localStorage
-  localStorage.setItem("lastTab", tabName);
-}
-
-// Function to retrieve the last selected tab when the page loads
-function loadTab() {
-  var lastTab = localStorage.getItem("lastTab");
-  if (lastTab) {
-    var allTabs = document.getElementsByClassName("tab-window");
-    for (var i = 0; i < allTabs.length; i++) {
-      // Hide all tabs except for the last selected one
-      if (allTabs[i].id === lastTab) {
-        allTabs[i].style.display = "block";
+      if (header) {
+        header.onmousedown = dragMouseDown;
       } else {
-        allTabs[i].style.display = "none";
-      }
-    }
-
-    // Remove the "openedTab" class from all tab links
-    var tablinks = document.getElementsByClassName("tab-link");
-    for (var j = 0; j < tablinks.length; j++) {
-      tablinks[j].classList.remove("opened-tab");
-    }
-
-    // Add the "openedTab" class to the corresponding tab link
-    var tabLink = document.querySelector(`[data-tab="${lastTab}"]`);
-    if (tabLink) {
-      tabLink.classList.add("opened-tab");
-    }
-  }
-}
-
-function dragElement(elmnt) {
-  var pos1 = 0,
-    pos2 = 0,
-    pos3 = 0,
-    pos4 = 0;
-  var dragWindow = elmnt.querySelector(".dragElWind");
-  var header = elmnt.querySelector(".dragElHeader");
-  var main = elmnt.querySelector(".dragElMain");
-
-  if (header) {
-    header.onmousedown = dragMouseDown;
-  } else {
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  // Set additional styles
-  elmnt.style.overflow = "auto";
-  elmnt.style.position = "absolute";
-  elmnt.style.resize = "both";
-  header.style.position = "sticky";
-  header.style.top = 0;
-  header.style.zIndex = 1;
-  dragWindow.style.transition = "width 0s, height 0s";
-
-  function createOverlay() {
-    var overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.top = 0;
-    overlay.style.right = 0;
-    overlay.style.bottom = 0;
-    overlay.style.left = 0;
-    overlay.style.opacity = 0;
-    overlay.style.zIndex = 2;
-    document.body.appendChild(overlay);
-    return overlay;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-
-    // Create transparent overlay for drag
-    var dragOverlay = createOverlay();
-
-    document.onmouseup = function () {
-      // Remove overlay for drag
-      if (dragOverlay.parentNode) {
-        dragOverlay.parentNode.removeChild(dragOverlay);
+        elmnt.onmousedown = dragMouseDown;
       }
 
-      closeDragElement();
-    };
-    document.onmousemove = elementDrag;
+      // Set additional styles
+      elmnt.style.overflow = "auto";
+      elmnt.style.position = "absolute";
+      elmnt.style.resize = "both";
+      header.style.position = "sticky";
+      header.style.top = 0;
+      header.style.zIndex = 1;
+      dragWindow.style.transition = "width 0s, height 0s";
 
-    // Add resize event listener
-    window.addEventListener("resize", handleResize);
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-
-    // Calculate new position
-    var newTop = elmnt.offsetTop - pos2;
-    var newLeft = elmnt.offsetLeft - pos1;
-
-    // Check if the element is going outside the screen boundaries
-    var maxX = window.innerWidth - elmnt.offsetWidth;
-    var maxY = window.innerHeight - elmnt.offsetHeight;
-
-    // Adjust position to keep it within the visible area
-    elmnt.style.top = Math.max(0, Math.min(newTop, maxY)) + "px";
-    elmnt.style.left = Math.max(0, Math.min(newLeft, maxX)) + "px";
-  }
-
-  function handleResize() {
-    // Create transparent overlay for resize
-    var resizeOverlay = createOverlay();
-
-    // Remove overlay for resize after a short delay
-    setTimeout(function () {
-      if (resizeOverlay.parentNode) {
-        resizeOverlay.parentNode.removeChild(resizeOverlay);
+      function createOverlay() {
+        var overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = 0;
+        overlay.style.right = 0;
+        overlay.style.bottom = 0;
+        overlay.style.left = 0;
+        overlay.style.opacity = 0;
+        overlay.style.zIndex = 2;
+        document.body.appendChild(overlay);
+        return overlay;
       }
-    }, 200);
-  }
 
-  function closeDragElement() {
-    document.onmouseup = null;
-    document.onmousemove = null;
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
 
-    // Remove resize event listener
-    window.removeEventListener("resize", handleResize);
-  }
-}
+        // Create transparent overlay for drag
+        var dragOverlay = createOverlay();
 
-// Apply dragElement to all elements with class "dragElWind"
-var draggableElements = document.querySelectorAll(".dragElWind");
-draggableElements.forEach(function (element) {
-  dragElement(element);
-});
+        document.onmouseup = function () {
+          // Remove overlay for drag
+          if (dragOverlay.parentNode) {
+            dragOverlay.parentNode.removeChild(dragOverlay);
+          }
 
-// Cocell's Show Hide Script
-function CShowHide(arg) {
-  var args = arg.split(", ");
-  var targetId = args[0];
-  var displayValue = args[1];
+          closeDragElement();
+        };
+        document.onmousemove = elementDrag;
 
-  var targetElement = document.getElementById(targetId);
-
-  if (targetElement) {
-    if (
-      targetElement.style.display === "none" ||
-      getComputedStyle(targetElement).display === "none"
-    ) {
-      targetElement.style.display = displayValue;
-    } else {
-      targetElement.style.display = "none";
-    }
-  }
-}
-
-// Close Parent Script
-function closeParent(elementId) {
-  if (elementId) {
-    var specificElement = document.getElementById(elementId);
-    if (specificElement) {
-      specificElement.style.display = "none";
-    } else {
-      console.error("Element with ID " + elementId + " not found.");
-    }
-  } else {
-    var parentElement = this.parentElement;
-
-    if (parentElement) {
-      parentElement.style.display = "none";
-    }
-  }
-}
-
-/*
-// Darkmode Script
-function darkmode() {
-  try {
-    const body = document.body;
-    body.classList.toggle("dark");
-
-    const isDarkModeEnabled = body.classList.contains("dark");
-    localStorage.setItem("darkMode", isDarkModeEnabled);
-  } catch (error) {
-    console.error("An error occurred while toggling dark mode:", error);
-  }
-}
-
-window.onload = function () {
-  try {
-    const savedDarkMode = localStorage.getItem("darkMode");
-    const body = document.body;
-
-    if (savedDarkMode === null) {
-      const prefersDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      if (prefersDarkMode) {
-        body.classList.add("dark");
-        localStorage.setItem("darkMode", true);
+        // Add resize event listener
+        window.addEventListener("resize", handleResize);
       }
-    } else {
-      if (savedDarkMode === "true") {
-        body.classList.add("dark");
+
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+
+        // Calculate new position
+        var newTop = elmnt.offsetTop - pos2;
+        var newLeft = elmnt.offsetLeft - pos1;
+
+        // Check if the element is going outside the screen boundaries
+        var maxX = window.innerWidth - elmnt.offsetWidth;
+        var maxY = window.innerHeight - elmnt.offsetHeight;
+
+        // Adjust position to keep it within the visible area
+        elmnt.style.top = Math.max(0, Math.min(newTop, maxY)) + "px";
+        elmnt.style.left = Math.max(0, Math.min(newLeft, maxX)) + "px";
       }
-    }
-  } catch (error) {
-    console.error("An error occurred during dark mode initialization:", error);
-  }
-};
 
-// Your crucial function for dark mode
-function darkModeInitialization(callback) {
-  try {
-    const savedDarkMode = localStorage.getItem("darkMode");
-    const body = document.body;
+      function handleResize() {
+        // Create transparent overlay for resize
+        var resizeOverlay = createOverlay();
 
-    if (savedDarkMode === null) {
-      const prefersDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      if (prefersDarkMode) {
-        body.classList.add("dark");
-        localStorage.setItem("darkMode", true);
-      }
-    } else {
-      if (savedDarkMode === "true") {
-        body.classList.add("dark");
-      }
-    }
-
-    // Call the callback to signal that dark mode initialization is done
-    callback();
-  } catch (error) {
-    console.error(
-      "An error occurred during dark mode initialization:",
-      error
-    );
-    // Still call the callback in case of error
-    callback();
-  }
-}
-
-// Call the dark mode initialization function
-darkModeInitialization(function () {
-  // This code will execute only after the dark mode initialization is done
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-  if (darkModeToggle) {
-    darkModeToggle.addEventListener("click", darkmode);
-  } else {
-    console.error("Dark mode toggle button not found");
-  }
-});
-*/
-
-// IIFE to check and apply dark mode based on local storage or system preference
-(function () {
-  const storedDarkMode = localStorage.getItem("darkMode");
-  const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (storedDarkMode === "true" || (storedDarkMode === null && systemPrefersDark)) {
-    document.documentElement.classList.add("dark");
-  }
-})();
-
-// Function to toggle dark mode and save the state in local storage
-function darkmode() {
-  const rootElement = document.documentElement;
-  const darkModeEnabled = rootElement.classList.toggle("dark");
-  localStorage.setItem("darkMode", darkModeEnabled.toString());
-}
-
-// Fullscreen Script
-function fullscreen() {
-  try {
-    var docElement = document.documentElement;
-
-    if (
-      !document.fullscreenElement &&
-      !document.mozFullScreenElement &&
-      !document.webkitFullscreenElement
-    ) {
-      if (docElement.requestFullscreen) {
-        docElement.requestFullscreen();
-      } else if (docElement.mozRequestFullScreen) {
-        docElement.mozRequestFullScreen();
-      } else if (docElement.webkitRequestFullscreen) {
-        docElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-      } else if (docElement.msRequestFullscreen) {
-        docElement.msRequestFullscreen();
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
-    }
-  } catch (error) {
-    console.error("An error occurred while toggling fullscreen:", error);
-  }
-}
-
-// $Fullscreen Script
-// This is a new version which adds a class to the body to indicate fullscreen which can be
-// Used for styling purposes.
-function $Fullscreen() {
-  // Check if fullscreen mode is currently active
-  var isInFullScreen =
-    (document.fullscreenElement && document.fullscreenElement !== null) ||
-    (document.webkitFullscreenElement &&
-      document.webkitFullscreenElement !== null) ||
-    (document.mozFullScreenElement &&
-      document.mozFullScreenElement !== null) ||
-    (document.msFullscreenElement && document.msFullscreenElement !== null);
-
-  // If not in fullscreen, request fullscreen
-  if (!isInFullScreen) {
-    var element = document.documentElement;
-    if (element.requestFullscreen) {
-      element.requestFullscreen();
-    } else if (element.mozRequestFullScreen) {
-      /* Firefox */
-      element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullscreen) {
-      /* Chrome, Safari & Opera */
-      element.webkitRequestFullscreen();
-    } else if (element.msRequestFullscreen) {
-      /* IE/Edge */
-      element.msRequestFullscreen();
-    }
-
-    // Add the 'in-fullscreen' class to the body
-    document.body.classList.add("in-fullscreen");
-  } else {
-    // If already in fullscreen, exit fullscreen
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) {
-      /* Safari */
-      document.webkitExitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-      /* Firefox */
-      document.mozCancelFullScreen();
-    } else if (document.msExitFullscreen) {
-      /* IE/Edge */
-      document.msExitFullscreen();
-    }
-
-    // Remove the 'in-fullscreen' class from the body
-    document.body.classList.remove("in-fullscreen");
-  }
-}
-
-function modalImage() {
-  var modalImages = document.querySelectorAll(".modal-image");
-
-  modalImages.forEach(function (modalImage) {
-    modalImage.style.cursor = "pointer"; // Set cursor to pointer for modal images
-
-    modalImage.addEventListener("click", function () {
-      var imageUrl = this.getAttribute("src");
-
-      // Background container
-      var backgroundContainer = document.createElement("div");
-      backgroundContainer.className = "modal-image-background-container";
-
-      // Modal container
-      var modalContainer = document.createElement("div");
-      modalContainer.className = "modal-image-container";
-
-      // Image element
-      var imageElement = document.createElement("img");
-      imageElement.src = imageUrl;
-      imageElement.alt = "Modal Image";
-
-      // Append image to modal container
-      modalContainer.appendChild(imageElement);
-
-      // Append modal container to background container
-      backgroundContainer.appendChild(modalContainer);
-
-      // Append background container to body
-      document.body.appendChild(backgroundContainer);
-
-      // Apply styles to the modal elements
-      backgroundContainer.style.display = "flex";
-      backgroundContainer.style.position = "fixed";
-      backgroundContainer.style.top = "0";
-      backgroundContainer.style.left = "0";
-      backgroundContainer.style.bottom = "0";
-      backgroundContainer.style.right = "0";
-      backgroundContainer.style.width = "100%";
-      backgroundContainer.style.height = "100%";
-      backgroundContainer.style.background = "#00000098";
-      backgroundContainer.style.justifyContent = "center";
-      backgroundContainer.style.alignItems = "center";
-      backgroundContainer.style.zIndex = "9999999999"; // You might want to adjust this value
-      backgroundContainer.style.transition = "background 0.5s";
-      backgroundContainer.style.cursor = "zoom-out";
-
-      modalContainer.style.maxWidth = "80%";
-      modalContainer.style.maxHeight = "80%";
-      modalContainer.style.transform = "scale(0)";
-      modalContainer.style.transition = "transform 0.25s";
-
-      imageElement.style.width = "100%";
-      imageElement.style.height = "auto";
-      imageElement.style.cursor = "zoom-out";
-
-      // Open modal with zoom effect
-      setTimeout(function () {
-        backgroundContainer.style.background = "#000000cc";
-        modalContainer.style.transform = "scale(1.2)"; // Start with zoomed-in scale
+        // Remove overlay for resize after a short delay
         setTimeout(function () {
-          modalContainer.style.transform = "scale(1)"; // Animate to normal scale
-        }, 180); // Adjust the time based on your preference
-      }, 10);
+          if (resizeOverlay.parentNode) {
+            resizeOverlay.parentNode.removeChild(resizeOverlay);
+          }
+        }, 200);
+      }
 
-      // Close modal on background click with zoom out effect
-      backgroundContainer.addEventListener("click", closeModal);
+      function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
 
-      // Close modal on Escape key press
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-          closeModal();
+        // Remove resize event listener
+        window.removeEventListener("resize", handleResize);
+      }
+    }
+
+    // Apply dragElement to all elements with class "dragElWind"
+    var draggableElements = document.querySelectorAll(".dragElWind");
+    draggableElements.forEach(function (element) {
+      dragElement(element);
+    });
+
+    // Cocell's Show Hide Script
+    function CShowHide(arg) {
+      var args = arg.split(", ");
+      var targetId = args[0];
+      var displayValue = args[1];
+
+      var targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        if (
+          targetElement.style.display === "none" ||
+          getComputedStyle(targetElement).display === "none"
+        ) {
+          targetElement.style.display = displayValue;
+        } else {
+          targetElement.style.display = "none";
         }
-      });
+      }
+    }
 
-      // Prevent mouse scroll while the modal is open
-      document.body.style.overflow = "hidden";
+    // Close Parent Script
+    function closeParent(elementId) {
+      if (elementId) {
+        var specificElement = document.getElementById(elementId);
+        if (specificElement) {
+          specificElement.style.display = "none";
+        } else {
+          console.error("Element with ID " + elementId + " not found.");
+        }
+      } else {
+        var parentElement = this.parentElement;
 
-      function closeModal() {
-        backgroundContainer.style.background = "#00000000";
-        modalContainer.style.transform = "scale(0)";
-        setTimeout(function () {
-          backgroundContainer.style.display = "none";
-          document.body.removeChild(backgroundContainer);
-        }, 300);
+        if (parentElement) {
+          parentElement.style.display = "none";
+        }
+      }
+    }
 
-        // Allow mouse scroll when the modal is closed
-        document.body.style.overflow = "auto";
+    /*
+    // Darkmode Script
+    function darkmode() {
+      try {
+        const body = document.body;
+        body.classList.toggle("dark");
+    
+        const isDarkModeEnabled = body.classList.contains("dark");
+        localStorage.setItem("darkMode", isDarkModeEnabled);
+      } catch (error) {
+        console.error("An error occurred while toggling dark mode:", error);
+      }
+    }
+    
+    window.onload = function () {
+      try {
+        const savedDarkMode = localStorage.getItem("darkMode");
+        const body = document.body;
+    
+        if (savedDarkMode === null) {
+          const prefersDarkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+    
+          if (prefersDarkMode) {
+            body.classList.add("dark");
+            localStorage.setItem("darkMode", true);
+          }
+        } else {
+          if (savedDarkMode === "true") {
+            body.classList.add("dark");
+          }
+        }
+      } catch (error) {
+        console.error("An error occurred during dark mode initialization:", error);
+      }
+    };
+    
+    // Your crucial function for dark mode
+    function darkModeInitialization(callback) {
+      try {
+        const savedDarkMode = localStorage.getItem("darkMode");
+        const body = document.body;
+    
+        if (savedDarkMode === null) {
+          const prefersDarkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+    
+          if (prefersDarkMode) {
+            body.classList.add("dark");
+            localStorage.setItem("darkMode", true);
+          }
+        } else {
+          if (savedDarkMode === "true") {
+            body.classList.add("dark");
+          }
+        }
+    
+        // Call the callback to signal that dark mode initialization is done
+        callback();
+      } catch (error) {
+        console.error(
+          "An error occurred during dark mode initialization:",
+          error
+        );
+        // Still call the callback in case of error
+        callback();
+      }
+    }
+    
+    // Call the dark mode initialization function
+    darkModeInitialization(function () {
+      // This code will execute only after the dark mode initialization is done
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+    
+      if (darkModeToggle) {
+        darkModeToggle.addEventListener("click", darkmode);
+      } else {
+        console.error("Dark mode toggle button not found");
       }
     });
-  });
-}
+    */
 
-// Copy Text OnClick Function
-function copyText(copyEl) {
-  let textToCopy;
+    // IIFE to check and apply dark mode based on local storage or system preference
+    (function () {
+      const storedDarkMode = localStorage.getItem("darkMode");
+      const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (copyEl === undefined || copyEl === null) {
-    console.error("Invalid element provided");
-    return;
-  }
+      if (storedDarkMode === "true" || (storedDarkMode === null && systemPrefersDark)) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
 
-  if (typeof copyEl === "string") {
-    const elementById = document.getElementById(copyEl);
-
-    if (!elementById) {
-      console.error(`Element with ID '${copyEl}' not found`);
-      return;
+    // Function to toggle dark mode and save the state in local storage
+    function darkmode() {
+      const rootElement = document.documentElement;
+      const darkModeEnabled = rootElement.classList.toggle("dark");
+      localStorage.setItem("darkMode", darkModeEnabled.toString());
     }
 
-    textToCopy = elementById.textContent || elementById.innerText;
-  } else if (copyEl instanceof Element) {
-    textToCopy = copyEl.textContent || copyEl.innerText;
-  } else {
-    console.error("Invalid parameter provided");
-    return;
-  }
+    // Fullscreen Script
+    function fullscreen() {
+      try {
+        var docElement = document.documentElement;
 
-  const tempTextarea = document.createElement("textarea");
-  tempTextarea.value = textToCopy;
-  document.body.appendChild(tempTextarea);
-  tempTextarea.select();
-  tempTextarea.setSelectionRange(0, 99999); // For mobile devices
-  document.execCommand("copy");
-  document.body.removeChild(tempTextarea);
-  console.log(`Text copied to clipboard: ${textToCopy}`);
-}
-
-// Close Elements Function
-function closeEl(element) {
-  if (element === undefined || element === null) {
-    const parent = this.parentElement;
-    if (parent) {
-      parent.style.display = "none";
-    } else {
-      console.error("Parent element not found");
-    }
-  } else if (typeof element === "string") {
-    const elementById = document.getElementById(element);
-
-    if (!elementById) {
-      console.error(`Element with ID '${element}' not found`);
-      return;
-    }
-
-    elementById.style.display = "none";
-  } else {
-    const parent = element.parentElement;
-    if (parent) {
-      parent.style.display = "none";
-    } else {
-      console.error("Parent element not found");
-    }
-  }
-}
-
-// Show Elements Function
-function showEl(elementId, displayValue = "block") {
-  const element = document.getElementById(elementId);
-
-  if (!element) {
-    console.error(`Element with ID '${elementId}' not found`);
-    return;
-  }
-
-  element.style.display = displayValue;
-}
-
-// Function Calls
-modalImage();
-
-// Function to truncate text to a specified number of words
-function truncateText(text, maxLength) {
-  const words = text.split(" ");
-  if (words.length <= maxLength) {
-    return text;
-  }
-  return words.slice(0, maxLength).join(" ");
-}
-
-function search(containerId) {
-  var filter = document.querySelector('input[type="text"]').value;
-  var container, elements, i, querElement, querText, serElement, serText;
-
-  // Remove special characters from the search query using regular expression
-  filter = filter
-    .replace(/[^\w\s]/g, "")
-    .trim()
-    .toLowerCase();
-
-  container = document.getElementById(containerId);
-  elements = container.querySelectorAll("[quer]");
-
-  for (i = 0; i < elements.length; i++) {
-    querElement = elements[i].getAttribute("quer");
-    serElement = elements[i].querySelector("[ser]"); // Get the first element with ser attribute
-
-    if (serElement) {
-      serText = serElement.textContent || serElement.innerText;
-      // Remove special characters from text content using regular expression
-      querText = serText.replace(/[^\w\s]/g, "").toLowerCase();
-    } else {
-      querText = querElement.toLowerCase();
+        if (
+          !document.fullscreenElement &&
+          !document.mozFullScreenElement &&
+          !document.webkitFullscreenElement
+        ) {
+          if (docElement.requestFullscreen) {
+            docElement.requestFullscreen();
+          } else if (docElement.mozRequestFullScreen) {
+            docElement.mozRequestFullScreen();
+          } else if (docElement.webkitRequestFullscreen) {
+            docElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+          } else if (docElement.msRequestFullscreen) {
+            docElement.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      } catch (error) {
+        console.error("An error occurred while toggling fullscreen:", error);
+      }
     }
 
-    // Use includes() for case-insensitive comparison
-    if (querText.includes(filter)) {
-      elements[i].style.display = "";
-    } else {
-      elements[i].style.display = "none";
+    // $Fullscreen Script
+    // This is a new version which adds a class to the body to indicate fullscreen which can be
+    // Used for styling purposes.
+    function $Fullscreen() {
+      // Check if fullscreen mode is currently active
+      var isInFullScreen =
+        (document.fullscreenElement && document.fullscreenElement !== null) ||
+        (document.webkitFullscreenElement &&
+          document.webkitFullscreenElement !== null) ||
+        (document.mozFullScreenElement &&
+          document.mozFullScreenElement !== null) ||
+        (document.msFullscreenElement && document.msFullscreenElement !== null);
+
+      // If not in fullscreen, request fullscreen
+      if (!isInFullScreen) {
+        var element = document.documentElement;
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+          /* Firefox */
+          element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+          /* Chrome, Safari & Opera */
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+          /* IE/Edge */
+          element.msRequestFullscreen();
+        }
+
+        // Add the 'in-fullscreen' class to the body
+        document.body.classList.add("in-fullscreen");
+      } else {
+        // If already in fullscreen, exit fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          /* Safari */
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          /* Firefox */
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          /* IE/Edge */
+          document.msExitFullscreen();
+        }
+
+        // Remove the 'in-fullscreen' class from the body
+        document.body.classList.remove("in-fullscreen");
+      }
     }
-  }
-}</script>
+
+    function modalImage() {
+      var modalImages = document.querySelectorAll(".modal-image");
+
+      modalImages.forEach(function (modalImage) {
+        modalImage.style.cursor = "pointer"; // Set cursor to pointer for modal images
+
+        modalImage.addEventListener("click", function () {
+          var imageUrl = this.getAttribute("src");
+
+          // Background container
+          var backgroundContainer = document.createElement("div");
+          backgroundContainer.className = "modal-image-background-container";
+
+          // Modal container
+          var modalContainer = document.createElement("div");
+          modalContainer.className = "modal-image-container";
+
+          // Image element
+          var imageElement = document.createElement("img");
+          imageElement.src = imageUrl;
+          imageElement.alt = "Modal Image";
+
+          // Append image to modal container
+          modalContainer.appendChild(imageElement);
+
+          // Append modal container to background container
+          backgroundContainer.appendChild(modalContainer);
+
+          // Append background container to body
+          document.body.appendChild(backgroundContainer);
+
+          // Apply styles to the modal elements
+          backgroundContainer.style.display = "flex";
+          backgroundContainer.style.position = "fixed";
+          backgroundContainer.style.top = "0";
+          backgroundContainer.style.left = "0";
+          backgroundContainer.style.bottom = "0";
+          backgroundContainer.style.right = "0";
+          backgroundContainer.style.width = "100%";
+          backgroundContainer.style.height = "100%";
+          backgroundContainer.style.background = "#00000098";
+          backgroundContainer.style.justifyContent = "center";
+          backgroundContainer.style.alignItems = "center";
+          backgroundContainer.style.zIndex = "9999999999"; // You might want to adjust this value
+          backgroundContainer.style.transition = "background 0.5s";
+          backgroundContainer.style.cursor = "zoom-out";
+
+          modalContainer.style.maxWidth = "80%";
+          modalContainer.style.maxHeight = "80%";
+          modalContainer.style.transform = "scale(0)";
+          modalContainer.style.transition = "transform 0.25s";
+
+          imageElement.style.width = "100%";
+          imageElement.style.height = "auto";
+          imageElement.style.cursor = "zoom-out";
+
+          // Open modal with zoom effect
+          setTimeout(function () {
+            backgroundContainer.style.background = "#000000cc";
+            modalContainer.style.transform = "scale(1.2)"; // Start with zoomed-in scale
+            setTimeout(function () {
+              modalContainer.style.transform = "scale(1)"; // Animate to normal scale
+            }, 180); // Adjust the time based on your preference
+          }, 10);
+
+          // Close modal on background click with zoom out effect
+          backgroundContainer.addEventListener("click", closeModal);
+
+          // Close modal on Escape key press
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+              closeModal();
+            }
+          });
+
+          // Prevent mouse scroll while the modal is open
+          document.body.style.overflow = "hidden";
+
+          function closeModal() {
+            backgroundContainer.style.background = "#00000000";
+            modalContainer.style.transform = "scale(0)";
+            setTimeout(function () {
+              backgroundContainer.style.display = "none";
+              document.body.removeChild(backgroundContainer);
+            }, 300);
+
+            // Allow mouse scroll when the modal is closed
+            document.body.style.overflow = "auto";
+          }
+        });
+      });
+    }
+
+    // Copy Text OnClick Function
+    function copyText(copyEl) {
+      let textToCopy;
+
+      if (copyEl === undefined || copyEl === null) {
+        console.error("Invalid element provided");
+        return;
+      }
+
+      if (typeof copyEl === "string") {
+        const elementById = document.getElementById(copyEl);
+
+        if (!elementById) {
+          console.error(`Element with ID '${copyEl}' not found`);
+          return;
+        }
+
+        textToCopy = elementById.textContent || elementById.innerText;
+      } else if (copyEl instanceof Element) {
+        textToCopy = copyEl.textContent || copyEl.innerText;
+      } else {
+        console.error("Invalid parameter provided");
+        return;
+      }
+
+      const tempTextarea = document.createElement("textarea");
+      tempTextarea.value = textToCopy;
+      document.body.appendChild(tempTextarea);
+      tempTextarea.select();
+      tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+      document.execCommand("copy");
+      document.body.removeChild(tempTextarea);
+      console.log(`Text copied to clipboard: ${textToCopy}`);
+    }
+
+    // Close Elements Function
+    function closeEl(element) {
+      if (element === undefined || element === null) {
+        const parent = this.parentElement;
+        if (parent) {
+          parent.style.display = "none";
+        } else {
+          console.error("Parent element not found");
+        }
+      } else if (typeof element === "string") {
+        const elementById = document.getElementById(element);
+
+        if (!elementById) {
+          console.error(`Element with ID '${element}' not found`);
+          return;
+        }
+
+        elementById.style.display = "none";
+      } else {
+        const parent = element.parentElement;
+        if (parent) {
+          parent.style.display = "none";
+        } else {
+          console.error("Parent element not found");
+        }
+      }
+    }
+
+    // Show Elements Function
+    function showEl(elementId, displayValue = "block") {
+      const element = document.getElementById(elementId);
+
+      if (!element) {
+        console.error(`Element with ID '${elementId}' not found`);
+        return;
+      }
+
+      element.style.display = displayValue;
+    }
+
+    // Function Calls
+    modalImage();
+
+    // Function to truncate text to a specified number of words
+    function truncateText(text, maxLength) {
+      const words = text.split(" ");
+      if (words.length <= maxLength) {
+        return text;
+      }
+      return words.slice(0, maxLength).join(" ");
+    }
+
+    function search(containerId) {
+      var filter = document.querySelector('input[type="text"]').value;
+      var container, elements, i, querElement, querText, serElement, serText;
+
+      // Remove special characters from the search query using regular expression
+      filter = filter
+        .replace(/[^\w\s]/g, "")
+        .trim()
+        .toLowerCase();
+
+      container = document.getElementById(containerId);
+      elements = container.querySelectorAll("[quer]");
+
+      for (i = 0; i < elements.length; i++) {
+        querElement = elements[i].getAttribute("quer");
+        serElement = elements[i].querySelector("[ser]"); // Get the first element with ser attribute
+
+        if (serElement) {
+          serText = serElement.textContent || serElement.innerText;
+          // Remove special characters from text content using regular expression
+          querText = serText.replace(/[^\w\s]/g, "").toLowerCase();
+        } else {
+          querText = querElement.toLowerCase();
+        }
+
+        // Use includes() for case-insensitive comparison
+        if (querText.includes(filter)) {
+          elements[i].style.display = "";
+        } else {
+          elements[i].style.display = "none";
+        }
+      }
+    }</script>
 </body>
 
 <style>

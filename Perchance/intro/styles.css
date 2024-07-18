@@ -1,14 +1,14 @@
-#INTRO {
+.INTRO {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
   color: hsl(0, 0%, 91%);
-  background: hsl(0, 0, 13%);
+  background: hsl(0, 0%, 13%);
 }
 
-#INTRO * {
+.INTRO * {
   margin: 0;
 }
 
@@ -32,12 +32,12 @@
   }
 }
 
-#INTRO_SHADOW {
+.INTRO_SHADOW {
   box-shadow: inset hsl(0, 0%, 0%) 0 0 80px;
   animation: INTRO_SHADOW_ANIM 30s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 
-#INTRO_CONTENT {
+.INTRO_CONTENT {
   display: grid;
   align-content: center;
   place-items: center;
@@ -45,18 +45,28 @@
   text-shadow: 0 0 1.5px white;
 }
 
-#INTRO_TITLE_OPENING_PRE {
+.INTRO_TITLE_OPENING_PRE {
   display: grid;
   place-items: center;
 }
 
-#INTRO_CONTENT #INTRO_TITLE {
+.INTRO_CONTENT .INTRO_TITLE {
   background: linear-gradient(90deg, #7aa7fc, #e273ca);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 2.5rem;
   text-shadow: 0 0 10px hsl(0, 0%, 100%, 15%);
+}
+
+@keyframes HEIGHT_CLOSE {
+  from {
+    height: var(--HEIGHT_CLOSE_VARIABLE);
+  }
+
+  to {
+    height: 0;
+  }
 }
 
 @keyframes HEIGHT_OPEN {
@@ -69,7 +79,19 @@
   }
 }
 
-#INTRO_TITLE_OPENING {
+@keyframes FADE_SCALE_IN {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1
+  }
+}
+
+.INTRO_TITLE_OPENING {
   animation: HEIGHT_OPEN 0.8s ease-in-out 1s 1 both;
   overflow-y: hidden;
   display: grid;
@@ -80,21 +102,21 @@
 }
 
 @media (min-width: 800px) {
-  #INTRO_CONTENT #INTRO_TITLE {
-    font-size: 2.5rem;
+  .INTRO_CONTENT .INTRO_TITLE {
+    font-size: 3rem;
   }
 
-  #INTRO_TITLE_OPENING {
+  .INTRO_TITLE_OPENING {
     --HEIGHT_OPEN_VARIABLE: 65px
   }
 }
 
 @media (max-width: 800px) {
-  #INTRO_CONTENT #INTRO_TITLE {
+  .INTRO_CONTENT .INTRO_TITLE {
     font-size: 1.5rem;
   }
 
-  #INTRO_TITLE_OPENING {
+  .INTRO_TITLE_OPENING {
     --HEIGHT_OPEN_VARIABLE: 40px
   }
 }
@@ -114,21 +136,68 @@
 }
 
 .INTRO_OPENING_TITLE_LINE {
-  animation: INTRO_TITLE_OPENING_LINE_ANIME 1.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s 1 both;
-  height: 1.5px;
-  background: linear-gradient(90deg, #7aa7fc, #e273ca);
+  animation: INTRO_TITLE_OPENING_LINE_ANIME 1.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s 1 both, INTRO_SHADOW_ANIM 1.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s 1 both;
+  height: 3px;
+  background: linear-gradient(90deg, hsl(219, 96%, 73%), hsl(313, 66%, 67%));
+  box-shadow: 0 0 linear-gradient(90deg, hsl(219, 96%, 73%), hsl(313, 66%, 67%)) 10px;
   border-radius: 10px;
 }
 
-#INTRO_DESCRIPTION {
-  animation: HEIGHT_OPEN 0.8s ease-in-out 2.5s 1 both;
-  --HEIGHT_OPEN_VARIABLE: 23px;
-  overflow-y: hidden;
+
+
+.INTRO_DESCRIPTION {
+  animation: HEIGHT_OPEN 0.8s ease-in-out 1.8s 1 both;
+  --HEIGHT_OPEN_VARIABLE: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-#INTRO_TEXT_BOTTOM_LEFT {
+.INTRO_CONTENT_BOTTOM {
+  animation: fade-scale-in;
+  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2.6s 1 both;
   position: fixed;
-  left: 10px;
-  bottom: 10px;
   text-align: left;
+}
+
+.INTRO_BACKGROUND_CONTENT {
+  animation: fade-scale-in;
+  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.6s 1 both;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.INTRO_BACKGROUND_CONTENT svg {
+  width: 80vw;
+  height: 80vh;
+}
+
+.INTRO_BACKGROUND_CONTENT svg path {
+  fill: hsl(0, 0%, 35%, 0.5);
+}
+
+
+@media (min-width: 600px) {
+  .INTRO_CONTENT_BOTTOM_RIGHT {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .INTRO_CONTENT_BOTTOM_RIGHT {
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.INTRO_WAIT {
+  animation: HEIGHT_OPEN 0.8s ease-in-out 15s 1 both;
+  --HEIGHT_OPEN_VARIABLE: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }

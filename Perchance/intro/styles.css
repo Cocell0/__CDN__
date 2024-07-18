@@ -146,7 +146,7 @@
 
 
 .INTRO_DESCRIPTION {
-  animation: HEIGHT_OPEN 0.8s ease-in-out 1.8s 1 both;
+  animation: HEIGHT_OPEN 1s ease-in-out 1.8s 1 both;
   --HEIGHT_OPEN_VARIABLE: 20px;
   overflow: hidden;
   display: flex;
@@ -155,14 +155,14 @@
 
 .INTRO_CONTENT_BOTTOM {
   animation: fade-scale-in;
-  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2.6s 1 both;
+  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 3s 1 both;
   position: fixed;
   text-align: left;
 }
 
 .INTRO_BACKGROUND_CONTENT {
   animation: fade-scale-in;
-  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.6s 1 both;
+  animation: FADE_SCALE_IN 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) 1.6s 1 both;
   position: fixed;
   display: grid;
   place-items: center;

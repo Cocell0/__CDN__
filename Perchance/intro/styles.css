@@ -146,7 +146,7 @@
 
 
 .INTRO_DESCRIPTION {
-  animation: HEIGHT_OPEN 1s ease-in-out 1.8s 1 both;
+  animation: HEIGHT_OPEN 0.8s ease-in-out 1.8s 1 both;
   --HEIGHT_OPEN_VARIABLE: 20px;
   overflow: hidden;
   display: flex;
@@ -155,14 +155,28 @@
 
 .INTRO_CONTENT_BOTTOM {
   animation: fade-scale-in;
-  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 3s 1 both;
+  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2.6s 1 both;
   position: fixed;
   text-align: left;
 }
 
+@keyframes LIGHT_PULSE {
+  0%, 100% { scale: 1; }
+
+  20% { scale: 1.1; }
+
+  25% { scale: 1.15; }
+
+  50% { scale: 1.2; }
+
+  70% { scale: 1.15; }
+
+  80% { scale: 1.1; }
+}
+
 .INTRO_BACKGROUND_CONTENT {
   animation: fade-scale-in;
-  animation: FADE_SCALE_IN 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) 1.6s 1 both;
+  animation: FADE_SCALE_IN 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.6s 1 both, LIGHT_PULSE 100s cubic-bezier(0.4, 0, 1, 1) 1.8s infinite;
   position: fixed;
   display: grid;
   place-items: center;
@@ -178,7 +192,6 @@
 .INTRO_BACKGROUND_CONTENT svg path {
   fill: hsl(0, 0%, 35%, 0.5);
 }
-
 
 @media (min-width: 600px) {
   .INTRO_CONTENT_BOTTOM_RIGHT {
